@@ -1,0 +1,7 @@
+vector_mult_mul_32s_32s_32_2_1
+vector_mult_gmem_A_m_axi
+vector_mult_gmem_B_m_axi
+vector_mult_gmem_C_m_axi
+vector_mult_control_s_axi
+vector_mult_flow_control_loop_pipe
+vector_mult

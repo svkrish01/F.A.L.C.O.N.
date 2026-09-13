@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\Vector_Mult_IP.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/07/26 23:59:25",
+ "timestampMillis": "1788805765136",
+ "buildStep": {
+  "cmdId": "e3ccbd40-ce5c-4cfe-9b12-745326be09ef",
+  "name": "vitis-run",
+  "logFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\logs\\Vector_Mult_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Vitis_WS\\Vector_Mult_IP\\hls_config.cfg --work_dir Vector_Mult_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\Vitis_WS\\Vector_Mult_IP\\hls_config.cfg",
+   "--work_dir",
+   "Vector_Mult_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Vitis_WS\\Vector_Mult_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 23:59:25",
+ "timestampMillis": "1788805765137",
+ "status": {
+  "cmdId": "e3ccbd40-ce5c-4cfe-9b12-745326be09ef",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771385",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vector_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771387",
+ "buildStep": {
+  "cmdId": "bc6f4751-e387-44b2-89eb-e00057232323",
+  "name": "",
+  "logFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Vitis_WS\\Vector_Mult_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771388",
+ "status": {
+  "cmdId": "bc6f4751-e387-44b2-89eb-e00057232323",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771396",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771398",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771399",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771400",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771402",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 23:59:31",
+ "timestampMillis": "1788805771403",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315040",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315041",
+ "report": {
+  "path": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315041",
+ "status": {
+  "cmdId": "bc6f4751-e387-44b2-89eb-e00057232323",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315181",
+ "status": {
+  "cmdId": "e3ccbd40-ce5c-4cfe-9b12-745326be09ef",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315182",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/26 00:08:35",
+ "timestampMillis": "1788806315183",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

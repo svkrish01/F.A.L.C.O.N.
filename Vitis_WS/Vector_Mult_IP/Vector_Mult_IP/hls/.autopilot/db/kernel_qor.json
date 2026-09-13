@@ -1,0 +1,30 @@
+{
+    "name": "vector_mult",
+    "type": "function",
+    "pipelined": "yes",
+    "dataflowed": "no",
+    "original_ti": 0,
+    "original_tl": -1,
+    "calculated_ti": -1,
+    "calculated_tl": -1,
+    "assume_ti": -1,
+    "assume_tl": -1,
+    "CIs": [],
+    "loops": [
+        {
+            "name": "VITIS_LOOP_20_1",
+            "type": "loop",
+            "trip_count": -1,
+            "pipelined": "yes",
+            "dataflowed": "no",
+            "original_ti": -1,
+            "original_tl": -1,
+            "calculated_ti": -1,
+            "calculated_tl": -1,
+            "assume_ti": -1,
+            "assume_tl": -1,
+            "CIs": [],
+            "loops": []
+        }
+    ]
+}

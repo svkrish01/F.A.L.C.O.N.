@@ -1,0 +1,133 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2026.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.214</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.214</CP_FINAL>
+  <CP_ROUTE>6.214</CP_ROUTE>
+  <CP_SYNTH>5.835</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.786</SLACK_FINAL>
+  <SLACK_ROUTE>3.786</SLACK_ROUTE>
+  <SLACK_SYNTH>4.165</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.786</WNS_FINAL>
+  <WNS_ROUTE>3.786</WNS_ROUTE>
+  <WNS_SYNTH>4.165</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>2</BRAM>
+    <CLB>0</CLB>
+    <DSP>3</DSP>
+    <FF>3457</FF>
+    <LATCH>0</LATCH>
+    <LUT>2119</LUT>
+    <SLICE>911</SLICE>
+    <SRL>264</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="vector_mult" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="6">control_s_axi_U flow_control_loop_pipe_U gmem_A_m_axi_U gmem_B_m_axi_U gmem_C_m_axi_U mul_32s_32s_32_2_1_U1</SubModules>
+    <Resources BRAM="2" DSP="3" FF="3457" LUT="2119" LUTRAM="6" LogicLUT="1849" RAMB18="2" SRL="264"/>
+    <LocalResources FF="334" LUT="51" SRL="51"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_control_s_axi">
+    <Resources FF="277" LUT="341" LogicLUT="341"/>
+  </RtlModule>
+  <RtlModule CELL="inst/flow_control_loop_pipe_U" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_flow_control_loop_pipe">
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_A_m_axi_U" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_gmem_A_m_axi">
+    <Resources BRAM="1" FF="842" LUT="495" LogicLUT="447" RAMB18="1" SRL="48"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_B_m_axi_U" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_gmem_B_m_axi">
+    <Resources BRAM="1" FF="842" LUT="497" LogicLUT="449" RAMB18="1" SRL="48"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_C_m_axi_U" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_gmem_C_m_axi">
+    <Resources FF="1144" LUT="718" LUTRAM="6" LogicLUT="595" SRL="117"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_32_2_1_U1" DEPTH="1" FILE_NAME="vector_mult.v" ORIG_REF_NAME="vector_mult_mul_32s_32s_32_2_1">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.701" DATAPATH_LOGIC_DELAY="1.634" DATAPATH_NET_DELAY="4.067" ENDPOINT_PIN="bd_0_i/hls_inst/inst/i_fu_112_reg[25]/R" LOGIC_LEVELS="6" MAX_FANOUT="74" SLACK="3.786" STARTPOINT_PIN="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult_control_s_axi.v" LINE_NUMBER="281"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348[0]_i_32" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_20" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/i_fu_112[30]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/i_fu_112_reg[25]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult.v" LINE_NUMBER="1128"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.701" DATAPATH_LOGIC_DELAY="1.634" DATAPATH_NET_DELAY="4.067" ENDPOINT_PIN="bd_0_i/hls_inst/inst/i_fu_112_reg[26]/R" LOGIC_LEVELS="6" MAX_FANOUT="74" SLACK="3.786" STARTPOINT_PIN="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult_control_s_axi.v" LINE_NUMBER="281"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348[0]_i_32" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_20" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/i_fu_112[30]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/i_fu_112_reg[26]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult.v" LINE_NUMBER="1128"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.701" DATAPATH_LOGIC_DELAY="1.634" DATAPATH_NET_DELAY="4.067" ENDPOINT_PIN="bd_0_i/hls_inst/inst/i_fu_112_reg[27]/R" LOGIC_LEVELS="6" MAX_FANOUT="74" SLACK="3.786" STARTPOINT_PIN="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult_control_s_axi.v" LINE_NUMBER="281"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348[0]_i_32" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_20" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/i_fu_112[30]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/i_fu_112_reg[27]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult.v" LINE_NUMBER="1128"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.701" DATAPATH_LOGIC_DELAY="1.634" DATAPATH_NET_DELAY="4.067" ENDPOINT_PIN="bd_0_i/hls_inst/inst/i_fu_112_reg[28]/R" LOGIC_LEVELS="6" MAX_FANOUT="74" SLACK="3.786" STARTPOINT_PIN="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult_control_s_axi.v" LINE_NUMBER="281"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348[0]_i_32" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_20" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/i_fu_112[30]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/i_fu_112_reg[28]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult.v" LINE_NUMBER="1128"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.634" DATAPATH_LOGIC_DELAY="1.634" DATAPATH_NET_DELAY="4.000" ENDPOINT_PIN="bd_0_i/hls_inst/inst/i_fu_112_reg[29]/R" LOGIC_LEVELS="6" MAX_FANOUT="74" SLACK="3.853" STARTPOINT_PIN="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/int_ap_start_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult_control_s_axi.v" LINE_NUMBER="281"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348[0]_i_32" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_20" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/icmp_ln20_1_reg_348_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/control_s_axi_U/i_fu_112[30]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="vector_mult_flow_control_loop_pipe.v" LINE_NUMBER="70"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/i_fu_112_reg[29]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vector_mult.v" LINE_NUMBER="1128"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/vector_mult_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/vector_mult_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/vector_mult_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/vector_mult_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/vector_mult_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/vector_mult_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/vector_mult_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/vector_mult_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

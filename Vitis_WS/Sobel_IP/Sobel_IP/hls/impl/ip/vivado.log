@@ -1,0 +1,47 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 22-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep  9 01:55:40 2026
+# Process ID         : 30812
+# Current directory  : C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/vivado.log
+# Journal file       : C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip\vivado.jou
+# Running On         : DESKTOP-55UAODO
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 23903 MB
+# Total Virtual      : 40752 MB
+# Available Virtual  : 8077 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/hls_data.json outdir=C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip srcdir=C:/Vitis_WS/Sobel_IP/Sobel_IP/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/misc
+INFO: Copied 15 verilog file(s) to C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/hdl/verilog
+INFO: Copied 12 vhdl file(s) to C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 585.711 ; gain = 270.660
+INFO: Import ports from HDL: C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/hdl/vhdl/sobel_filter.vhd (sobel_filter)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: Add axi4stream interface input_r
+INFO: Add axi4stream interface output_r
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Vitis_WS/Sobel_IP/Sobel_IP/hls/impl/ip/xilinx_com_hls_sobel_filter_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 01:55:53 2026...

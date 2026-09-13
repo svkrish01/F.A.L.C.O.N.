@@ -1,0 +1,141 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'sobel_filter_Pipeline_1'" level="0">
+<item name = "Date">Wed Sep  9 01:53:16 2026
+</item>
+<item name = "Version">2026.1 (Build 6493734 on Jun 16 2026)</item>
+<item name = "Project">Sobel_IP</item>
+<item name = "Solution">hls</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.560 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4, 4, 40.000 ns, 40.000 ns, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">2, 2, 1, 1, N/A, 3, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 34, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 27, -</column>
+<column name="Register">-, -, 4, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln17_1_fu_156_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln17_fu_172_p2">+, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln17_fu_178_p2">icmp, 0, 0, 11, 2, 3</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_indvars_iv_load">9, 2, 2, 4</column>
+<column name="indvars_iv_fu_46">9, 2, 2, 4</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="indvars_iv_fu_46">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sobel_filter_Pipeline_1, return value</column>
+<column name="mul_ln17">in, 3, ap_none, mul_ln17, scalar</column>
+<column name="window_keep_address0">out, 4, ap_memory, window_keep, array</column>
+<column name="window_keep_ce0">out, 1, ap_memory, window_keep, array</column>
+<column name="window_keep_we0">out, 1, ap_memory, window_keep, array</column>
+<column name="window_keep_d0">out, 4, ap_memory, window_keep, array</column>
+<column name="window_strb_address0">out, 4, ap_memory, window_strb, array</column>
+<column name="window_strb_ce0">out, 1, ap_memory, window_strb, array</column>
+<column name="window_strb_we0">out, 1, ap_memory, window_strb, array</column>
+<column name="window_strb_d0">out, 4, ap_memory, window_strb, array</column>
+<column name="window_user_address0">out, 4, ap_memory, window_user, array</column>
+<column name="window_user_ce0">out, 1, ap_memory, window_user, array</column>
+<column name="window_user_we0">out, 1, ap_memory, window_user, array</column>
+<column name="window_user_d0">out, 2, ap_memory, window_user, array</column>
+<column name="window_last_address0">out, 4, ap_memory, window_last, array</column>
+<column name="window_last_ce0">out, 1, ap_memory, window_last, array</column>
+<column name="window_last_we0">out, 1, ap_memory, window_last, array</column>
+<column name="window_last_d0">out, 1, ap_memory, window_last, array</column>
+<column name="window_id_address0">out, 4, ap_memory, window_id, array</column>
+<column name="window_id_ce0">out, 1, ap_memory, window_id, array</column>
+<column name="window_id_we0">out, 1, ap_memory, window_id, array</column>
+<column name="window_id_d0">out, 5, ap_memory, window_id, array</column>
+<column name="window_dest_address0">out, 4, ap_memory, window_dest, array</column>
+<column name="window_dest_ce0">out, 1, ap_memory, window_dest, array</column>
+<column name="window_dest_we0">out, 1, ap_memory, window_dest, array</column>
+<column name="window_dest_d0">out, 6, ap_memory, window_dest, array</column>
+</table>
+</item>
+</section>
+</profile>

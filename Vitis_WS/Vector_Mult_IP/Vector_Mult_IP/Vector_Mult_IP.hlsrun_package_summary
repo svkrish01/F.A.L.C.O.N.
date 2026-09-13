@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\Vector_Mult_IP.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/07/26 20:06:26",
+ "timestampMillis": "1788791786836",
+ "buildStep": {
+  "cmdId": "6d212d52-146d-44df-89c4-13f8d8b11311",
+  "name": "vitis-run",
+  "logFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\logs\\Vector_Mult_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Vitis_WS\\Vector_Mult_IP\\hls_config.cfg --work_dir Vector_Mult_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Vitis_WS\\Vector_Mult_IP\\hls_config.cfg",
+   "--work_dir",
+   "Vector_Mult_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Vitis_WS\\Vector_Mult_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 20:06:26",
+ "timestampMillis": "1788791786837",
+ "status": {
+  "cmdId": "6d212d52-146d-44df-89c4-13f8d8b11311",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/07/26 20:06:32",
+ "timestampMillis": "1788791792256",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vector_mult",
+     "file": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\vector_mult.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/07/26 20:06:32",
+ "timestampMillis": "1788791792259",
+ "buildStep": {
+  "cmdId": "3146dcdf-1002-4f95-a0cb-d5bb7c7623ee",
+  "name": "",
+  "logFile": "C:/Vitis_WS\\Vector_Mult_IP\\Vector_Mult_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Vitis_WS\\Vector_Mult_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 20:06:32",
+ "timestampMillis": "1788791792261",
+ "status": {
+  "cmdId": "3146dcdf-1002-4f95-a0cb-d5bb7c7623ee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 20:07:09",
+ "timestampMillis": "1788791829881",
+ "status": {
+  "cmdId": "3146dcdf-1002-4f95-a0cb-d5bb7c7623ee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/07/26 20:07:09",
+ "timestampMillis": "1788791829972",
+ "status": {
+  "cmdId": "6d212d52-146d-44df-89c4-13f8d8b11311",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 20:07:09",
+ "timestampMillis": "1788791829973",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/07/26 20:07:09",
+ "timestampMillis": "1788791829973",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

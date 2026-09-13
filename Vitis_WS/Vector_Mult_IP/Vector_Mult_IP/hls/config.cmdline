@@ -1,0 +1,3 @@
+relativeroot=C:/Vitis_WS/Vector_Mult_IP
+original_argv=--mode hls --impl --config C:\Vitis_WS\Vector_Mult_IP\hls_config.cfg --work_dir Vector_Mult_IP 
+

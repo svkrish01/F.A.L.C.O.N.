@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'sobel_filter_Pipeline_1'
+================================================================
+* Date:           Wed Sep  9 01:53:15 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Sobel_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.560 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |        4|        4|  40.000 ns|  40.000 ns|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        2|        2|         1|          1|        N/A|     3|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     34|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       4|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       4|     61|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln17_1_fu_156_p2  |         +|   0|  0|  13|           4|           4|
+    |add_ln17_fu_172_p2    |         +|   0|  0|  10|           2|           1|
+    |icmp_ln17_fu_178_p2   |      icmp|   0|  0|  11|           2|           3|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  34|           8|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvars_iv_load  |   9|          2|    2|          4|
+    |indvars_iv_fu_46                  |   9|          2|    2|          4|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  27|          6|    5|         10|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+---+----+-----+-----------+
+    |       Name       | FF| LUT| Bits| Const Bits|
+    +------------------+---+----+-----+-----------+
+    |ap_CS_fsm         |  1|   0|    1|          0|
+    |ap_done_reg       |  1|   0|    1|          0|
+    |indvars_iv_fu_46  |  2|   0|    2|          0|
+    +------------------+---+----+-----+-----------+
+    |Total             |  4|   0|    4|          0|
+    +------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+-------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++----------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  sobel_filter_Pipeline_1|  return value|
+|mul_ln17              |   in|    3|     ap_none|                 mul_ln17|        scalar|
+|window_keep_address0  |  out|    4|   ap_memory|              window_keep|         array|
+|window_keep_ce0       |  out|    1|   ap_memory|              window_keep|         array|
+|window_keep_we0       |  out|    1|   ap_memory|              window_keep|         array|
+|window_keep_d0        |  out|    4|   ap_memory|              window_keep|         array|
+|window_strb_address0  |  out|    4|   ap_memory|              window_strb|         array|
+|window_strb_ce0       |  out|    1|   ap_memory|              window_strb|         array|
+|window_strb_we0       |  out|    1|   ap_memory|              window_strb|         array|
+|window_strb_d0        |  out|    4|   ap_memory|              window_strb|         array|
+|window_user_address0  |  out|    4|   ap_memory|              window_user|         array|
+|window_user_ce0       |  out|    1|   ap_memory|              window_user|         array|
+|window_user_we0       |  out|    1|   ap_memory|              window_user|         array|
+|window_user_d0        |  out|    2|   ap_memory|              window_user|         array|
+|window_last_address0  |  out|    4|   ap_memory|              window_last|         array|
+|window_last_ce0       |  out|    1|   ap_memory|              window_last|         array|
+|window_last_we0       |  out|    1|   ap_memory|              window_last|         array|
+|window_last_d0        |  out|    1|   ap_memory|              window_last|         array|
+|window_id_address0    |  out|    4|   ap_memory|                window_id|         array|
+|window_id_ce0         |  out|    1|   ap_memory|                window_id|         array|
+|window_id_we0         |  out|    1|   ap_memory|                window_id|         array|
+|window_id_d0          |  out|    5|   ap_memory|                window_id|         array|
+|window_dest_address0  |  out|    4|   ap_memory|              window_dest|         array|
+|window_dest_ce0       |  out|    1|   ap_memory|              window_dest|         array|
+|window_dest_we0       |  out|    1|   ap_memory|              window_dest|         array|
+|window_dest_d0        |  out|    6|   ap_memory|              window_dest|         array|
++----------------------+-----+-----+------------+-------------------------+--------------+
+

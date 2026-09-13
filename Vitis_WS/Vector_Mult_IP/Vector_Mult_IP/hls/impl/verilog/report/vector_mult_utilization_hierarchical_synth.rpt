@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Sep  8 00:05:08 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/vector_mult_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|         Instance        |                     Module                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper            |                                          (top) |       2354 |       1874 |       6 |  474 | 3457 |      0 |      2 |          3 |
+|   bd_0_i                |                                           bd_0 |       2354 |       1874 |       6 |  474 | 3457 |      0 |      2 |          3 |
+|     hls_inst            |                                bd_0_hls_inst_0 |       2354 |       1874 |       6 |  474 | 3457 |      0 |      2 |          3 |
+|       inst              |                    bd_0_hls_inst_0_vector_mult |       2354 |       1874 |       6 |  474 | 3457 |      0 |      2 |          3 |
+|         (inst)          |                    bd_0_hls_inst_0_vector_mult |         96 |          0 |       0 |   96 |  334 |      0 |      0 |          0 |
+|         control_s_axi_U |      bd_0_hls_inst_0_vector_mult_control_s_axi |        343 |        343 |       0 |    0 |  277 |      0 |      0 |          0 |
+|         gmem_A_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_A_m_axi |        546 |        453 |       0 |   93 |  842 |      0 |      1 |          0 |
+|           bus_read      |  bd_0_hls_inst_0_vector_mult_gmem_A_m_axi_read |        344 |        344 |       0 |    0 |  604 |      0 |      0 |          0 |
+|           load_unit_0   |  bd_0_hls_inst_0_vector_mult_gmem_A_m_axi_load |        202 |        109 |       0 |   93 |  238 |      0 |      1 |          0 |
+|         gmem_B_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_B_m_axi |        549 |        456 |       0 |   93 |  842 |      0 |      1 |          0 |
+|           bus_read      |  bd_0_hls_inst_0_vector_mult_gmem_B_m_axi_read |        344 |        344 |       0 |    0 |  604 |      0 |      0 |          0 |
+|           load_unit_0   |  bd_0_hls_inst_0_vector_mult_gmem_B_m_axi_load |        205 |        112 |       0 |   93 |  238 |      0 |      1 |          0 |
+|         gmem_C_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_C_m_axi |        802 |        604 |       6 |  192 | 1144 |      0 |      0 |          0 |
+|           bus_write     | bd_0_hls_inst_0_vector_mult_gmem_C_m_axi_write |        503 |        440 |       0 |   63 |  820 |      0 |      0 |          0 |
+|           store_unit_0  | bd_0_hls_inst_0_vector_mult_gmem_C_m_axi_store |        299 |        164 |       6 |  129 |  324 |      0 |      0 |          0 |
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

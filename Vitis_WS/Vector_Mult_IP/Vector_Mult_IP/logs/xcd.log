@@ -1,0 +1,131 @@
+09/07/26 20:05:13: Running xcd server. This server was built by gradle.
+09/07/26 20:05:13: Server was asked to start on port: '60909'
+09/07/26 20:05:13: Server is using token UUID: '50ba31c7-95c8-4519-b9f5-4bee3a3bfdd3'
+09/07/26 20:05:13: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/07/26 20:05:13: Attempting to start server on port '60909'
+09/07/26 20:05:13: Running Dispatch Server
+09/07/26 20:05:13: Version 2.2.0
+09/07/26 20:05:15: Dispatch Server: Accepted socket connection from client
+09/07/26 20:05:15: Starting Socket connection
+09/07/26 20:05:15: EXCHANGE_TOKEN received, server token: 50ba31c7-95c8-4519-b9f5-4bee3a3bfdd3, passed token: 50ba31c7-95c8-4519-b9f5-4bee3a3bfdd3
+09/07/26 20:05:16: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/07/26 20:05:16: SESSION_MGR: creating session with session uuid: '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:16: KERNEL_SVC: creating session with uuid: '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:16: GUIDANCE_SMGR: creating guidance session with uuid: '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:16: SYSTEM_DIAGRAM: creating session with uuid: '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:30: Dispatch Server: Accepted socket connection from client
+09/07/26 20:05:30: Starting Socket connection
+09/07/26 20:05:58: SESSION_MGR: closing session for UUID '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:58: KERNEL_SVC: closing session for UUID '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:58: GUIDANCE_SMGR: closing session for UUID '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:58: SYSTEM_DIAGRAM: closing session for UUID '91fea3b7-c6db-49c5-b878-cfb23abc9c9c' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 20:05:58: STOP_SERVER received, server token: 50ba31c7-95c8-4519-b9f5-4bee3a3bfdd3, passed token: 50ba31c7-95c8-4519-b9f5-4bee3a3bfdd3
+09/07/26 20:05:58: Socket received request to stop server.
+09/07/26 20:05:58: Dispatch Server: do_await_stop
+09/07/26 20:05:58: SERVER: destructor for server bound to port 60909
+09/07/26 20:06:24: Running xcd server. This server was built by gradle.
+09/07/26 20:06:24: Server was asked to start on port: '60915'
+09/07/26 20:06:24: Server is using token UUID: 'e82fb55c-a2fe-4c3e-8b6f-396e688d6840'
+09/07/26 20:06:24: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/07/26 20:06:24: Attempting to start server on port '60915'
+09/07/26 20:06:24: Running Dispatch Server
+09/07/26 20:06:24: Version 2.2.0
+09/07/26 20:06:26: Dispatch Server: Accepted socket connection from client
+09/07/26 20:06:26: Starting Socket connection
+09/07/26 20:06:26: EXCHANGE_TOKEN received, server token: e82fb55c-a2fe-4c3e-8b6f-396e688d6840, passed token: e82fb55c-a2fe-4c3e-8b6f-396e688d6840
+09/07/26 20:06:26: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/07/26 20:06:26: SESSION_MGR: creating session with session uuid: '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:06:26: KERNEL_SVC: creating session with uuid: '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:06:26: GUIDANCE_SMGR: creating guidance session with uuid: '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:06:26: SYSTEM_DIAGRAM: creating session with uuid: '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:06:32: Dispatch Server: Accepted socket connection from client
+09/07/26 20:06:32: Starting Socket connection
+09/07/26 20:07:09: SESSION_MGR: closing session for UUID '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' with name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:07:09: KERNEL_SVC: closing session for UUID '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' with name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:07:09: GUIDANCE_SMGR: closing session for UUID '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' with name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:07:09: SYSTEM_DIAGRAM: closing session for UUID '00ac8aa1-c9ce-41f0-bf7c-30cf7ff7120e' with name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 20:07:09: STOP_SERVER received, server token: e82fb55c-a2fe-4c3e-8b6f-396e688d6840, passed token: e82fb55c-a2fe-4c3e-8b6f-396e688d6840
+09/07/26 20:07:09: Socket received request to stop server.
+09/07/26 20:07:09: Dispatch Server: do_await_stop
+09/07/26 20:07:09: SERVER: destructor for server bound to port 60915
+09/07/26 23:36:30: Running xcd server. This server was built by gradle.
+09/07/26 23:36:30: Server was asked to start on port: '64188'
+09/07/26 23:36:30: Server is using token UUID: 'e190d432-8056-4b0c-873b-6ab6f95c25d8'
+09/07/26 23:36:30: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/07/26 23:36:30: Attempting to start server on port '64188'
+09/07/26 23:36:30: Running Dispatch Server
+09/07/26 23:36:30: Version 2.2.0
+09/07/26 23:36:33: Dispatch Server: Accepted socket connection from client
+09/07/26 23:36:33: Starting Socket connection
+09/07/26 23:36:33: EXCHANGE_TOKEN received, server token: e190d432-8056-4b0c-873b-6ab6f95c25d8, passed token: e190d432-8056-4b0c-873b-6ab6f95c25d8
+09/07/26 23:36:33: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/07/26 23:36:33: SESSION_MGR: creating session with session uuid: 'c76e9ea0-90da-4638-a457-94cb6b0f5558' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:36:33: KERNEL_SVC: creating session with uuid: 'c76e9ea0-90da-4638-a457-94cb6b0f5558' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:36:33: GUIDANCE_SMGR: creating guidance session with uuid: 'c76e9ea0-90da-4638-a457-94cb6b0f5558' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:36:33: SYSTEM_DIAGRAM: creating session with uuid: 'c76e9ea0-90da-4638-a457-94cb6b0f5558' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:36:41: Dispatch Server: Accepted socket connection from client
+09/07/26 23:36:41: Starting Socket connection
+09/07/26 23:37:10: SESSION_MGR: closing session for UUID 'c76e9ea0-90da-4638-a457-94cb6b0f5558' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:37:10: KERNEL_SVC: closing session for UUID 'c76e9ea0-90da-4638-a457-94cb6b0f5558' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:37:10: GUIDANCE_SMGR: closing session for UUID 'c76e9ea0-90da-4638-a457-94cb6b0f5558' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:37:11: SYSTEM_DIAGRAM: closing session for UUID 'c76e9ea0-90da-4638-a457-94cb6b0f5558' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:37:11: STOP_SERVER received, server token: e190d432-8056-4b0c-873b-6ab6f95c25d8, passed token: e190d432-8056-4b0c-873b-6ab6f95c25d8
+09/07/26 23:37:11: Socket received request to stop server.
+09/07/26 23:37:11: Dispatch Server: do_await_stop
+09/07/26 23:37:11: SERVER: destructor for server bound to port 64188
+09/07/26 23:58:02: Running xcd server. This server was built by gradle.
+09/07/26 23:58:02: Server was asked to start on port: '50211'
+09/07/26 23:58:02: Server is using token UUID: 'ba8a4317-dce5-4276-abfe-5eed3178a69d'
+09/07/26 23:58:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/07/26 23:58:02: Attempting to start server on port '50211'
+09/07/26 23:58:02: Running Dispatch Server
+09/07/26 23:58:02: Version 2.2.0
+09/07/26 23:58:04: Dispatch Server: Accepted socket connection from client
+09/07/26 23:58:04: Starting Socket connection
+09/07/26 23:58:04: EXCHANGE_TOKEN received, server token: ba8a4317-dce5-4276-abfe-5eed3178a69d, passed token: ba8a4317-dce5-4276-abfe-5eed3178a69d
+09/07/26 23:58:04: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/07/26 23:58:04: SESSION_MGR: creating session with session uuid: 'bd6039a9-8566-408b-802b-002c46a3c766' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:04: KERNEL_SVC: creating session with uuid: 'bd6039a9-8566-408b-802b-002c46a3c766' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:04: GUIDANCE_SMGR: creating guidance session with uuid: 'bd6039a9-8566-408b-802b-002c46a3c766' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:04: SYSTEM_DIAGRAM: creating session with uuid: 'bd6039a9-8566-408b-802b-002c46a3c766' and name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:10: Dispatch Server: Accepted socket connection from client
+09/07/26 23:58:10: Starting Socket connection
+09/07/26 23:58:33: SESSION_MGR: closing session for UUID 'bd6039a9-8566-408b-802b-002c46a3c766' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:33: KERNEL_SVC: closing session for UUID 'bd6039a9-8566-408b-802b-002c46a3c766' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:33: GUIDANCE_SMGR: closing session for UUID 'bd6039a9-8566-408b-802b-002c46a3c766' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:33: SYSTEM_DIAGRAM: closing session for UUID 'bd6039a9-8566-408b-802b-002c46a3c766' with name 'v++_compile_Vector_Mult_IP'
+09/07/26 23:58:33: STOP_SERVER received, server token: ba8a4317-dce5-4276-abfe-5eed3178a69d, passed token: ba8a4317-dce5-4276-abfe-5eed3178a69d
+09/07/26 23:58:33: Socket received request to stop server.
+09/07/26 23:58:33: Dispatch Server: do_await_stop
+09/07/26 23:58:33: SERVER: destructor for server bound to port 50211
+09/07/26 23:59:22: Running xcd server. This server was built by gradle.
+09/07/26 23:59:22: Server was asked to start on port: '55374'
+09/07/26 23:59:22: Server is using token UUID: '2fadfa94-c0b6-4f2c-bc06-ea1bd4f5fd90'
+09/07/26 23:59:22: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/07/26 23:59:22: Attempting to start server on port '55374'
+09/07/26 23:59:22: Running Dispatch Server
+09/07/26 23:59:22: Version 2.2.0
+09/07/26 23:59:25: Dispatch Server: Accepted socket connection from client
+09/07/26 23:59:25: Starting Socket connection
+09/07/26 23:59:25: EXCHANGE_TOKEN received, server token: 2fadfa94-c0b6-4f2c-bc06-ea1bd4f5fd90, passed token: 2fadfa94-c0b6-4f2c-bc06-ea1bd4f5fd90
+09/07/26 23:59:25: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/07/26 23:59:25: SESSION_MGR: creating session with session uuid: 'b82232e4-0a63-49bc-91f5-c335b4df95a6' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 23:59:25: KERNEL_SVC: creating session with uuid: 'b82232e4-0a63-49bc-91f5-c335b4df95a6' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 23:59:25: GUIDANCE_SMGR: creating guidance session with uuid: 'b82232e4-0a63-49bc-91f5-c335b4df95a6' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 23:59:25: SYSTEM_DIAGRAM: creating session with uuid: 'b82232e4-0a63-49bc-91f5-c335b4df95a6' and name 'vitis-run_compile_Vector_Mult_IP'
+09/07/26 23:59:31: Dispatch Server: Accepted socket connection from client
+09/07/26 23:59:31: Starting Socket connection
+09/08/26 00:00:56: Dispatch Server: Accepted socket connection from client
+09/08/26 00:00:56: Starting Socket connection
+09/08/26 00:03:23: Dispatch Server: Accepted socket connection from client
+09/08/26 00:03:23: Starting Socket connection
+09/08/26 00:05:59: Dispatch Server: Accepted socket connection from client
+09/08/26 00:05:59: Starting Socket connection
+09/08/26 00:08:35: SESSION_MGR: closing session for UUID 'b82232e4-0a63-49bc-91f5-c335b4df95a6' with name 'vitis-run_compile_Vector_Mult_IP'
+09/08/26 00:08:35: KERNEL_SVC: closing session for UUID 'b82232e4-0a63-49bc-91f5-c335b4df95a6' with name 'vitis-run_compile_Vector_Mult_IP'
+09/08/26 00:08:35: GUIDANCE_SMGR: closing session for UUID 'b82232e4-0a63-49bc-91f5-c335b4df95a6' with name 'vitis-run_compile_Vector_Mult_IP'
+09/08/26 00:08:35: SYSTEM_DIAGRAM: closing session for UUID 'b82232e4-0a63-49bc-91f5-c335b4df95a6' with name 'vitis-run_compile_Vector_Mult_IP'
+09/08/26 00:08:35: STOP_SERVER received, server token: 2fadfa94-c0b6-4f2c-bc06-ea1bd4f5fd90, passed token: 2fadfa94-c0b6-4f2c-bc06-ea1bd4f5fd90
+09/08/26 00:08:35: Socket received request to stop server.
+09/08/26 00:08:35: Dispatch Server: do_await_stop
+09/08/26 00:08:35: SERVER: destructor for server bound to port 55374

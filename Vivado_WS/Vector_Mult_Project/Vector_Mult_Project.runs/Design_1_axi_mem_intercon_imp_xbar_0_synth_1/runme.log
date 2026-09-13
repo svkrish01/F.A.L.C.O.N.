@@ -1,0 +1,392 @@
+
+*** Running vivado
+    with args -log Design_1_axi_mem_intercon_imp_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_1_axi_mem_intercon_imp_xbar_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 22-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep  8 00:16:53 2026
+# Process ID         : 14412
+# Current directory  : C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1
+# Command line       : vivado.exe -log Design_1_axi_mem_intercon_imp_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_1_axi_mem_intercon_imp_xbar_0.tcl
+# Log file           : C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1/Design_1_axi_mem_intercon_imp_xbar_0.vds
+# Journal file       : C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1\vivado.jou
+# Running On         : DESKTOP-55UAODO
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 23903 MB
+# Total Virtual      : 40752 MB
+# Available Virtual  : 12398 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Sep  8 00:16:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Design_1_axi_mem_intercon_imp_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 583.059 ; gain = 267.590
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vitis_WS/Vector_Mult_IP/Vector_Mult_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: synth_design -top Design_1_axi_mem_intercon_imp_xbar_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17124
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1406.309 ; gain = 576.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Design_1_axi_mem_intercon_imp_xbar_0' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ip/Design_1_axi_mem_intercon_imp_xbar_0/synth/Design_1_axi_mem_intercon_imp_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_axi_crossbar' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_crossbar_sasd' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_addr_decoder' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_carry_and' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_carry_and' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_addr_decoder' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_decerr_slave' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_decerr_slave' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_addr_arbiter_sasd' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_addr_arbiter_sasd' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_splitter' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_splitter' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_39_splitter__parameterized0' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_splitter__parameterized0' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_37_axic_register_slice' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/8c55/hdl/axi_register_slice_v2_1_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_37_axic_register_slice' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/8c55/hdl/axi_register_slice_v2_1_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_crossbar_sasd' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_39_axi_crossbar' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'Design_1_axi_mem_intercon_imp_xbar_0' (0#1) [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ip/Design_1_axi_mem_intercon_imp_xbar_0/synth/Design_1_axi_mem_intercon_imp_xbar_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:2051]
+INFO: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:2062]
+INFO: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:2073]
+INFO: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/eea9/hdl/axi_crossbar_v2_1_vl_rfs.v:2086]
+INFO: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_39_decerr_slave is either unconnected or has no load
+INFO: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_39_addr_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_39_addr_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[2] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WID[2] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARID[2] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARID[1] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_39_crossbar_sasd is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awid[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awid[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[23] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[22] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[21] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[20] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[19] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[18] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[17] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[16] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[15] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[14] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[13] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[12] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[11] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[10] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[9] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[8] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[8] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[7] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[6] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[5] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[4] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[3] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[5] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[4] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[3] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlock[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlock[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[11] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[10] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[9] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[8] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[7] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[6] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[5] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[4] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[11] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[10] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[9] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[8] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[7] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[6] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[5] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[4] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wid[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wid[1] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wlast[2] in module axi_crossbar_v2_1_39_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1670.062 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ip/Design_1_axi_mem_intercon_imp_xbar_0/Design_1_axi_mem_intercon_imp_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ip/Design_1_axi_mem_intercon_imp_xbar_0/Design_1_axi_mem_intercon_imp_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1670.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1670.062 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               96 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 3     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.gen/sources_1/bd/Design_1/ipshared/8c55/hdl/axi_register_slice_v2_1_rfs.v:1726]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1670.062 ; gain = 840.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1775.656 ; gain = 945.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1831.812 ; gain = 1001.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1840.273 ; gain = 1010.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    24|
+|3     |LUT3 |     3|
+|4     |LUT4 |   259|
+|5     |LUT5 |    48|
+|6     |LUT6 |   105|
+|7     |FDRE |   152|
+|8     |FDSE |    21|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2075.602 ; gain = 1245.762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2075.602 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2075.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 942082c
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+157 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2075.602 ; gain = 1473.004
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2075.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1/Design_1_axi_mem_intercon_imp_xbar_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP Design_1_axi_mem_intercon_imp_xbar_0, cache-ID = b6a51bb2c3923753
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2075.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_WS/Vector_Mult_Project/Vector_Mult_Project.runs/Design_1_axi_mem_intercon_imp_xbar_0_synth_1/Design_1_axi_mem_intercon_imp_xbar_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Design_1_axi_mem_intercon_imp_xbar_0_utilization_synth.rpt -pb Design_1_axi_mem_intercon_imp_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  8 00:17:40 2026...

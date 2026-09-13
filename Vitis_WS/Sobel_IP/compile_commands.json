@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\Vitis_WS\\Sobel_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_filter",
+      "-c",
+      "C:\\Vitis_WS\\Sobel_IP\\Sobel.cpp"
+    ],
+    "file": "C:\\Vitis_WS\\Sobel_IP\\Sobel.cpp"
+  }
+]

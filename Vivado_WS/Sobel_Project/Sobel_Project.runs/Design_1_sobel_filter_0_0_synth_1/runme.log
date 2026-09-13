@@ -1,0 +1,578 @@
+
+*** Running vivado
+    with args -log Design_1_sobel_filter_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_1_sobel_filter_0_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 22-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep  9 02:37:57 2026
+# Process ID         : 10892
+# Current directory  : C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1
+# Command line       : vivado.exe -log Design_1_sobel_filter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_1_sobel_filter_0_0.tcl
+# Log file           : C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1/Design_1_sobel_filter_0_0.vds
+# Journal file       : C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1\vivado.jou
+# Running On         : DESKTOP-55UAODO
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 23903 MB
+# Total Virtual      : 40752 MB
+# Available Virtual  : 6714 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep  9 02:37:57 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Design_1_sobel_filter_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 581.469 ; gain = 268.469
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vitis_WS/Sobel_IP/Sobel_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: synth_design -top Design_1_sobel_filter_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31496
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1396.648 ; gain = 577.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Design_1_sobel_filter_0_0' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ip/Design_1_sobel_filter_0_0/synth/Design_1_sobel_filter_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_window_keep_RAM_AUTO_1R1W' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_keep_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_window_keep_RAM_AUTO_1R1W' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_keep_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_window_user_RAM_AUTO_1R1W' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_user_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_window_user_RAM_AUTO_1R1W' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_user_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_window_last_RAM_AUTO_1R1W' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_last_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_window_last_RAM_AUTO_1R1W' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_last_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_window_id_RAM_AUTO_1R1W' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_id_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_window_id_RAM_AUTO_1R1W' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_id_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_window_dest_RAM_AUTO_1R1W' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_dest_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_window_dest_RAM_AUTO_1R1W' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_window_dest_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_sobel_filter_Pipeline_1' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_sobel_filter_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_flow_control_loop_pipe_sequential_init' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_flow_control_loop_pipe_sequential_init' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_sobel_filter_Pipeline_1' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_sobel_filter_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_sobel_filter_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_19_2' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_sobel_filter_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_19_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_sobel_filter_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_19_2' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_sobel_filter_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_19_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_control_s_axi' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_control_s_axi.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_control_s_axi' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_mul_31ns_31ns_62_2_1' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_mul_31ns_31ns_62_2_1' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both__parameterized0' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both__parameterized0' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both__parameterized1' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both__parameterized1' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both__parameterized2' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both__parameterized2' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both__parameterized3' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both__parameterized3' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_filter_regslice_both__parameterized4' [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter_regslice_both__parameterized4' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_filter' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Design_1_sobel_filter_0_0' (0#1) [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ip/Design_1_sobel_filter_0_0/synth/Design_1_sobel_filter_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_control_s_axi.v:276]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port reset in module sobel_filter_mul_31ns_31ns_62_2_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[1] in module sobel_filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[0] in module sobel_filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module sobel_filter_window_dest_RAM_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module sobel_filter_window_id_RAM_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module sobel_filter_window_last_RAM_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module sobel_filter_window_user_RAM_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module sobel_filter_window_keep_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.145 ; gain = 730.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.145 ; gain = 730.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.145 ; gain = 730.465
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1549.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ip/Design_1_sobel_filter_0_0/constraints/sobel_filter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ip/Design_1_sobel_filter_0_0/constraints/sobel_filter_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1609.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1611.664 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.664 ; gain = 792.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.664 ; gain = 792.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.664 ; gain = 792.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sobel_filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sobel_filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_filter_regslice_both__parameterized4'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "sobel_filter_window_keep_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "sobel_filter_window_user_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "sobel_filter_window_last_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "sobel_filter_window_id_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "sobel_filter_window_dest_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sobel_filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'sobel_filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_filter_regslice_both__parameterized4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1611.664 ; gain = 792.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   32 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   31 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               62 Bit    Registers := 2     
+	               32 Bit    Registers := 24    
+	               31 Bit    Registers := 6     
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 44    
+	                5 Bit    Registers := 46    
+	                4 Bit    Registers := 88    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 61    
+	                1 Bit    Registers := 86    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	               54 Bit	(9 X 6 bit)          RAMs := 1     
+	               45 Bit	(9 X 5 bit)          RAMs := 1     
+	               36 Bit	(9 X 4 bit)          RAMs := 2     
+	               18 Bit	(9 X 2 bit)          RAMs := 1     
+	                9 Bit	(9 X 1 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 19    
+	   2 Input    5 Bit        Muxes := 19    
+	   2 Input    4 Bit        Muxes := 48    
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 161   
+	   4 Input    2 Bit        Muxes := 56    
+	   2 Input    1 Bit        Muxes := 95    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6014] Unused sequential element mul_31ns_31ns_62_2_1_U132/tmp_product was removed.  [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_mul_31ns_31ns_62_2_1.v:47]
+INFO: [Synth 8-6014] Unused sequential element mul_31ns_31ns_62_2_1_U132/buff0_reg was removed.  [c:/Vivado_WS/Sobel_Project/Sobel_Project.gen/sources_1/bd/Design_1/ipshared/30ea/hdl/verilog/sobel_filter_mul_31ns_31ns_62_2_1.v:47]
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U132/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_2037_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U132/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_2032_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: register smax1_reg_2037_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U132/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U132/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_2032_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U132/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U132/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U132/buff0_reg.
+INFO: [Synth 8-7129] Port AWADDR[1] in module sobel_filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[0] in module sobel_filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-3971] The signal "inst/window_keep_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/window_strb_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/window_user_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/window_last_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/window_id_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/window_dest_U/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_0 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_0/\window_keep_U/ram_reg , of type : RAMB18E1 in constant propagation
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_1 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_1/\window_strb_U/ram_reg , of type : RAMB18E1 in constant propagation
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_2 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_2/\window_user_U/ram_reg , of type : RAMB18E1 in constant propagation
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_3 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_3/\window_last_U/ram_reg , of type : RAMB18E1 in constant propagation
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_4 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_4/\window_id_U/ram_reg , of type : RAMB18E1 in constant propagation
+WARNING: [Synth 8-13374] Removed Unreachable instance inst/i_5 containing BRAMs/URAMs in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/i_5/\window_dest_U/ram_reg , of type : RAMB18E1 in constant propagation
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module sobel_filter_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module sobel_filter_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[47]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[46]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[45]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[44]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[43]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[42]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[41]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[40]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[39]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[38]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[37]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[36]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[35]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[34]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[33]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[32]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[31]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[30]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[29]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[28]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[27]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[26]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[25]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[24]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[23]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[22]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[21]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[20]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[19]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[18]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[17]) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[47]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[46]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[45]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[44]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[43]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[42]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[41]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[40]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[39]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[38]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[37]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[36]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[35]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[34]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[33]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[32]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[31]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[30]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[29]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[28]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[27]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[26]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[25]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[24]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[23]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[22]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[21]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[20]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[19]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[18]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/buff0_reg[17]__0) is unused and will be removed from module sobel_filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U132/tmp_product__18) is unused and will be removed from module sobel_filter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1863.996 ; gain = 1045.316
+---------------------------------------------------------------------------------
+ Sort Area is  mul_31ns_31ns_62_2_1_U132/tmp_product_0 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U132/tmp_product_0 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U132/tmp_product_3 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U132/tmp_product_3 : 0 1 : 2563 5230 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sobel_filter | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_filter | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|sobel_filter | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_filter | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2040.457 ; gain = 1221.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2047.160 ; gain = 1228.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2075.777 ; gain = 1257.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sobel_filter | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_filter | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|sobel_filter | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_filter | (PCIN>>17+A'*B')' | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   133|
+|2     |DSP48E1 |     4|
+|4     |LUT1    |    65|
+|5     |LUT2    |   222|
+|6     |LUT3    |   253|
+|7     |LUT4    |   301|
+|8     |LUT5    |   142|
+|9     |LUT6    |   213|
+|10    |FDRE    |  1221|
+|11    |FDSE    |    26|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 2328.301 ; gain = 1447.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 2328.301 ; gain = 1509.621
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2337.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2341.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d0ec6bb1
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+169 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 2341.129 ; gain = 1739.172
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2341.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1/Design_1_sobel_filter_0_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP Design_1_sobel_filter_0_0, cache-ID = db6e25245adcae8c
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2341.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_WS/Sobel_Project/Sobel_Project.runs/Design_1_sobel_filter_0_0_synth_1/Design_1_sobel_filter_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Design_1_sobel_filter_0_0_utilization_synth.rpt -pb Design_1_sobel_filter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 02:39:24 2026...

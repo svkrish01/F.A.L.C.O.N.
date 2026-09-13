@@ -1,0 +1,43 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Sep  8 00:08:18 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/vector_mult_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|         Instance        |                     Module                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper            |                                          (top) |       2119 |       1849 |       6 |  264 | 3457 |      0 |      2 |          3 |
+|   bd_0_i                |                                           bd_0 |       2119 |       1849 |       6 |  264 | 3457 |      0 |      2 |          3 |
+|     hls_inst            |                                bd_0_hls_inst_0 |       2119 |       1849 |       6 |  264 | 3457 |      0 |      2 |          3 |
+|       inst              |                    bd_0_hls_inst_0_vector_mult |       2119 |       1849 |       6 |  264 | 3457 |      0 |      2 |          3 |
+|         (inst)          |                    bd_0_hls_inst_0_vector_mult |         51 |          0 |       0 |   51 |  334 |      0 |      0 |          0 |
+|         control_s_axi_U |      bd_0_hls_inst_0_vector_mult_control_s_axi |        341 |        341 |       0 |    0 |  277 |      0 |      0 |          0 |
+|         gmem_A_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_A_m_axi |        495 |        447 |       0 |   48 |  842 |      0 |      1 |          0 |
+|           bus_read      |  bd_0_hls_inst_0_vector_mult_gmem_A_m_axi_read |        342 |        342 |       0 |    0 |  604 |      0 |      0 |          0 |
+|           load_unit_0   |  bd_0_hls_inst_0_vector_mult_gmem_A_m_axi_load |        153 |        105 |       0 |   48 |  238 |      0 |      1 |          0 |
+|         gmem_B_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_B_m_axi |        497 |        449 |       0 |   48 |  842 |      0 |      1 |          0 |
+|           bus_read      |  bd_0_hls_inst_0_vector_mult_gmem_B_m_axi_read |        341 |        341 |       0 |    0 |  604 |      0 |      0 |          0 |
+|           load_unit_0   |  bd_0_hls_inst_0_vector_mult_gmem_B_m_axi_load |        156 |        108 |       0 |   48 |  238 |      0 |      1 |          0 |
+|         gmem_C_m_axi_U  |       bd_0_hls_inst_0_vector_mult_gmem_C_m_axi |        718 |        595 |       6 |  117 | 1144 |      0 |      0 |          0 |
+|           bus_write     | bd_0_hls_inst_0_vector_mult_gmem_C_m_axi_write |        469 |        436 |       0 |   33 |  820 |      0 |      0 |          0 |
+|           store_unit_0  | bd_0_hls_inst_0_vector_mult_gmem_C_m_axi_store |        249 |        159 |       6 |   84 |  324 |      0 |      0 |          0 |
++-------------------------+------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
