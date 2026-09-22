@@ -1,0 +1,29 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Sobel_Filter": {
+			"proto_instances": {
+				"/AESL_inst_Sobel_Filter_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

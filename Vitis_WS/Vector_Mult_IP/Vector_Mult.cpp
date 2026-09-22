@@ -1,6 +1,5 @@
 #include <ap_int.h>
 
-// This prevents C++ name mangling so Python can read the register names cleanly
 extern "C" { 
 
 void vector_mult(int *A, int *B, int *C, int length) 

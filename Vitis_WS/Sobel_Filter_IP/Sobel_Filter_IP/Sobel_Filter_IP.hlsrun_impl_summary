@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\Sobel_Filter_IP.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/22/26 20:08:35",
+ "timestampMillis": "1790087915119",
+ "buildStep": {
+  "cmdId": "10e3dc71-835e-4571-9aa8-0a57fd388269",
+  "name": "vitis-run",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\logs\\Sobel_Filter_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\hls_config.cfg --work_dir Sobel_Filter_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\hls_config.cfg",
+   "--work_dir",
+   "Sobel_Filter_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:08:35",
+ "timestampMillis": "1790087915120",
+ "status": {
+  "cmdId": "10e3dc71-835e-4571-9aa8-0a57fd388269",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920847",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Sobel_Filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920849",
+ "buildStep": {
+  "cmdId": "aa43c3a4-e1cc-48da-9aa1-c29d36826d35",
+  "name": "",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920851",
+ "status": {
+  "cmdId": "aa43c3a4-e1cc-48da-9aa1-c29d36826d35",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920854",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920855",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920856",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920857",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920857",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:40",
+ "timestampMillis": "1790087920858",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:14:37",
+ "timestampMillis": "1790088277961",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:14:37",
+ "timestampMillis": "1790088277963",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:14:37",
+ "timestampMillis": "1790088277964",
+ "status": {
+  "cmdId": "aa43c3a4-e1cc-48da-9aa1-c29d36826d35",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:14:38",
+ "timestampMillis": "1790088278150",
+ "status": {
+  "cmdId": "10e3dc71-835e-4571-9aa8-0a57fd388269",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:14:38",
+ "timestampMillis": "1790088278153",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:14:38",
+ "timestampMillis": "1790088278153",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,162 @@
+09/22/26 19:53:45: Running xcd server. This server was built by gradle.
+09/22/26 19:53:45: Server was asked to start on port: '51526'
+09/22/26 19:53:45: Server is using token UUID: '6f89c192-61dd-489a-8bc4-d027dcde4b6d'
+09/22/26 19:53:45: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 19:53:45: Attempting to start server on port '51526'
+09/22/26 19:53:45: Running Dispatch Server
+09/22/26 19:53:45: Version 2.2.0
+09/22/26 19:53:48: Dispatch Server: Accepted socket connection from client
+09/22/26 19:53:48: Starting Socket connection
+09/22/26 19:53:48: EXCHANGE_TOKEN received, server token: 6f89c192-61dd-489a-8bc4-d027dcde4b6d, passed token: 6f89c192-61dd-489a-8bc4-d027dcde4b6d
+09/22/26 19:53:48: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 19:53:48: SESSION_MGR: creating session with session uuid: '00702fa9-edbc-4a5c-af99-82af1345bc27' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:53:48: KERNEL_SVC: creating session with uuid: '00702fa9-edbc-4a5c-af99-82af1345bc27' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:53:48: GUIDANCE_SMGR: creating guidance session with uuid: '00702fa9-edbc-4a5c-af99-82af1345bc27' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:53:48: SYSTEM_DIAGRAM: creating session with uuid: '00702fa9-edbc-4a5c-af99-82af1345bc27' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:53:59: Dispatch Server: Accepted socket connection from client
+09/22/26 19:53:59: Starting Socket connection
+09/22/26 19:54:05: SESSION_MGR: closing session for UUID '00702fa9-edbc-4a5c-af99-82af1345bc27' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:05: KERNEL_SVC: closing session for UUID '00702fa9-edbc-4a5c-af99-82af1345bc27' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:05: GUIDANCE_SMGR: closing session for UUID '00702fa9-edbc-4a5c-af99-82af1345bc27' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:05: SYSTEM_DIAGRAM: closing session for UUID '00702fa9-edbc-4a5c-af99-82af1345bc27' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:05: STOP_SERVER received, server token: 6f89c192-61dd-489a-8bc4-d027dcde4b6d, passed token: 6f89c192-61dd-489a-8bc4-d027dcde4b6d
+09/22/26 19:54:05: Socket received request to stop server.
+09/22/26 19:54:05: Dispatch Server: do_await_stop
+09/22/26 19:54:05: SERVER: destructor for server bound to port 51526
+09/22/26 19:54:31: Running xcd server. This server was built by gradle.
+09/22/26 19:54:31: Server was asked to start on port: '51540'
+09/22/26 19:54:31: Server is using token UUID: 'e50427f4-c066-4bef-bbcb-cabe61371611'
+09/22/26 19:54:31: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 19:54:31: Attempting to start server on port '51540'
+09/22/26 19:54:31: Running Dispatch Server
+09/22/26 19:54:31: Version 2.2.0
+09/22/26 19:54:33: Dispatch Server: Accepted socket connection from client
+09/22/26 19:54:33: Starting Socket connection
+09/22/26 19:54:33: EXCHANGE_TOKEN received, server token: e50427f4-c066-4bef-bbcb-cabe61371611, passed token: e50427f4-c066-4bef-bbcb-cabe61371611
+09/22/26 19:54:33: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 19:54:33: SESSION_MGR: creating session with session uuid: 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:33: KERNEL_SVC: creating session with uuid: 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:33: GUIDANCE_SMGR: creating guidance session with uuid: 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:33: SYSTEM_DIAGRAM: creating session with uuid: 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:54:38: Dispatch Server: Accepted socket connection from client
+09/22/26 19:54:38: Starting Socket connection
+09/22/26 19:55:10: SESSION_MGR: closing session for UUID 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:55:10: KERNEL_SVC: closing session for UUID 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:55:10: GUIDANCE_SMGR: closing session for UUID 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:55:10: SYSTEM_DIAGRAM: closing session for UUID 'b99eeef4-7d1f-4f59-9798-b0e4bd9f01e3' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 19:55:10: STOP_SERVER received, server token: e50427f4-c066-4bef-bbcb-cabe61371611, passed token: e50427f4-c066-4bef-bbcb-cabe61371611
+09/22/26 19:55:10: Socket received request to stop server.
+09/22/26 19:55:10: Dispatch Server: do_await_stop
+09/22/26 19:55:10: SERVER: destructor for server bound to port 51540
+09/22/26 19:55:26: Running xcd server. This server was built by gradle.
+09/22/26 19:55:26: Server was asked to start on port: '64354'
+09/22/26 19:55:26: Server is using token UUID: 'f8d8ad18-27f6-4bb1-8505-1da6507ac6c2'
+09/22/26 19:55:26: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 19:55:26: Attempting to start server on port '64354'
+09/22/26 19:55:26: Running Dispatch Server
+09/22/26 19:55:26: Version 2.2.0
+09/22/26 19:55:29: Dispatch Server: Accepted socket connection from client
+09/22/26 19:55:29: Starting Socket connection
+09/22/26 19:55:29: EXCHANGE_TOKEN received, server token: f8d8ad18-27f6-4bb1-8505-1da6507ac6c2, passed token: f8d8ad18-27f6-4bb1-8505-1da6507ac6c2
+09/22/26 19:55:29: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 19:55:29: SESSION_MGR: creating session with session uuid: '8a799233-fdf3-40a4-b004-47b5669fe0ca' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 19:55:29: KERNEL_SVC: creating session with uuid: '8a799233-fdf3-40a4-b004-47b5669fe0ca' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 19:55:29: GUIDANCE_SMGR: creating guidance session with uuid: '8a799233-fdf3-40a4-b004-47b5669fe0ca' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 19:55:29: SYSTEM_DIAGRAM: creating session with uuid: '8a799233-fdf3-40a4-b004-47b5669fe0ca' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 19:55:35: Dispatch Server: Accepted socket connection from client
+09/22/26 19:55:35: Starting Socket connection
+09/22/26 19:57:06: Dispatch Server: Accepted socket connection from client
+09/22/26 19:57:06: Starting Socket connection
+09/22/26 19:58:34: Dispatch Server: Accepted socket connection from client
+09/22/26 19:58:34: Starting Socket connection
+09/22/26 20:00:25: Dispatch Server: Accepted socket connection from client
+09/22/26 20:00:25: Starting Socket connection
+09/22/26 20:02:05: SESSION_MGR: closing session for UUID '8a799233-fdf3-40a4-b004-47b5669fe0ca' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:02:05: KERNEL_SVC: closing session for UUID '8a799233-fdf3-40a4-b004-47b5669fe0ca' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:02:05: GUIDANCE_SMGR: closing session for UUID '8a799233-fdf3-40a4-b004-47b5669fe0ca' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:02:05: SYSTEM_DIAGRAM: closing session for UUID '8a799233-fdf3-40a4-b004-47b5669fe0ca' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:02:05: STOP_SERVER received, server token: f8d8ad18-27f6-4bb1-8505-1da6507ac6c2, passed token: f8d8ad18-27f6-4bb1-8505-1da6507ac6c2
+09/22/26 20:02:05: Socket received request to stop server.
+09/22/26 20:02:05: Dispatch Server: do_await_stop
+09/22/26 20:02:05: SERVER: destructor for server bound to port 64354
+09/22/26 20:06:50: Running xcd server. This server was built by gradle.
+09/22/26 20:06:50: Server was asked to start on port: '64609'
+09/22/26 20:06:50: Server is using token UUID: '715e29c9-559f-4880-8dc1-c2b3f3d38cda'
+09/22/26 20:06:50: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 20:06:50: Attempting to start server on port '64609'
+09/22/26 20:06:50: Running Dispatch Server
+09/22/26 20:06:50: Version 2.2.0
+09/22/26 20:06:53: Dispatch Server: Accepted socket connection from client
+09/22/26 20:06:53: Starting Socket connection
+09/22/26 20:06:53: EXCHANGE_TOKEN received, server token: 715e29c9-559f-4880-8dc1-c2b3f3d38cda, passed token: 715e29c9-559f-4880-8dc1-c2b3f3d38cda
+09/22/26 20:06:53: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 20:06:53: SESSION_MGR: creating session with session uuid: 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:06:53: KERNEL_SVC: creating session with uuid: 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:06:53: GUIDANCE_SMGR: creating guidance session with uuid: 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:06:53: SYSTEM_DIAGRAM: creating session with uuid: 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' and name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:06:58: Dispatch Server: Accepted socket connection from client
+09/22/26 20:06:58: Starting Socket connection
+09/22/26 20:07:27: SESSION_MGR: closing session for UUID 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:07:27: KERNEL_SVC: closing session for UUID 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:07:27: GUIDANCE_SMGR: closing session for UUID 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:07:27: SYSTEM_DIAGRAM: closing session for UUID 'f24ea89e-9932-43f0-ae0d-d0b22a85d350' with name 'v++_compile_Sobel_Filter_IP'
+09/22/26 20:07:27: STOP_SERVER received, server token: 715e29c9-559f-4880-8dc1-c2b3f3d38cda, passed token: 715e29c9-559f-4880-8dc1-c2b3f3d38cda
+09/22/26 20:07:27: Socket received request to stop server.
+09/22/26 20:07:27: Dispatch Server: do_await_stop
+09/22/26 20:07:27: SERVER: destructor for server bound to port 64609
+09/22/26 20:07:55: Running xcd server. This server was built by gradle.
+09/22/26 20:07:55: Server was asked to start on port: '64636'
+09/22/26 20:07:55: Server is using token UUID: 'e2d453d7-da9c-4eac-92f1-309034dd7f83'
+09/22/26 20:07:55: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 20:07:55: Attempting to start server on port '64636'
+09/22/26 20:07:55: Running Dispatch Server
+09/22/26 20:07:55: Version 2.2.0
+09/22/26 20:07:58: Dispatch Server: Accepted socket connection from client
+09/22/26 20:07:58: Starting Socket connection
+09/22/26 20:07:58: EXCHANGE_TOKEN received, server token: e2d453d7-da9c-4eac-92f1-309034dd7f83, passed token: e2d453d7-da9c-4eac-92f1-309034dd7f83
+09/22/26 20:07:58: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 20:07:58: SESSION_MGR: creating session with session uuid: 'a1cf7d64-654b-492e-9dac-6657e177ef8a' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:07:58: KERNEL_SVC: creating session with uuid: 'a1cf7d64-654b-492e-9dac-6657e177ef8a' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:07:58: GUIDANCE_SMGR: creating guidance session with uuid: 'a1cf7d64-654b-492e-9dac-6657e177ef8a' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:07:58: SYSTEM_DIAGRAM: creating session with uuid: 'a1cf7d64-654b-492e-9dac-6657e177ef8a' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:04: Dispatch Server: Accepted socket connection from client
+09/22/26 20:08:04: Starting Socket connection
+09/22/26 20:08:22: SESSION_MGR: closing session for UUID 'a1cf7d64-654b-492e-9dac-6657e177ef8a' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:22: KERNEL_SVC: closing session for UUID 'a1cf7d64-654b-492e-9dac-6657e177ef8a' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:22: GUIDANCE_SMGR: closing session for UUID 'a1cf7d64-654b-492e-9dac-6657e177ef8a' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:22: SYSTEM_DIAGRAM: closing session for UUID 'a1cf7d64-654b-492e-9dac-6657e177ef8a' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:22: STOP_SERVER received, server token: e2d453d7-da9c-4eac-92f1-309034dd7f83, passed token: e2d453d7-da9c-4eac-92f1-309034dd7f83
+09/22/26 20:08:22: Socket received request to stop server.
+09/22/26 20:08:22: Dispatch Server: do_await_stop
+09/22/26 20:08:22: SERVER: destructor for server bound to port 64636
+09/22/26 20:08:32: Running xcd server. This server was built by gradle.
+09/22/26 20:08:32: Server was asked to start on port: '64647'
+09/22/26 20:08:32: Server is using token UUID: 'ee27b563-8089-44aa-92b6-616153723cdc'
+09/22/26 20:08:32: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/22/26 20:08:32: Attempting to start server on port '64647'
+09/22/26 20:08:32: Running Dispatch Server
+09/22/26 20:08:32: Version 2.2.0
+09/22/26 20:08:35: Dispatch Server: Accepted socket connection from client
+09/22/26 20:08:35: Starting Socket connection
+09/22/26 20:08:35: EXCHANGE_TOKEN received, server token: ee27b563-8089-44aa-92b6-616153723cdc, passed token: ee27b563-8089-44aa-92b6-616153723cdc
+09/22/26 20:08:35: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/22/26 20:08:35: SESSION_MGR: creating session with session uuid: '2e390ca8-b262-4511-a356-caeaadc103a8' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:35: KERNEL_SVC: creating session with uuid: '2e390ca8-b262-4511-a356-caeaadc103a8' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:35: GUIDANCE_SMGR: creating guidance session with uuid: '2e390ca8-b262-4511-a356-caeaadc103a8' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:35: SYSTEM_DIAGRAM: creating session with uuid: '2e390ca8-b262-4511-a356-caeaadc103a8' and name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:08:40: Dispatch Server: Accepted socket connection from client
+09/22/26 20:08:40: Starting Socket connection
+09/22/26 20:09:27: Dispatch Server: Accepted socket connection from client
+09/22/26 20:09:27: Starting Socket connection
+09/22/26 20:10:50: Dispatch Server: Accepted socket connection from client
+09/22/26 20:10:50: Starting Socket connection
+09/22/26 20:12:33: Dispatch Server: Accepted socket connection from client
+09/22/26 20:12:33: Starting Socket connection
+09/22/26 20:14:38: SESSION_MGR: closing session for UUID '2e390ca8-b262-4511-a356-caeaadc103a8' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:14:38: KERNEL_SVC: closing session for UUID '2e390ca8-b262-4511-a356-caeaadc103a8' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:14:38: GUIDANCE_SMGR: closing session for UUID '2e390ca8-b262-4511-a356-caeaadc103a8' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:14:38: SYSTEM_DIAGRAM: closing session for UUID '2e390ca8-b262-4511-a356-caeaadc103a8' with name 'vitis-run_compile_Sobel_Filter_IP'
+09/22/26 20:14:38: STOP_SERVER received, server token: ee27b563-8089-44aa-92b6-616153723cdc, passed token: ee27b563-8089-44aa-92b6-616153723cdc
+09/22/26 20:14:38: Socket received request to stop server.
+09/22/26 20:14:38: Dispatch Server: do_await_stop
+09/22/26 20:14:38: SERVER: destructor for server bound to port 64647

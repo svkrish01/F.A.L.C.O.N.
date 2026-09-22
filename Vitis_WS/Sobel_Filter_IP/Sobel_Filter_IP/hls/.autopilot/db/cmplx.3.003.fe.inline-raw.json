@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 13,
+    "file": "Sobel_Filter.cpp",
+    "fileloc": 9,
+    "instructions": 674,
+    "loads": {
+      "L": 75
+    },
+    "memory_accesses": 68,
+    "name": "Sobel_Filter",
+    "stores": {
+      "L": 108
+    },
+    "total_instructions": 674
+  }
+}

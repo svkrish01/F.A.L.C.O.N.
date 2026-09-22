@@ -1,0 +1,50 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<4, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<3, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<1, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::axis<ap_int<32>, 3, 5, 6>>::write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator*" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<6>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<6, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::axis<ap_int<32>, 3, 5, 6>>::read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="Sobel_Filter.cpp" line="30" pragmaType="pipeline" parentfunction="Sobel_Filter" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Sobel_Filter.cpp" line="11" pragmaType="interface" parentfunction="Sobel_Filter" mode="axis" port="Input" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="Sobel_Filter.cpp" line="12" pragmaType="interface" parentfunction="Sobel_Filter" mode="axis" port="Output" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="Sobel_Filter.cpp" line="13" pragmaType="interface" parentfunction="Sobel_Filter" mode="s_axilite" port="Rows" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Sobel_Filter.cpp" line="14" pragmaType="interface" parentfunction="Sobel_Filter" mode="s_axilite" port="Cols" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Sobel_Filter.cpp" line="15" pragmaType="interface" parentfunction="Sobel_Filter" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Sobel_Filter.cpp" line="18" pragmaType="array_partition" parentfunction="Sobel_Filter" dim="1" factor="0" mode="complete" dynamic="0" variable="Line_Buffer"/>
+<pragma file="Sobel_Filter.cpp" line="21" pragmaType="array_partition" parentfunction="Sobel_Filter" dim="0" factor="0" mode="complete" dynamic="0" variable="Window"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator*" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<5>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::operator long long" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<5, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base" off="0" region="0" recursive="0"/>
+</pragmas>

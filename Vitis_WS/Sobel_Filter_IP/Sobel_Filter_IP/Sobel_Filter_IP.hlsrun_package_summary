@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\Sobel_Filter_IP.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/22/26 20:07:58",
+ "timestampMillis": "1790087878369",
+ "buildStep": {
+  "cmdId": "c0b66d9f-300f-4747-b5be-8435e833c3ad",
+  "name": "vitis-run",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\logs\\Sobel_Filter_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\hls_config.cfg --work_dir Sobel_Filter_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\hls_config.cfg",
+   "--work_dir",
+   "Sobel_Filter_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:07:58",
+ "timestampMillis": "1790087878371",
+ "status": {
+  "cmdId": "c0b66d9f-300f-4747-b5be-8435e833c3ad",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/22/26 20:08:04",
+ "timestampMillis": "1790087884318",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Sobel_Filter",
+     "file": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\Sobel_Filter.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/22/26 20:08:04",
+ "timestampMillis": "1790087884319",
+ "buildStep": {
+  "cmdId": "ea71e326-2646-44b8-9a05-9a7b3c834bcd",
+  "name": "",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP\\Sobel_Filter_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Sobel_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:08:04",
+ "timestampMillis": "1790087884320",
+ "status": {
+  "cmdId": "ea71e326-2646-44b8-9a05-9a7b3c834bcd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:08:22",
+ "timestampMillis": "1790087902049",
+ "status": {
+  "cmdId": "ea71e326-2646-44b8-9a05-9a7b3c834bcd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/22/26 20:08:22",
+ "timestampMillis": "1790087902149",
+ "status": {
+  "cmdId": "c0b66d9f-300f-4747-b5be-8435e833c3ad",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:22",
+ "timestampMillis": "1790087902150",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/22/26 20:08:22",
+ "timestampMillis": "1790087902150",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,737 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Sep 22 20:14:31 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/Sobel_Filter_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.234ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[12]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.049ns  (logic 3.122ns (38.788%)  route 4.927ns (61.212%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.861     9.022    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[12]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[12]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y41         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[12]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -9.022    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.234    <hidden>
+
+Slack (MET) :             1.234ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[13]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.049ns  (logic 3.122ns (38.788%)  route 4.927ns (61.212%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.861     9.022    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[13]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[13]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y41         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[13]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -9.022    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.234    <hidden>
+
+Slack (MET) :             1.234ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[14]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.049ns  (logic 3.122ns (38.788%)  route 4.927ns (61.212%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.861     9.022    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[14]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[14]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y41         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[14]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -9.022    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.234    <hidden>
+
+Slack (MET) :             1.234ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[15]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        8.049ns  (logic 3.122ns (38.788%)  route 4.927ns (61.212%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.861     9.022    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[15]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y41         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[15]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y41         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[15]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -9.022    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.234    <hidden>
+
+Slack (MET) :             1.300ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[24]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.983ns  (logic 3.122ns (39.110%)  route 4.861ns (60.890%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.794     8.956    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[24]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[24]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y44         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[24]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.956    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.300    <hidden>
+
+Slack (MET) :             1.300ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[25]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.983ns  (logic 3.122ns (39.110%)  route 4.861ns (60.890%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.794     8.956    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[25]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[25]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y44         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[25]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.956    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.300    <hidden>
+
+Slack (MET) :             1.300ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[26]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.983ns  (logic 3.122ns (39.110%)  route 4.861ns (60.890%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.794     8.956    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[26]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[26]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y44         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[26]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.956    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.300    <hidden>
+
+Slack (MET) :             1.300ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[27]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.983ns  (logic 3.122ns (39.110%)  route 4.861ns (60.890%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.794     8.956    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[27]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y44         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[27]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y44         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[27]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.956    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.300    <hidden>
+
+Slack (MET) :             1.313ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[28]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.970ns  (logic 3.122ns (39.173%)  route 4.848ns (60.827%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.781     8.943    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y45         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[28]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y45         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[28]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y45         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[28]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.943    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.313    <hidden>
+
+Slack (MET) :             1.313ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[29]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.970ns  (logic 3.122ns (39.173%)  route 4.848ns (60.827%))
+  Logic Levels:           10  (CARRY4=7 LUT2=2 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=1308, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/ap_clk
+    SLICE_X33Y45         FDRE                                         r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y45         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777_reg[31]/Q
+                         net (fo=63, routed)          1.239     2.631    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_reg_777[31]
+    SLICE_X34Y37         LUT3 (Prop_lut3_I1_O)        0.326     2.957 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_i_3/O
+                         net (fo=1, routed)           0.638     3.595    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Gx_Value_Abs_fu_555_p3[5]
+    SLICE_X35Y39         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.714     4.309 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.309    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__0_n_0
+    SLICE_X35Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.423 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.423    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__1_n_0
+    SLICE_X35Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.537 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.537    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__2_n_0
+    SLICE_X35Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.651 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     4.651    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__3_n_0
+    SLICE_X35Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.765 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     4.765    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__4_n_0
+    SLICE_X35Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.021 f  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Magnitude_fu_574_p2_carry__5/O[2]
+                         net (fo=5, routed)           0.848     5.870    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/tmp_2_fu_580_p4[18]
+    SLICE_X36Y43         LUT2 (Prop_lut2_I0_O)        0.302     6.172 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7/O
+                         net (fo=1, routed)           0.000     6.172    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_i_7_n_0
+    SLICE_X36Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.705 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1/CO[3]
+                         net (fo=65, routed)          1.341     8.045    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/icmp_ln68_fu_590_p2_carry__1_n_0
+    SLICE_X38Y38         LUT2 (Prop_lut2_I0_O)        0.116     8.161 r  bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86/Output_r_TDATA_reg[31]_i_1/O
+                         net (fo=32, routed)          0.781     8.943    bd_0_i/hls_inst/inst/grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_n_60
+    SLICE_X35Y45         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[29]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=1308, unset)         0.924    10.924    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X35Y45         FDRE                                         r  bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[29]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+    SLICE_X35Y45         FDRE (Setup_fdre_C_R)       -0.633    10.256    bd_0_i/hls_inst/inst/Output_r_TDATA_reg_reg[29]
+  -------------------------------------------------------------------
+                         required time                         10.256    <hidden>
+                         arrival time                          -8.943    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.313    <hidden>
+
+
+
+

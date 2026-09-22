@@ -1,0 +1,218 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2'" level="0">
+<item name = "Date">Tue Sep 22 20:07:24 2026
+</item>
+<item name = "Version">2026.1 (Build 6493734 on Jun 16 2026)</item>
+<item name = "Project">Sobel_Filter_IP</item>
+<item name = "Solution">hls</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.206 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_26_1_VITIS_LOOP_28_2">?, ?, 5, 1, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 988, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">8, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 99, -</column>
+<column name="Register">-, -, 1269, 224, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, 1, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="Line_Buffer_data_1_U">Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_Line_Buffer_data_1_RAM_bkb, 4, 0, 0, 0, 1920, 32, 1, 61440</column>
+<column name="Line_Buffer_data_U">Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_Line_Buffer_data_RAM_AUcud, 4, 0, 0, 0, 1920, 32, 1, 61440</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Gx_Value_fu_522_p2">+, 0, 0, 32, 32, 32</column>
+<column name="Gy_Value_2_fu_531_p2">+, 0, 0, 32, 32, 32</column>
+<column name="Magnitude_fu_574_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln26_fu_273_p2">+, 0, 0, 69, 62, 1</column>
+<column name="add_ln28_fu_367_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln57_1_fu_517_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln57_fu_464_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln58_fu_475_p2">+, 0, 0, 32, 32, 32</column>
+<column name="Gy_Value_3_fu_527_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln57_fu_470_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln58_fu_444_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln62_fu_536_p2">-, 0, 0, 39, 1, 32</column>
+<column name="sub_ln63_fu_542_p2">-, 0, 0, 39, 1, 32</column>
+<column name="tmp31_fu_450_p2">-, 0, 0, 38, 31, 31</column>
+<column name="tmp5_fu_438_p2">-, 0, 0, 38, 31, 31</column>
+<column name="ap_block_state3_pp0_stage0_iter2_grp1">and, 0, 0, 2, 1, 1</column>
+<column name="addr_cmp24_fu_342_p2">icmp, 0, 0, 71, 64, 64</column>
+<column name="addr_cmp_fu_351_p2">icmp, 0, 0, 71, 64, 64</column>
+<column name="icmp_ln26_fu_268_p2">icmp, 0, 0, 69, 62, 62</column>
+<column name="icmp_ln28_fu_291_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln68_fu_590_p2">icmp, 0, 0, 31, 24, 1</column>
+<column name="ap_block_pp0_stage0_01001_grp1">or, 0, 0, 2, 1, 1</column>
+<column name="Gx_Value_Abs_fu_555_p3">select, 0, 0, 32, 1, 32</column>
+<column name="Gy_Value_Abs_fu_568_p3">select, 0, 0, 32, 1, 32</column>
+<column name="Output_r_TDATA">select, 0, 0, 32, 1, 8</column>
+<column name="reuse_select25_fu_407_p3">select, 0, 0, 32, 1, 32</column>
+<column name="reuse_select_fu_417_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln26_fu_296_p3">select, 0, 0, 11, 1, 11</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Input_r_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="J_fu_124">9, 2, 11, 22</column>
+<column name="Output_r_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="indvar_flatten_fu_128">9, 2, 62, 124</column>
+<column name="reuse_addr_reg21_fu_96">9, 2, 64, 128</column>
+<column name="reuse_addr_reg_fu_104">9, 2, 64, 128</column>
+<column name="reuse_reg20_fu_100">9, 2, 32, 64</column>
+<column name="reuse_reg_fu_108">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Gx_Value_reg_777">32, 0, 32, 0</column>
+<column name="Gy_Value_2_reg_783">32, 0, 32, 0</column>
+<column name="Gy_Value_fu_112">32, 0, 32, 0</column>
+<column name="J_fu_124">11, 0, 11, 0</column>
+<column name="Line_Buffer_data_addr_reg_735">11, 0, 11, 0</column>
+<column name="add_ln58_reg_772">32, 0, 32, 0</column>
+<column name="addr_cmp24_reg_741">1, 0, 1, 0</column>
+<column name="addr_cmp_reg_751">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter4_reg">1, 0, 1, 0</column>
+<column name="icmp_ln26_reg_693">1, 0, 1, 0</column>
+<column name="indvar_flatten_fu_128">62, 0, 62, 0</column>
+<column name="p_0_0_0_0158434_fu_132">32, 0, 32, 0</column>
+<column name="p_0_0_0_0158_1441_fu_116">31, 0, 31, 0</column>
+<column name="p_0_0_0_0158_1448_fu_136">31, 0, 31, 0</column>
+<column name="p_0_0_0_0158_2455_fu_120">32, 0, 32, 0</column>
+<column name="p_0_0_0_0158_2462_fu_140">32, 0, 32, 0</column>
+<column name="p_0_reg_730">6, 0, 6, 0</column>
+<column name="p_1_reg_705">4, 0, 4, 0</column>
+<column name="p_2_reg_710">4, 0, 4, 0</column>
+<column name="p_3_reg_715">3, 0, 3, 0</column>
+<column name="p_4_reg_720">1, 0, 1, 0</column>
+<column name="p_5_reg_725">5, 0, 5, 0</column>
+<column name="p_s_reg_697">32, 0, 32, 0</column>
+<column name="p_s_reg_697_pp0_iter3_reg">32, 0, 32, 0</column>
+<column name="reuse_addr_reg21_fu_96">64, 0, 64, 0</column>
+<column name="reuse_addr_reg_fu_104">64, 0, 64, 0</column>
+<column name="reuse_reg20_fu_100">32, 0, 32, 0</column>
+<column name="reuse_reg_fu_108">32, 0, 32, 0</column>
+<column name="reuse_select25_reg_756">32, 0, 32, 0</column>
+<column name="sub_ln57_reg_767">32, 0, 32, 0</column>
+<column name="sub_ln62_reg_789">32, 0, 32, 0</column>
+<column name="sub_ln63_reg_794">32, 0, 32, 0</column>
+<column name="tmp5_reg_762">31, 0, 31, 0</column>
+<column name="icmp_ln26_reg_693">64, 32, 1, 0</column>
+<column name="p_0_reg_730">64, 32, 6, 0</column>
+<column name="p_1_reg_705">64, 32, 4, 0</column>
+<column name="p_2_reg_710">64, 32, 4, 0</column>
+<column name="p_3_reg_715">64, 32, 3, 0</column>
+<column name="p_4_reg_720">64, 32, 1, 0</column>
+<column name="p_5_reg_725">64, 32, 5, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2, return value</column>
+<column name="Input_r_TVALID">in, 1, axis, Input_r_V_data_V, pointer</column>
+<column name="Input_r_TDATA">in, 32, axis, Input_r_V_data_V, pointer</column>
+<column name="Output_r_TREADY">in, 1, axis, Output_r_V_data_V, pointer</column>
+<column name="Output_r_TDATA">out, 32, axis, Output_r_V_data_V, pointer</column>
+<column name="Cols">in, 32, ap_none, Cols, scalar</column>
+<column name="bound">in, 62, ap_none, bound, scalar</column>
+<column name="Input_r_TREADY">out, 1, axis, Input_r_V_dest_V, pointer</column>
+<column name="Input_r_TDEST">in, 6, axis, Input_r_V_dest_V, pointer</column>
+<column name="Input_r_TKEEP">in, 4, axis, Input_r_V_keep_V, pointer</column>
+<column name="Input_r_TSTRB">in, 4, axis, Input_r_V_strb_V, pointer</column>
+<column name="Input_r_TUSER">in, 3, axis, Input_r_V_user_V, pointer</column>
+<column name="Input_r_TLAST">in, 1, axis, Input_r_V_last_V, pointer</column>
+<column name="Input_r_TID">in, 5, axis, Input_r_V_id_V, pointer</column>
+<column name="Output_r_TVALID">out, 1, axis, Output_r_V_dest_V, pointer</column>
+<column name="Output_r_TDEST">out, 6, axis, Output_r_V_dest_V, pointer</column>
+<column name="Output_r_TKEEP">out, 4, axis, Output_r_V_keep_V, pointer</column>
+<column name="Output_r_TSTRB">out, 4, axis, Output_r_V_strb_V, pointer</column>
+<column name="Output_r_TUSER">out, 3, axis, Output_r_V_user_V, pointer</column>
+<column name="Output_r_TLAST">out, 1, axis, Output_r_V_last_V, pointer</column>
+<column name="Output_r_TID">out, 5, axis, Output_r_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

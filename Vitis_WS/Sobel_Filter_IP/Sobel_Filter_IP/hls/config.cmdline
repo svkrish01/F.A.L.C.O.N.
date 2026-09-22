@@ -1,0 +1,3 @@
+relativeroot=C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP
+original_argv=--mode hls --impl --config C:\F.A.L.C.O.N\Vitis_WS\Sobel_Filter_IP\hls_config.cfg --work_dir Sobel_Filter_IP 
+

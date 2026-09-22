@@ -1,0 +1,191 @@
+
+
+================================================================
+== Vitis HLS Report for 'Sobel_Filter'
+================================================================
+* Date:           Tue Sep 22 20:07:24 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Sobel_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.206 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                                                 |                                                       |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                             Instance                            |                         Module                        |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86  |Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2  |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    142|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        8|    4|    1522|   1527|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    109|    -|
+|Register         |        -|    -|     218|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        8|    4|    1740|   1778|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    1|       1|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |                             Instance                            |                         Module                        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86  |Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2  |        8|   0|  1269|  1311|    0|
+    |control_s_axi_U                                                  |control_s_axi                                          |        0|   0|   112|   168|    0|
+    |mul_31ns_31ns_62_2_1_U19                                         |mul_31ns_31ns_62_2_1                                   |        0|   4|   141|    48|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                            |                                                       |        8|   4|  1522|  1527|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                  Variable Name                                  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_Output_r_TREADY  |       and|   0|  0|   2|           1|           1|
+    |empty_27_fu_146_p2                                                               |      icmp|   0|  0|  39|          32|           1|
+    |empty_fu_132_p2                                                                  |      icmp|   0|  0|  39|          32|           1|
+    |smax1_fu_152_p3                                                                  |    select|   0|  0|  31|           1|          31|
+    |smax_fu_138_p3                                                                   |    select|   0|  0|  31|           1|          31|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                            |          |   0|  0| 142|          67|          65|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Input_r_TREADY_int_regslice  |   9|          2|    1|          2|
+    |Output_r_TDATA_int_regslice  |   9|          2|   32|         64|
+    |Output_r_TDEST_int_regslice  |   9|          2|    6|         12|
+    |Output_r_TID_int_regslice    |   9|          2|    5|         10|
+    |Output_r_TKEEP_int_regslice  |   9|          2|    4|          8|
+    |Output_r_TLAST_int_regslice  |   9|          2|    1|          2|
+    |Output_r_TSTRB_int_regslice  |   9|          2|    4|          8|
+    |Output_r_TUSER_int_regslice  |   9|          2|    3|          6|
+    |ap_NS_fsm                    |  37|          7|    1|          7|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 109|         23|   57|        119|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                     | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Cols_read_reg_168                                                             |  32|   0|   32|          0|
+    |Output_r_TDATA_reg                                                            |  32|   0|   32|          0|
+    |Output_r_TDEST_reg                                                            |   6|   0|    6|          0|
+    |Output_r_TID_reg                                                              |   5|   0|    5|          0|
+    |Output_r_TKEEP_reg                                                            |   4|   0|    4|          0|
+    |Output_r_TLAST_reg                                                            |   1|   0|    1|          0|
+    |Output_r_TSTRB_reg                                                            |   4|   0|    4|          0|
+    |Output_r_TUSER_reg                                                            |   3|   0|    3|          0|
+    |ap_CS_fsm                                                                     |   6|   0|    6|          0|
+    |bound_reg_193                                                                 |  62|   0|   62|          0|
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86_ap_start_reg  |   1|   0|    1|          0|
+    |smax1_reg_178                                                                 |  31|   0|   31|          0|
+    |smax_reg_173                                                                  |  31|   0|   31|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                         | 218|   0|  218|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_AWADDR   |   in|    5|       s_axi|            control|        scalar|
+|s_axi_control_WVALID   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_WREADY   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_WDATA    |   in|   32|       s_axi|            control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|            control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_ARADDR   |   in|    5|       s_axi|            control|        scalar|
+|s_axi_control_RVALID   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_RREADY   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_RDATA    |  out|   32|       s_axi|            control|        scalar|
+|s_axi_control_RRESP    |  out|    2|       s_axi|            control|        scalar|
+|s_axi_control_BVALID   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_BREADY   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_BRESP    |  out|    2|       s_axi|            control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|       Sobel_Filter|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|       Sobel_Filter|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|       Sobel_Filter|  return value|
+|Input_r_TDATA          |   in|   32|        axis|   Input_r_V_data_V|       pointer|
+|Input_r_TVALID         |   in|    1|        axis|   Input_r_V_dest_V|       pointer|
+|Input_r_TREADY         |  out|    1|        axis|   Input_r_V_dest_V|       pointer|
+|Input_r_TDEST          |   in|    6|        axis|   Input_r_V_dest_V|       pointer|
+|Input_r_TKEEP          |   in|    4|        axis|   Input_r_V_keep_V|       pointer|
+|Input_r_TSTRB          |   in|    4|        axis|   Input_r_V_strb_V|       pointer|
+|Input_r_TUSER          |   in|    3|        axis|   Input_r_V_user_V|       pointer|
+|Input_r_TLAST          |   in|    1|        axis|   Input_r_V_last_V|       pointer|
+|Input_r_TID            |   in|    5|        axis|     Input_r_V_id_V|       pointer|
+|Output_r_TDATA         |  out|   32|        axis|  Output_r_V_data_V|       pointer|
+|Output_r_TVALID        |  out|    1|        axis|  Output_r_V_dest_V|       pointer|
+|Output_r_TREADY        |   in|    1|        axis|  Output_r_V_dest_V|       pointer|
+|Output_r_TDEST         |  out|    6|        axis|  Output_r_V_dest_V|       pointer|
+|Output_r_TKEEP         |  out|    4|        axis|  Output_r_V_keep_V|       pointer|
+|Output_r_TSTRB         |  out|    4|        axis|  Output_r_V_strb_V|       pointer|
+|Output_r_TUSER         |  out|    3|        axis|  Output_r_V_user_V|       pointer|
+|Output_r_TLAST         |  out|    1|        axis|  Output_r_V_last_V|       pointer|
+|Output_r_TID           |  out|    5|        axis|    Output_r_V_id_V|       pointer|
++-----------------------+-----+-----+------------+-------------------+--------------+
+

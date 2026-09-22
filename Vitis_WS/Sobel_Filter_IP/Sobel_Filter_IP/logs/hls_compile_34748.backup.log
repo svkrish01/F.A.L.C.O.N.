@@ -1,0 +1,19 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP/Sobel_Filter_IP 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP/Sobel_Filter_IP/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP/Sobel_Filter_IP'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Sobel_Filter.cpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP/Sobel_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=Sobel_Filter' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Sobel_Filter_IP/Sobel_Filter_IP/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 11.925 seconds; current allocated memory: 138.723 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'Sobel_Filter.cpp' ... 
+ERROR: [HLS 207-4638] use of undeclared identifier 'Pixel_in'; did you mean 'Pixel_In'? (Sobel_Filter.cpp:67:30)
+INFO: [HLS 207-5482] 'Pixel_In' declared here (Sobel_Filter.cpp:32:21)
+ERROR: syntax check failed.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 14.667 seconds; peak allocated memory: 140.082 MB.

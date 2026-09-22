@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Sep 22 20:12:05 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/Sobel_Filter_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                   Instance                                  |                                       Module                                       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                                |                                                                              (top) |        961 |        937 |       0 |   24 | 1275 |      4 |      0 |          4 |
+|   bd_0_i                                                                    |                                                                               bd_0 |        961 |        937 |       0 |   24 | 1275 |      4 |      0 |          4 |
+|     hls_inst                                                                |                                                                    bd_0_hls_inst_0 |        961 |        937 |       0 |   24 | 1275 |      4 |      0 |          4 |
+|       inst                                                                  |                                                       bd_0_hls_inst_0_Sobel_Filter |        961 |        937 |       0 |   24 | 1275 |      4 |      0 |          4 |
+|         (inst)                                                              |                                                       bd_0_hls_inst_0_Sobel_Filter |          0 |          0 |       0 |    0 |  156 |      0 |      0 |          0 |
+|         control_s_axi_U                                                     |                                         bd_0_hls_inst_0_Sobel_Filter_control_s_axi |        191 |        191 |       0 |    0 |  116 |      0 |      0 |          0 |
+|         grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86     | bd_0_hls_inst_0_Sobel_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2 |        592 |        568 |       0 |   24 |  703 |      4 |      0 |          0 |
+|           (grp_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2_fu_86) | bd_0_hls_inst_0_Sobel_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_28_2 |        566 |        542 |       0 |   24 |  701 |      0 |      0 |          0 |
+|         regslice_both_Input_r_V_data_V_U                                    |                                         bd_0_hls_inst_0_Sobel_Filter_regslice_both |         38 |         38 |       0 |    0 |   69 |      0 |      0 |          0 |
+|         regslice_both_Output_r_V_data_V_U                                   |                                       bd_0_hls_inst_0_Sobel_Filter_regslice_both_1 |          7 |          7 |       0 |    0 |   69 |      0 |      0 |          0 |
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
