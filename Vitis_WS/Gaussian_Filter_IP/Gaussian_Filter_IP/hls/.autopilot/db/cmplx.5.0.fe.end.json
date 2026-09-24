@@ -1,0 +1,35 @@
+{
+    "0": {
+        "name": "Gaussian_Filter",
+        "file": "Gaussian_Filter.cpp",
+        "fileloc": "9",
+        "instructions": "39",
+        "total_instructions": "137",
+        "calls": "1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "1": {
+        "name": "Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2",
+        "file": "Gaussian_Filter.cpp",
+        "fileloc": "17",
+        "instructions": "98",
+        "total_instructions": "98",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "30",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "14"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

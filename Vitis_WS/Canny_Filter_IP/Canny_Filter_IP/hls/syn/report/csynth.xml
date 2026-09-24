@@ -1,0 +1,1631 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>Canny_Filter</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>Canny_Filter.cpp:13</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>27</BRAM_18K>
+            <DSP>16</DSP>
+            <FF>5899</FF>
+            <LUT>6721</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>Canny_Filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>Canny_Filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>Canny_Filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TDATA</name>
+            <Object>Input_Stream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TKEEP</name>
+            <Object>Input_Stream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TSTRB</name>
+            <Object>Input_Stream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TUSER</name>
+            <Object>Input_Stream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>3</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TLAST</name>
+            <Object>Input_Stream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TID</name>
+            <Object>Input_Stream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TDEST</name>
+            <Object>Input_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TVALID</name>
+            <Object>Input_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Input_Stream_TREADY</name>
+            <Object>Input_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TDATA</name>
+            <Object>Output_Stream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TKEEP</name>
+            <Object>Output_Stream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TSTRB</name>
+            <Object>Output_Stream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TUSER</name>
+            <Object>Output_Stream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TLAST</name>
+            <Object>Output_Stream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TID</name>
+            <Object>Output_Stream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TDEST</name>
+            <Object>Output_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TVALID</name>
+            <Object>Output_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Output_Stream_TREADY</name>
+            <Object>Output_Stream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>Canny_Filter</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>entry_proc_U0</InstName>
+                    <ModuleName>entry_proc</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>198</ID>
+                </Instance>
+                <Instance>
+                    <InstName>Gaussian_Filter_U0</InstName>
+                    <ModuleName>Gaussian_Filter</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>208</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90</InstName>
+                            <ModuleName>Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>90</ID>
+                            <BindInstances>Line_Buffer_1_U Line_Buffer_U icmp_ln13_fu_231_p2 icmp_ln15_fu_254_p2 add_ln13_fu_236_p2 select_ln13_fu_259_p3 addr_cmp25_fu_281_p2 Top_Pixel_fu_356_p3 addr_cmp_fu_290_p2 Mid_Pixel_fu_323_p3 tmp1_fu_388_p2 add_ln43_fu_399_p2 add_ln15_fu_306_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>empty_81_fu_124_p2 smax_fu_130_p3 empty_82_fu_138_p2 smax1_fu_144_p3 mul_31ns_31ns_62_2_1_U16</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>Sobel_Filter_U0</InstName>
+                    <ModuleName>Sobel_Filter</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>233</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68</InstName>
+                            <ModuleName>Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>68</ID>
+                            <BindInstances>Line_Buffer_1_U Line_Buffer_U icmp_ln14_fu_243_p2 icmp_ln16_fu_266_p2 add_ln14_fu_248_p2 select_ln14_fu_271_p3 addr_cmp31_fu_288_p2 Top_Pixel_fu_353_p3 addr_cmp_fu_297_p2 Mid_Pixel_fu_363_p3 tmp7_fu_384_p2 tmp35_fu_396_p2 sub_ln50_fu_490_p2 Gx_Value_Abs_fu_504_p3 sub_ln51_fu_509_p2 Gy_Value_Abs_fu_514_p3 Magnitude_fu_556_p2 icmp_ln54_fu_570_p2 Magnitude_1_fu_656_p3 sub_ln56_fu_532_p2 icmp_ln60_fu_636_p2 icmp_ln61_fu_641_p2 icmp_ln62_fu_646_p2 icmp_ln62_2_fu_651_p2 and_ln62_fu_662_p2 and_ln62_1_fu_666_p2 or_ln62_fu_678_p2 Direction_fu_709_p6 xor_ln60_fu_692_p2 and_ln61_fu_697_p2 sparsemux_7_2_16_1_1_U37 or_ln67_fu_733_p2 add_ln16_fu_313_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>empty_63_fu_91_p2 smax_fu_97_p3 empty_64_fu_105_p2 smax1_fu_111_p3 mul_31ns_31ns_62_2_1_U44</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>Suppression_Filter_U0</InstName>
+                    <ModuleName>Suppression_Filter</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>243</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68</InstName>
+                            <ModuleName>Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>68</ID>
+                            <BindInstances>Line_Buffer_1_U Line_Buffer_U icmp_ln11_fu_232_p2 icmp_ln13_fu_255_p2 add_ln11_fu_237_p2 select_ln11_fu_260_p3 addr_cmp26_fu_286_p2 Top_Pixel_fu_347_p3 addr_cmp_fu_295_p2 Mid_Pixel_fu_357_p3 icmp_ln62_fu_427_p2 xor_ln62_fu_432_p2 icmp_ln62_1_fu_438_p2 xor_ln62_1_fu_443_p2 and_ln62_fu_449_p2 Final_Magnitude_fu_455_p3 add_ln13_fu_311_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>empty_55_fu_91_p2 smax_fu_97_p3 empty_56_fu_105_p2 smax1_fu_111_p3 mul_31ns_31ns_62_2_1_U57</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>Hysteresis_Filter_U0</InstName>
+                    <ModuleName>Hysteresis_Filter</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>253</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84</InstName>
+                            <ModuleName>Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>84</ID>
+                            <BindInstances>Line_Buffer_1_U Line_Buffer_U icmp_ln11_fu_298_p2 icmp_ln13_fu_321_p2 add_ln11_fu_303_p2 select_ln11_fu_326_p3 empty_69_fu_409_p3 add_ln11_1_fu_416_p2 icmp_ln70_fu_426_p2 addr_cmp22_fu_347_p2 Top_Pixel_fu_434_p3 addr_cmp_fu_356_p2 Mid_Pixel_fu_444_p3 icmp_ln38_fu_461_p2 icmp_ln42_fu_466_p2 Strong_fu_471_p2 icmp_ln50_fu_476_p2 icmp_ln50_1_fu_481_p2 icmp_ln50_2_fu_486_p2 icmp_ln50_3_fu_491_p2 icmp_ln50_4_fu_496_p2 icmp_ln50_5_fu_501_p2 icmp_ln50_6_fu_506_p2 or_ln57_fu_560_p2 or_ln57_1_fu_564_p2 or_ln57_2_fu_568_p2 or_ln57_3_fu_574_p2 or_ln57_4_fu_578_p2 or_ln57_5_fu_582_p2 Final_Value_1_fu_611_p4 xor_ln38_fu_594_p2 and_ln42_fu_599_p2 sparsemux_7_2_1_1_1_U64 Output_Stream_TDATA or_ln69_fu_510_p2 icmp_ln69_fu_515_p2 icmp_ln70_1_fu_372_p2 and_ln70_fu_521_p2 add_ln13_fu_377_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>add_ln70_fu_159_p2 add_ln70_1_fu_165_p2 empty_71_fu_123_p2 smax_fu_129_p3 empty_72_fu_137_p2 smax1_fu_143_p3 mul_31ns_31ns_62_2_1_U80</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>High_Threshold_c_U Low_Threshold_c_U Gaussian_to_Sobel_U Rows_c2_U Cols_c4_U Sobel_to_Suppression_U Rows_c1_U Cols_c3_U Suppression_to_Hysteresis_U Rows_c_U Cols_c_U control_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>entry_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.613</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>-</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>3</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>38</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2</Name>
+            <Loops>
+                <VITIS_LOOP_13_1_VITIS_LOOP_15_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_13_1_VITIS_LOOP_15_2>
+                        <Name>VITIS_LOOP_13_1_VITIS_LOOP_15_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>7</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_13_1_VITIS_LOOP_15_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Gaussian_Filter.cpp:37</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_13_1_VITIS_LOOP_15_2>
+                            <Name>VITIS_LOOP_13_1_VITIS_LOOP_15_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>Gaussian_Filter.cpp:13</SourceLocation>
+                        </VITIS_LOOP_13_1_VITIS_LOOP_15_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <FF>946</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>888</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="12884901916" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Line_Buffer_1_U" SOURCE="Gaussian_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="Line_Buffer_1" VISIBLE="true"/>
+                <BindNode BINDID="12884901917" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Line_Buffer_U" SOURCE="Gaussian_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="Line_Buffer" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln13_fu_231_p2" SOURCE="Gaussian_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln15_fu_254_p2" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_236_p2" SOURCE="Gaussian_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln13_fu_259_p3" SOURCE="Gaussian_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp25_fu_281_p2" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="select" PRAGMA="" RTLNAME="Top_Pixel_fu_356_p3" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="Top_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp_fu_290_p2" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="select" PRAGMA="" RTLNAME="Mid_Pixel_fu_323_p3" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="Mid_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="add" PRAGMA="" RTLNAME="tmp1_fu_388_p2" SOURCE="Gaussian_Filter.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_fu_399_p2" SOURCE="Gaussian_Filter.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_13_1_VITIS_LOOP_15_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_306_p2" SOURCE="Gaussian_Filter.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Gaussian_Filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Gaussian_Filter.cpp:53</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1251</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1154</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_81_fu_124_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_81" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax_fu_130_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_82_fu_138_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_82" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax1_fu_144_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_31ns_62_2_1_U16" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2</Name>
+            <Loops>
+                <VITIS_LOOP_14_1_VITIS_LOOP_16_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_14_1_VITIS_LOOP_16_2>
+                        <Name>VITIS_LOOP_14_1_VITIS_LOOP_16_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>7</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_14_1_VITIS_LOOP_16_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Sobel_Filter.cpp:39</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_14_1_VITIS_LOOP_16_2>
+                            <Name>VITIS_LOOP_14_1_VITIS_LOOP_16_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>Sobel_Filter.cpp:14</SourceLocation>
+                        </VITIS_LOOP_14_1_VITIS_LOOP_16_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <FF>1149</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1697</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="21474836501" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Line_Buffer_1_U" SOURCE="Sobel_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="Line_Buffer_1" VISIBLE="true"/>
+                <BindNode BINDID="21474836502" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Line_Buffer_U" SOURCE="Sobel_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Line_Buffer" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln14_fu_243_p2" SOURCE="Sobel_Filter.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln16_fu_266_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln16" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_248_p2" SOURCE="Sobel_Filter.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln14_fu_271_p3" SOURCE="Sobel_Filter.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp31_fu_288_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp31" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Top_Pixel_fu_353_p3" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="Top_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp_fu_297_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Mid_Pixel_fu_363_p3" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="Mid_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sub" PRAGMA="" RTLNAME="tmp7_fu_384_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sub" PRAGMA="" RTLNAME="tmp35_fu_396_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln50_fu_490_p2" SOURCE="Sobel_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Gx_Value_Abs_fu_504_p3" SOURCE="Sobel_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="Gx_Value_Abs" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln51_fu_509_p2" SOURCE="Sobel_Filter.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Gy_Value_Abs_fu_514_p3" SOURCE="Sobel_Filter.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="Gy_Value_Abs" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="add" PRAGMA="" RTLNAME="Magnitude_fu_556_p2" SOURCE="Sobel_Filter.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="Magnitude" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln54_fu_570_p2" SOURCE="Sobel_Filter.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln54" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Magnitude_1_fu_656_p3" SOURCE="Sobel_Filter.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="Magnitude_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln56_fu_532_p2" SOURCE="Sobel_Filter.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln60_fu_636_p2" SOURCE="Sobel_Filter.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln60" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln61_fu_641_p2" SOURCE="Sobel_Filter.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln61" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln62_fu_646_p2" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln62_2_fu_651_p2" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_fu_662_p2" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_1_fu_666_p2" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln62_fu_678_p2" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="select" PRAGMA="" RTLNAME="Direction_fu_709_p6" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln60_fu_692_p2" SOURCE="Sobel_Filter.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln60" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln61_fu_697_p2" SOURCE="Sobel_Filter.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln61" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_16_1_1_U37" SOURCE="Sobel_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="Direction" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln67_fu_733_p2" SOURCE="Sobel_Filter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln67" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1_VITIS_LOOP_16_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln16_fu_313_p2" SOURCE="Sobel_Filter.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln16" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Sobel_Filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Sobel_Filter.cpp:72</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1453</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1966</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_63_fu_91_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_63" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax_fu_97_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_64_fu_105_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_64" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax1_fu_111_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_31ns_62_2_1_U44" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+            <Loops>
+                <VITIS_LOOP_11_1_VITIS_LOOP_13_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                        <Name>VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Suppression_Filter.cpp:13</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                            <Name>VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>Suppression_Filter.cpp:11</SourceLocation>
+                        </VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>3</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <FF>483</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>645</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="30064771093" BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Line_Buffer_1_U" SOURCE="Suppression_Filter.cpp:5" STORAGESIZE="16 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="Line_Buffer_1" VISIBLE="true"/>
+                <BindNode BINDID="30064771094" BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Line_Buffer_U" SOURCE="Suppression_Filter.cpp:5" STORAGESIZE="8 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Line_Buffer" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln11_fu_232_p2" SOURCE="Suppression_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln13_fu_255_p2" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_237_p2" SOURCE="Suppression_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln11_fu_260_p3" SOURCE="Suppression_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp26_fu_286_p2" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp26" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Top_Pixel_fu_347_p3" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="Top_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp_fu_295_p2" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Mid_Pixel_fu_357_p3" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="Mid_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_fu_427_p2" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln62_fu_432_p2" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_1_fu_438_p2" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln62_1_fu_443_p2" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln62_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_fu_449_p2" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Final_Magnitude_fu_455_p3" SOURCE="Suppression_Filter.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="Final_Magnitude" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_311_p2" SOURCE="Suppression_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Suppression_Filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Suppression_Filter.cpp:70</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>3</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>786</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>905</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_55_fu_91_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_55" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax_fu_97_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_56_fu_105_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax1_fu_111_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_31ns_62_2_1_U57" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+            <Loops>
+                <VITIS_LOOP_11_1_VITIS_LOOP_13_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                        <Name>VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Hysteresis_Filter.cpp:13</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                            <Name>VITIS_LOOP_11_1_VITIS_LOOP_13_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>Hysteresis_Filter.cpp:11</SourceLocation>
+                        </VITIS_LOOP_11_1_VITIS_LOOP_13_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <FF>608</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1182</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="38654705701" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Line_Buffer_1_U" SOURCE="Hysteresis_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="Line_Buffer_1" VISIBLE="true"/>
+                <BindNode BINDID="38654705702" BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Line_Buffer_U" SOURCE="Hysteresis_Filter.cpp:5" STORAGESIZE="32 1920 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Line_Buffer" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln11_fu_298_p2" SOURCE="Hysteresis_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln13_fu_321_p2" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_303_p2" SOURCE="Hysteresis_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln11_fu_326_p3" SOURCE="Hysteresis_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="empty_69_fu_409_p3" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_69" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_1_fu_416_p2" SOURCE="Hysteresis_Filter.cpp:11" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln11_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln70_fu_426_p2" SOURCE="Hysteresis_Filter.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln70" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp22_fu_347_p2" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp22" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Top_Pixel_fu_434_p3" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="Top_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="addr_cmp_fu_356_p2" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="addr_cmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Mid_Pixel_fu_444_p3" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="Mid_Pixel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln38_fu_461_p2" SOURCE="Hysteresis_Filter.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln38" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln42_fu_466_p2" SOURCE="Hysteresis_Filter.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln42" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="Strong_fu_471_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="Strong" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_fu_476_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_1_fu_481_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_2_fu_486_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_3_fu_491_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_4_fu_496_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_5_fu_501_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln50_6_fu_506_p2" SOURCE="Hysteresis_Filter.cpp:50" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln50_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_fu_560_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_1_fu_564_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_2_fu_568_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_3_fu_574_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_4_fu_578_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_5_fu_582_p2" SOURCE="Hysteresis_Filter.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="Final_Value_1_fu_611_p4" SOURCE="Hysteresis_Filter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln58" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln38_fu_594_p2" SOURCE="Hysteresis_Filter.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln38" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln42_fu_599_p2" SOURCE="Hysteresis_Filter.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln42" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_1_1_1_U64" SOURCE="Hysteresis_Filter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="Final_Value_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="select" PRAGMA="" RTLNAME="Output_Stream_TDATA" SOURCE="Hysteresis_Filter.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln69" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_fu_510_p2" SOURCE="Hysteresis_Filter.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln69_fu_515_p2" SOURCE="Hysteresis_Filter.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln69" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln70_1_fu_372_p2" SOURCE="Hysteresis_Filter.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln70_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="and" PRAGMA="" RTLNAME="and_ln70_fu_521_p2" SOURCE="Hysteresis_Filter.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln70" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1_VITIS_LOOP_13_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_377_p2" SOURCE="Hysteresis_Filter.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Hysteresis_Filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Hysteresis_Filter.cpp:70</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>8</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1127</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1591</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_159_p2" SOURCE="Hysteresis_Filter.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_165_p2" SOURCE="Hysteresis_Filter.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln70_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_71_fu_123_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_71" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax_fu_129_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="empty_72_fu_137_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_72" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="smax1_fu_143_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="smax1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_31ns_62_2_1_U80" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Canny_Filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.396</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Canny_Filter.cpp:13</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>27</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>9</UTIL_BRAM>
+                    <DSP>16</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>7</UTIL_DSP>
+                    <FF>5899</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>5</UTIL_FF>
+                    <LUT>6723</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>12</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="47244640282" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="High_Threshold_c_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 5 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="High_Threshold_c" VISIBLE="true"/>
+                <BindNode BINDID="47244640279" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Low_Threshold_c_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 5 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Low_Threshold_c" VISIBLE="true"/>
+                <BindNode BINDID="47244640334" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Gaussian_to_Sobel_U" SOURCE="Canny_Filter.cpp:15" STORAGESIZE="32 8 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Gaussian_to_Sobel" VISIBLE="true"/>
+                <BindNode BINDID="47244640294" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Rows_c2_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Rows_c2" VISIBLE="true"/>
+                <BindNode BINDID="47244640285" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Cols_c4_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Cols_c4" VISIBLE="true"/>
+                <BindNode BINDID="47244640337" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Sobel_to_Suppression_U" SOURCE="Canny_Filter.cpp:16" STORAGESIZE="32 8 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Sobel_to_Suppression" VISIBLE="true"/>
+                <BindNode BINDID="47244640297" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Rows_c1_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Rows_c1" VISIBLE="true"/>
+                <BindNode BINDID="47244640288" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Cols_c3_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Cols_c3" VISIBLE="true"/>
+                <BindNode BINDID="47244640340" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Suppression_to_Hysteresis_U" SOURCE="Canny_Filter.cpp:17" STORAGESIZE="32 8 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Suppression_to_Hysteresis" VISIBLE="true"/>
+                <BindNode BINDID="47244640300" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Rows_c_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Rows_c" VISIBLE="true"/>
+                <BindNode BINDID="47244640291" BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Cols_c_U" SOURCE="Canny_Filter.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Cols_c" VISIBLE="true"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" CE_REG="" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation>
+        <FIFOInst>
+            <Name>Gaussian_to_Sobel_U</Name>
+            <ParentInst/>
+            <StaticDepth>8</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>Sobel_to_Suppression_U</Name>
+            <ParentInst/>
+            <StaticDepth>8</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>Suppression_to_Hysteresis_U</Name>
+            <ParentInst/>
+            <StaticDepth>8</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+    </FIFOInformation>
+    <UserConfigCommands>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="Input_Stream" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3UL, 5UL, 6UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="Input_Stream" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Output_Stream" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3UL, 5UL, 6UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="Output_Stream" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Rows" index="2" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="Rows" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Cols" index="3" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="Cols" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="High_Threshold" index="4" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="High_Threshold" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Low_Threshold" index="5" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="Low_Threshold" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="Rows" access="W" description="Data signal of Rows" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="Rows" access="W" description="Bit 31 to 0 of Rows"/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="Cols" access="W" description="Data signal of Cols" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="Cols" access="W" description="Bit 31 to 0 of Cols"/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="High_Threshold" access="W" description="Data signal of High_Threshold" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="High_Threshold" access="W" description="Bit 31 to 0 of High_Threshold"/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="Low_Threshold" access="W" description="Data signal of Low_Threshold" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="Low_Threshold" access="W" description="Bit 31 to 0 of Low_Threshold"/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="Rows"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="Cols"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="High_Threshold"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40" argName="Low_Threshold"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:Input_Stream:Output_Stream</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="Input_Stream" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="Input_Stream_">
+            <ports>
+                <port>Input_Stream_TDATA</port>
+                <port>Input_Stream_TDEST</port>
+                <port>Input_Stream_TID</port>
+                <port>Input_Stream_TKEEP</port>
+                <port>Input_Stream_TLAST</port>
+                <port>Input_Stream_TREADY</port>
+                <port>Input_Stream_TSTRB</port>
+                <port>Input_Stream_TUSER</port>
+                <port>Input_Stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="Input_Stream"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="Output_Stream" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="Output_Stream_">
+            <ports>
+                <port>Output_Stream_TDATA</port>
+                <port>Output_Stream_TDEST</port>
+                <port>Output_Stream_TID</port>
+                <port>Output_Stream_TKEEP</port>
+                <port>Output_Stream_TLAST</port>
+                <port>Output_Stream_TREADY</port>
+                <port>Output_Stream_TSTRB</port>
+                <port>Output_Stream_TUSER</port>
+                <port>Output_Stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="Output_Stream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 6, 16, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">Rows, 0x10, 32, W, Data signal of Rows, </column>
+                    <column name="s_axi_control">Cols, 0x18, 32, W, Data signal of Cols, </column>
+                    <column name="s_axi_control">High_Threshold, 0x20, 32, W, Data signal of High_Threshold, </column>
+                    <column name="s_axi_control">Low_Threshold, 0x28, 32, W, Data signal of Low_Threshold, </column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table>
+                    <keys size="12">Interface, Direction, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="Input_Stream">in, both, 32, 6, 5, 4, 1, 1, 4, 3, 1</column>
+                    <column name="Output_Stream">out, both, 32, 6, 5, 4, 1, 1, 4, 3, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="Input_Stream">in, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 3UL 5UL 6UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="Output_Stream">out, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 3UL 5UL 6UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="Rows">in, int</column>
+                    <column name="Cols">in, int</column>
+                    <column name="High_Threshold">in, int</column>
+                    <column name="Low_Threshold">in, int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="Input_Stream">Input_Stream, interface, </column>
+                    <column name="Output_Stream">Output_Stream, interface, </column>
+                    <column name="Rows">s_axi_control, register, name=Rows offset=0x10 range=32</column>
+                    <column name="Cols">s_axi_control, register, name=Cols offset=0x18 range=32</column>
+                    <column name="High_Threshold">s_axi_control, register, name=High_Threshold offset=0x20 range=32</column>
+                    <column name="Low_Threshold">s_axi_control, register, name=Low_Threshold offset=0x28 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:5" parentFunction="canny_filter" variable="Input_Stream" isDirective="0" options="axis port=Input_Stream"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:6" parentFunction="canny_filter" variable="Output_Stream" isDirective="0" options="axis port=Output_Stream"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:7" parentFunction="canny_filter" variable="Rows" isDirective="0" options="s_axilite port=Rows"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:8" parentFunction="canny_filter" variable="Cols" isDirective="0" options="s_axilite port=Cols"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:9" parentFunction="canny_filter" variable="High_Threshold" isDirective="0" options="s_axilite port=High_Threshold"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:10" parentFunction="canny_filter" variable="Low_Threshold" isDirective="0" options="s_axilite port=Low_Threshold"/>
+        <Pragma type="interface" status="valid" location="Canny_Filter.cpp:11" parentFunction="canny_filter" variable="return" isDirective="0" options="s_axilite port=return"/>
+        <Pragma type="dataflow" status="valid" location="Canny_Filter.cpp:13" parentFunction="canny_filter" variable="" isDirective="0" options=""/>
+        <Pragma type="stream" status="valid" location="Canny_Filter.cpp:19" parentFunction="canny_filter" variable="Gaussian_to_Sobel" isDirective="0" options="variable=Gaussian_to_Sobel depth=8"/>
+        <Pragma type="stream" status="valid" location="Canny_Filter.cpp:20" parentFunction="canny_filter" variable="Sobel_to_Suppression" isDirective="0" options="variable=Sobel_to_Suppression depth=8"/>
+        <Pragma type="stream" status="valid" location="Canny_Filter.cpp:21" parentFunction="canny_filter" variable="Suppression_to_Hysteresis" isDirective="0" options="variable=Suppression_to_Hysteresis depth=8"/>
+        <Pragma type="array_partition" status="valid" location="Gaussian_Filter.cpp:6" parentFunction="gaussian_filter" variable="Line_Buffer" isDirective="0" options="variable=Line_Buffer complete dim=1"/>
+        <Pragma type="array_partition" status="invalid" location="Gaussian_Filter.cpp:9" parentFunction="gaussian_filter" variable="Window" isDirective="0" options="variable=Window complete dim=0">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="Gaussian_Filter.cpp:17" parentFunction="gaussian_filter" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="array_partition" status="valid" location="Hysteresis_Filter.cpp:6" parentFunction="hysteresis_filter" variable="Line_Buffer" isDirective="0" options="variable=Line_Buffer complete dim=1"/>
+        <Pragma type="array_partition" status="invalid" location="Hysteresis_Filter.cpp:9" parentFunction="hysteresis_filter" variable="Window" isDirective="0" options="variable=Window complete dim=0">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="Hysteresis_Filter.cpp:15" parentFunction="hysteresis_filter" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="array_partition" status="valid" location="Sobel_Filter.cpp:6" parentFunction="sobel_filter" variable="Line_Buffer" isDirective="0" options="variable=Line_Buffer complete dim=1"/>
+        <Pragma type="array_partition" status="invalid" location="Sobel_Filter.cpp:9" parentFunction="sobel_filter" variable="Window" isDirective="0" options="variable=Window complete dim=0">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="Sobel_Filter.cpp:18" parentFunction="sobel_filter" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="array_partition" status="valid" location="Suppression_Filter.cpp:6" parentFunction="suppression_filter" variable="Line_Buffer" isDirective="0" options="variable=Line_Buffer complete dim=1"/>
+        <Pragma type="array_partition" status="invalid" location="Suppression_Filter.cpp:9" parentFunction="suppression_filter" variable="Window" isDirective="0" options="variable=Window complete dim=0">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="Suppression_Filter.cpp:15" parentFunction="suppression_filter" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="dataflow" status="implemented" location="Canny_Filter.cpp:13" parentFunction="canny_filter" variable="" isDirective="0" options=" "/>
+        <Pragma type="stream" status="implemented" location="Canny_Filter.cpp:19" parentFunction="canny_filter" variable="Gaussian_to_Sobel" isDirective="0" options="variable=Gaussian_to_Sobel type=fifo depth=8"/>
+        <Pragma type="stream" status="implemented" location="Canny_Filter.cpp:20" parentFunction="canny_filter" variable="Sobel_to_Suppression" isDirective="0" options="variable=Sobel_to_Suppression type=fifo depth=8"/>
+        <Pragma type="stream" status="implemented" location="Canny_Filter.cpp:21" parentFunction="canny_filter" variable="Suppression_to_Hysteresis" isDirective="0" options="variable=Suppression_to_Hysteresis type=fifo depth=8"/>
+        <Pragma type="array_partition" status="implemented" location="Gaussian_Filter.cpp:6" parentFunction="gaussian_filter" variable="Line_Buffer" isDirective="0" options="dim=1 type=complete variable=Line_Buffer"/>
+        <Pragma type="loop_flatten" status="warning" location="Gaussian_Filter.cpp:15" parentFunction="gaussian_filter" variable="" isDirective="0" options=" "/>
+        <Pragma type="array_partition" status="implemented" location="Hysteresis_Filter.cpp:6" parentFunction="hysteresis_filter" variable="Line_Buffer" isDirective="0" options="dim=1 type=complete variable=Line_Buffer"/>
+        <Pragma type="loop_flatten" status="warning" location="Hysteresis_Filter.cpp:13" parentFunction="hysteresis_filter" variable="" isDirective="0" options=" "/>
+        <Pragma type="array_partition" status="implemented" location="Sobel_Filter.cpp:6" parentFunction="sobel_filter" variable="Line_Buffer" isDirective="0" options="dim=1 type=complete variable=Line_Buffer"/>
+        <Pragma type="loop_flatten" status="warning" location="Sobel_Filter.cpp:16" parentFunction="sobel_filter" variable="" isDirective="0" options=" "/>
+        <Pragma type="array_partition" status="implemented" location="Suppression_Filter.cpp:6" parentFunction="suppression_filter" variable="Line_Buffer" isDirective="0" options="dim=1 type=complete variable=Line_Buffer"/>
+        <Pragma type="loop_flatten" status="warning" location="Suppression_Filter.cpp:13" parentFunction="suppression_filter" variable="" isDirective="0" options=" "/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="loop_flatten" parentFunction="gaussian_filter" options=" " pragmaLocId="Gaussian_Filter.cpp:15:0" pragmaLocOpt="gaussian_filter/VITIS_LOOP_15_2" srcPragmaType="pipeline" srcPragmaLoc="Gaussian_Filter.cpp:17" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline Gaussian_Filter.cpp:17" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=gaussian_filter/VITIS_LOOP_15_2  " loopName="VITIS_LOOP_15_2" loopLoc="Gaussian_Filter.cpp:15:26"/>
+        <AutoPragma type="loop_flatten" parentFunction="hysteresis_filter" options=" " pragmaLocId="Hysteresis_Filter.cpp:13:0" pragmaLocOpt="hysteresis_filter/VITIS_LOOP_13_2" srcPragmaType="pipeline" srcPragmaLoc="Hysteresis_Filter.cpp:15" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline Hysteresis_Filter.cpp:15" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=hysteresis_filter/VITIS_LOOP_13_2  " loopName="VITIS_LOOP_13_2" loopLoc="Hysteresis_Filter.cpp:13:26"/>
+        <AutoPragma type="loop_flatten" parentFunction="sobel_filter" options=" " pragmaLocId="Sobel_Filter.cpp:16:0" pragmaLocOpt="sobel_filter/VITIS_LOOP_16_2" srcPragmaType="pipeline" srcPragmaLoc="Sobel_Filter.cpp:18" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline Sobel_Filter.cpp:18" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=sobel_filter/VITIS_LOOP_16_2  " loopName="VITIS_LOOP_16_2" loopLoc="Sobel_Filter.cpp:16:26"/>
+        <AutoPragma type="loop_flatten" parentFunction="suppression_filter" options=" " pragmaLocId="Suppression_Filter.cpp:13:0" pragmaLocOpt="suppression_filter/VITIS_LOOP_13_2" srcPragmaType="pipeline" srcPragmaLoc="Suppression_Filter.cpp:15" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline Suppression_Filter.cpp:15" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=suppression_filter/VITIS_LOOP_13_2  " loopName="VITIS_LOOP_13_2" loopLoc="Suppression_Filter.cpp:13:26"/>
+    </AutoPragmaReport>
+</profile>

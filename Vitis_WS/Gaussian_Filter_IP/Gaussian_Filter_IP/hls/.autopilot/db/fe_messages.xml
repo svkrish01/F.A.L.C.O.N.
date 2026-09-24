@@ -1,0 +1,179 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:255:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:380:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:389:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:412:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:423:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:440:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=Gaussian_Filter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=Input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:12:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=Output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:13:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Rows" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:14:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Cols" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:15:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Line_Buffer complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:29:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="Gaussian_Filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:33:30" msg_body="Loop 'VITIS_LOOP_33_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_33_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:51:30" msg_body="Loop 'VITIS_LOOP_51_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_51_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:53:34" msg_body="Loop 'VITIS_LOOP_53_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_53_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_33_3' (Gaussian_Filter.cpp:33:30) in function 'Gaussian_Filter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Gaussian_Filter.cpp:33:30" LoopName="VITIS_LOOP_33_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_51_4' (Gaussian_Filter.cpp:51:30) in function 'Gaussian_Filter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Gaussian_Filter.cpp:51:30" LoopName="VITIS_LOOP_51_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_53_5' (Gaussian_Filter.cpp:53:34) in function 'Gaussian_Filter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Gaussian_Filter.cpp:53:34" LoopName="VITIS_LOOP_53_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:31:38" msg_body="Duplicating function 'hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="Gaussian_Filter.cpp:59:21" msg_body="Duplicating function 'hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()' into 'Gaussian_Filter(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="Gaussian_Filter(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)" Caller-DebugLoc="File Gaussian_Filter.cpp Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis() (.47)' into 'Gaussian_Filter(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;::axis() (.47)" Callee-DebugLoc="File {C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="Gaussian_Filter(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 3ul, 5ul, 6ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)" Caller-DebugLoc="File Gaussian_Filter.cpp Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.data false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.data Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.data" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.keep': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.keep"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.keep false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.keep Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.keep" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.keep"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.strb': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.strb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.strb false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.strb Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.strb" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.strb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.user': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.user"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.user false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.user Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.user" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.user"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.last': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.last false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.last Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.last" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.id': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.id"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.id false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.id Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.id" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.id"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="Applying array_partition to 'Line_Buffer.dest': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Line_Buffer.dest"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:18:1" msg_body="array_partition dim=1 type=complete variable=Line_Buffer.dest false Gaussian_Filter Gaussian_Filter.cpp:18:1 Line_Buffer.dest Gaussian_Filter.cpp:17:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=Line_Buffer.dest" PragmaSrcLoc="Gaussian_Filter.cpp:18:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 18 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:17:13" VarName="Line_Buffer.dest"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.keep': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.keep"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.keep false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.keep Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.keep" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.keep"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.strb': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.strb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.strb false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.strb Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.strb" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.strb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.user': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.user"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.user false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.user Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.user" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.user"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.last': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.last false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.last Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.last" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.id': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.id"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.id false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.id Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.id" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.id"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Applying array_partition to 'Window.dest': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="Window.dest"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:21:1" msg_body="array_partition dim=0 type=complete variable=Window.dest false Gaussian_Filter Gaussian_Filter.cpp:21:1 Window.dest Gaussian_Filter.cpp:20:13">
+        <args PragmaFunction="Gaussian_Filter" PragmaIsAuto="false" PragmaOptions="dim=0 type=complete variable=Window.dest" PragmaSrcLoc="Gaussian_Filter.cpp:21:1" PragmaSrcLoc-DebugLoc="File Gaussian_Filter.cpp Line 21 Column 1" PragmaType="array_partition" VarLoc="Gaussian_Filter.cpp:20:13" VarName="Window.dest"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:17:13" msg_body="pipeline   1 Gaussian_Filter config_compile -pipeline_loops 64anonymous Gaussian_Filter.cpp:17:13">
+        <args LoopLoc="Gaussian_Filter.cpp:17:13" LoopLoc-DebugLoc="File Gaussian_Filter.cpp Line 17 Column 13" LoopName="anonymous" PragmaFunction="Gaussian_Filter" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="pipeline   1 Gaussian_Filter config_compile -pipeline_loops 64anonymous Gaussian_Filter.cpp:20:13">
+        <args LoopLoc="Gaussian_Filter.cpp:20:13" LoopLoc-DebugLoc="File Gaussian_Filter.cpp Line 20 Column 13" LoopName="anonymous" PragmaFunction="Gaussian_Filter" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:20:13" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Gaussian_Filter.cpp:10:0" msg_body="Unrolling loop 'anonymous' (Gaussian_Filter.cpp:20:13) in function 'Gaussian_Filter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Gaussian_Filter.cpp:20:13" LoopName="anonymous"/>
+    </msg>
+</xilinx:hls_fe_msgs>

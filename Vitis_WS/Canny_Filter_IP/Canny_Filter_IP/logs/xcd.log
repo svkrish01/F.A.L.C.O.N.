@@ -1,0 +1,177 @@
+09/24/26 01:14:48: Running xcd server. This server was built by gradle.
+09/24/26 01:14:48: Server was asked to start on port: '60094'
+09/24/26 01:14:48: Server is using token UUID: '967793ca-d3bb-479a-90f5-1ee08a33eec6'
+09/24/26 01:14:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 01:14:48: Attempting to start server on port '60094'
+09/24/26 01:14:48: Running Dispatch Server
+09/24/26 01:14:48: Version 2.2.0
+09/24/26 01:14:51: Dispatch Server: Accepted socket connection from client
+09/24/26 01:14:51: Starting Socket connection
+09/24/26 01:14:51: EXCHANGE_TOKEN received, server token: 967793ca-d3bb-479a-90f5-1ee08a33eec6, passed token: 967793ca-d3bb-479a-90f5-1ee08a33eec6
+09/24/26 01:14:51: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 01:14:51: SESSION_MGR: creating session with session uuid: '5f92b64d-1402-4e23-b334-9adc7a148ebd' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:14:51: KERNEL_SVC: creating session with uuid: '5f92b64d-1402-4e23-b334-9adc7a148ebd' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:14:51: GUIDANCE_SMGR: creating guidance session with uuid: '5f92b64d-1402-4e23-b334-9adc7a148ebd' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:14:51: SYSTEM_DIAGRAM: creating session with uuid: '5f92b64d-1402-4e23-b334-9adc7a148ebd' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:03: Dispatch Server: Accepted socket connection from client
+09/24/26 01:15:03: Starting Socket connection
+09/24/26 01:15:33: SESSION_MGR: closing session for UUID '5f92b64d-1402-4e23-b334-9adc7a148ebd' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:33: KERNEL_SVC: closing session for UUID '5f92b64d-1402-4e23-b334-9adc7a148ebd' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:33: GUIDANCE_SMGR: closing session for UUID '5f92b64d-1402-4e23-b334-9adc7a148ebd' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:33: SYSTEM_DIAGRAM: closing session for UUID '5f92b64d-1402-4e23-b334-9adc7a148ebd' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:33: STOP_SERVER received, server token: 967793ca-d3bb-479a-90f5-1ee08a33eec6, passed token: 967793ca-d3bb-479a-90f5-1ee08a33eec6
+09/24/26 01:15:33: Socket received request to stop server.
+09/24/26 01:15:33: Dispatch Server: do_await_stop
+09/24/26 01:15:33: SERVER: destructor for server bound to port 60094
+09/24/26 01:15:39: Running xcd server. This server was built by gradle.
+09/24/26 01:15:39: Server was asked to start on port: '60111'
+09/24/26 01:15:39: Server is using token UUID: 'a9ba6407-7cb3-4520-8901-856b586b9b6a'
+09/24/26 01:15:39: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 01:15:39: Attempting to start server on port '60111'
+09/24/26 01:15:39: Running Dispatch Server
+09/24/26 01:15:39: Version 2.2.0
+09/24/26 01:15:42: Dispatch Server: Accepted socket connection from client
+09/24/26 01:15:42: Starting Socket connection
+09/24/26 01:15:42: EXCHANGE_TOKEN received, server token: a9ba6407-7cb3-4520-8901-856b586b9b6a, passed token: a9ba6407-7cb3-4520-8901-856b586b9b6a
+09/24/26 01:15:42: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 01:15:42: SESSION_MGR: creating session with session uuid: '0830095f-017a-47dd-b2bb-f06b8ecc702f' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:42: KERNEL_SVC: creating session with uuid: '0830095f-017a-47dd-b2bb-f06b8ecc702f' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:42: GUIDANCE_SMGR: creating guidance session with uuid: '0830095f-017a-47dd-b2bb-f06b8ecc702f' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:42: SYSTEM_DIAGRAM: creating session with uuid: '0830095f-017a-47dd-b2bb-f06b8ecc702f' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:15:46: Dispatch Server: Accepted socket connection from client
+09/24/26 01:15:46: Starting Socket connection
+09/24/26 01:16:57: SESSION_MGR: closing session for UUID '0830095f-017a-47dd-b2bb-f06b8ecc702f' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:16:57: KERNEL_SVC: closing session for UUID '0830095f-017a-47dd-b2bb-f06b8ecc702f' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:16:57: GUIDANCE_SMGR: closing session for UUID '0830095f-017a-47dd-b2bb-f06b8ecc702f' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:16:57: SYSTEM_DIAGRAM: closing session for UUID '0830095f-017a-47dd-b2bb-f06b8ecc702f' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 01:16:57: STOP_SERVER received, server token: a9ba6407-7cb3-4520-8901-856b586b9b6a, passed token: a9ba6407-7cb3-4520-8901-856b586b9b6a
+09/24/26 01:16:57: Socket received request to stop server.
+09/24/26 01:16:57: Dispatch Server: do_await_stop
+09/24/26 01:16:57: SERVER: destructor for server bound to port 60111
+09/24/26 09:08:54: Running xcd server. This server was built by gradle.
+09/24/26 09:08:54: Server was asked to start on port: '53692'
+09/24/26 09:08:54: Server is using token UUID: '13646b51-464c-4863-a678-07e28ddee5fe'
+09/24/26 09:08:54: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 09:08:54: Attempting to start server on port '53692'
+09/24/26 09:08:54: Running Dispatch Server
+09/24/26 09:08:54: Version 2.2.0
+09/24/26 09:08:57: Dispatch Server: Accepted socket connection from client
+09/24/26 09:08:57: Starting Socket connection
+09/24/26 09:08:57: EXCHANGE_TOKEN received, server token: 13646b51-464c-4863-a678-07e28ddee5fe, passed token: 13646b51-464c-4863-a678-07e28ddee5fe
+09/24/26 09:08:57: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 09:08:57: SESSION_MGR: creating session with session uuid: '350ff61b-9b14-4a07-8304-32f7c3a9745e' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:08:57: KERNEL_SVC: creating session with uuid: '350ff61b-9b14-4a07-8304-32f7c3a9745e' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:08:57: GUIDANCE_SMGR: creating guidance session with uuid: '350ff61b-9b14-4a07-8304-32f7c3a9745e' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:08:57: SYSTEM_DIAGRAM: creating session with uuid: '350ff61b-9b14-4a07-8304-32f7c3a9745e' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:09:11: Dispatch Server: Accepted socket connection from client
+09/24/26 09:09:11: Starting Socket connection
+09/24/26 09:10:42: SESSION_MGR: closing session for UUID '350ff61b-9b14-4a07-8304-32f7c3a9745e' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:10:42: KERNEL_SVC: closing session for UUID '350ff61b-9b14-4a07-8304-32f7c3a9745e' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:10:42: GUIDANCE_SMGR: closing session for UUID '350ff61b-9b14-4a07-8304-32f7c3a9745e' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:10:42: SYSTEM_DIAGRAM: closing session for UUID '350ff61b-9b14-4a07-8304-32f7c3a9745e' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 09:10:42: STOP_SERVER received, server token: 13646b51-464c-4863-a678-07e28ddee5fe, passed token: 13646b51-464c-4863-a678-07e28ddee5fe
+09/24/26 09:10:42: Socket received request to stop server.
+09/24/26 09:10:42: Dispatch Server: do_await_stop
+09/24/26 09:10:42: SERVER: destructor for server bound to port 53692
+09/24/26 09:11:13: Running xcd server. This server was built by gradle.
+09/24/26 09:11:13: Server was asked to start on port: '53737'
+09/24/26 09:11:13: Server is using token UUID: 'bb317784-04b4-407a-bfc4-b70b5e7764d8'
+09/24/26 09:11:13: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 09:11:13: Attempting to start server on port '53737'
+09/24/26 09:11:13: Running Dispatch Server
+09/24/26 09:11:13: Version 2.2.0
+09/24/26 09:11:16: Dispatch Server: Accepted socket connection from client
+09/24/26 09:11:16: Starting Socket connection
+09/24/26 09:11:16: EXCHANGE_TOKEN received, server token: bb317784-04b4-407a-bfc4-b70b5e7764d8, passed token: bb317784-04b4-407a-bfc4-b70b5e7764d8
+09/24/26 09:11:16: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 09:11:16: SESSION_MGR: creating session with session uuid: '0ef24a08-7b62-43a6-9afa-852679dbddd1' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:11:16: KERNEL_SVC: creating session with uuid: '0ef24a08-7b62-43a6-9afa-852679dbddd1' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:11:16: GUIDANCE_SMGR: creating guidance session with uuid: '0ef24a08-7b62-43a6-9afa-852679dbddd1' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:11:16: SYSTEM_DIAGRAM: creating session with uuid: '0ef24a08-7b62-43a6-9afa-852679dbddd1' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:11:21: Dispatch Server: Accepted socket connection from client
+09/24/26 09:11:21: Starting Socket connection
+09/24/26 09:13:06: Dispatch Server: Accepted socket connection from client
+09/24/26 09:13:06: Starting Socket connection
+09/24/26 09:15:00: Dispatch Server: Accepted socket connection from client
+09/24/26 09:15:00: Starting Socket connection
+09/24/26 09:16:51: Dispatch Server: Accepted socket connection from client
+09/24/26 09:16:51: Starting Socket connection
+09/24/26 09:19:20: SESSION_MGR: closing session for UUID '0ef24a08-7b62-43a6-9afa-852679dbddd1' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:19:20: KERNEL_SVC: closing session for UUID '0ef24a08-7b62-43a6-9afa-852679dbddd1' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:19:20: GUIDANCE_SMGR: closing session for UUID '0ef24a08-7b62-43a6-9afa-852679dbddd1' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:19:20: SYSTEM_DIAGRAM: closing session for UUID '0ef24a08-7b62-43a6-9afa-852679dbddd1' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 09:19:20: STOP_SERVER received, server token: bb317784-04b4-407a-bfc4-b70b5e7764d8, passed token: bb317784-04b4-407a-bfc4-b70b5e7764d8
+09/24/26 09:19:20: Socket received request to stop server.
+09/24/26 09:19:20: Dispatch Server: do_await_stop
+09/24/26 09:19:20: SERVER: destructor for server bound to port 53737
+09/24/26 14:57:01: Running xcd server. This server was built by gradle.
+09/24/26 14:57:01: Server was asked to start on port: '64826'
+09/24/26 14:57:01: Server is using token UUID: 'a2a7f2db-63be-467c-9846-37df514733be'
+09/24/26 14:57:01: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 14:57:01: Attempting to start server on port '64826'
+09/24/26 14:57:01: Running Dispatch Server
+09/24/26 14:57:01: Version 2.2.0
+09/24/26 14:57:04: Dispatch Server: Accepted socket connection from client
+09/24/26 14:57:04: Starting Socket connection
+09/24/26 14:57:04: EXCHANGE_TOKEN received, server token: a2a7f2db-63be-467c-9846-37df514733be, passed token: a2a7f2db-63be-467c-9846-37df514733be
+09/24/26 14:57:04: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 14:57:04: SESSION_MGR: creating session with session uuid: '552802c8-09a8-46b6-bb04-3c3b9c30af74' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:57:04: KERNEL_SVC: creating session with uuid: '552802c8-09a8-46b6-bb04-3c3b9c30af74' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:57:04: GUIDANCE_SMGR: creating guidance session with uuid: '552802c8-09a8-46b6-bb04-3c3b9c30af74' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:57:04: SYSTEM_DIAGRAM: creating session with uuid: '552802c8-09a8-46b6-bb04-3c3b9c30af74' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:57:20: Running xcd server. This server was built by gradle.
+09/24/26 14:57:20: Server was asked to start on port: '64833'
+09/24/26 14:57:20: Server is using token UUID: '3f4746e8-077f-4f9b-ac20-df4e3094e685'
+09/24/26 14:57:20: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 14:57:20: Attempting to start server on port '64833'
+09/24/26 14:57:20: Running Dispatch Server
+09/24/26 14:57:20: Version 2.2.0
+09/24/26 14:57:22: Dispatch Server: Accepted socket connection from client
+09/24/26 14:57:22: Starting Socket connection
+09/24/26 14:57:22: EXCHANGE_TOKEN received, server token: 3f4746e8-077f-4f9b-ac20-df4e3094e685, passed token: 3f4746e8-077f-4f9b-ac20-df4e3094e685
+09/24/26 14:57:22: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 14:57:22: SESSION_MGR: creating session with session uuid: '131af526-cb14-4605-83f3-f31661ceec12' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:57:22: KERNEL_SVC: creating session with uuid: '131af526-cb14-4605-83f3-f31661ceec12' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:57:22: GUIDANCE_SMGR: creating guidance session with uuid: '131af526-cb14-4605-83f3-f31661ceec12' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:57:22: SYSTEM_DIAGRAM: creating session with uuid: '131af526-cb14-4605-83f3-f31661ceec12' and name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:57:27: Dispatch Server: Accepted socket connection from client
+09/24/26 14:57:27: Starting Socket connection
+09/24/26 14:58:55: SESSION_MGR: closing session for UUID '131af526-cb14-4605-83f3-f31661ceec12' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:58:55: KERNEL_SVC: closing session for UUID '131af526-cb14-4605-83f3-f31661ceec12' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:58:55: GUIDANCE_SMGR: closing session for UUID '131af526-cb14-4605-83f3-f31661ceec12' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:58:55: SYSTEM_DIAGRAM: closing session for UUID '131af526-cb14-4605-83f3-f31661ceec12' with name 'v++_compile_Canny_Filter_IP'
+09/24/26 14:58:55: STOP_SERVER received, server token: 3f4746e8-077f-4f9b-ac20-df4e3094e685, passed token: 3f4746e8-077f-4f9b-ac20-df4e3094e685
+09/24/26 14:58:55: Socket received request to stop server.
+09/24/26 14:58:55: Dispatch Server: do_await_stop
+09/24/26 14:58:55: SERVER: destructor for server bound to port 64833
+09/24/26 14:59:05: Running xcd server. This server was built by gradle.
+09/24/26 14:59:05: Server was asked to start on port: '64866'
+09/24/26 14:59:05: Server is using token UUID: '5f02d6c8-033e-4bd2-8427-775b75f6e380'
+09/24/26 14:59:05: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/24/26 14:59:05: Attempting to start server on port '64866'
+09/24/26 14:59:05: Running Dispatch Server
+09/24/26 14:59:05: Version 2.2.0
+09/24/26 14:59:07: Dispatch Server: Accepted socket connection from client
+09/24/26 14:59:07: Starting Socket connection
+09/24/26 14:59:07: EXCHANGE_TOKEN received, server token: 5f02d6c8-033e-4bd2-8427-775b75f6e380, passed token: 5f02d6c8-033e-4bd2-8427-775b75f6e380
+09/24/26 14:59:07: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/24/26 14:59:07: SESSION_MGR: creating session with session uuid: '3b93d6f3-01ff-4790-8221-304c084aa4ac' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:59:07: KERNEL_SVC: creating session with uuid: '3b93d6f3-01ff-4790-8221-304c084aa4ac' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:59:07: GUIDANCE_SMGR: creating guidance session with uuid: '3b93d6f3-01ff-4790-8221-304c084aa4ac' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:59:07: SYSTEM_DIAGRAM: creating session with uuid: '3b93d6f3-01ff-4790-8221-304c084aa4ac' and name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 14:59:13: Dispatch Server: Accepted socket connection from client
+09/24/26 14:59:13: Starting Socket connection
+09/24/26 15:00:02: Dispatch Server: Accepted socket connection from client
+09/24/26 15:00:02: Starting Socket connection
+09/24/26 15:01:44: Dispatch Server: Accepted socket connection from client
+09/24/26 15:01:44: Starting Socket connection
+09/24/26 15:03:27: Dispatch Server: Accepted socket connection from client
+09/24/26 15:03:27: Starting Socket connection
+09/24/26 15:05:47: SESSION_MGR: closing session for UUID '3b93d6f3-01ff-4790-8221-304c084aa4ac' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 15:05:47: KERNEL_SVC: closing session for UUID '3b93d6f3-01ff-4790-8221-304c084aa4ac' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 15:05:47: GUIDANCE_SMGR: closing session for UUID '3b93d6f3-01ff-4790-8221-304c084aa4ac' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 15:05:47: SYSTEM_DIAGRAM: closing session for UUID '3b93d6f3-01ff-4790-8221-304c084aa4ac' with name 'vitis-run_compile_Canny_Filter_IP'
+09/24/26 15:05:47: STOP_SERVER received, server token: 5f02d6c8-033e-4bd2-8427-775b75f6e380, passed token: 5f02d6c8-033e-4bd2-8427-775b75f6e380
+09/24/26 15:05:47: Socket received request to stop server.
+09/24/26 15:05:47: Dispatch Server: do_await_stop
+09/24/26 15:05:47: SERVER: destructor for server bound to port 64866

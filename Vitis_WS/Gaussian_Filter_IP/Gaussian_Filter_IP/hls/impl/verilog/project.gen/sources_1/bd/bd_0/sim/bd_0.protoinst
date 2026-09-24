@@ -1,0 +1,65 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/Input_r": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "Input_r_TDATA[31:0]"},
+						"TDEST": { "actual": "Input_r_TDEST[5:0]"},
+						"TID": { "actual": "Input_r_TID[4:0]"},
+						"TKEEP": { "actual": "Input_r_TKEEP[3:0]"},
+						"TLAST": { "actual": "Input_r_TLAST[0:0]"},
+						"TREADY": { "actual": "Input_r_TREADY"},
+						"TSTRB": { "actual": "Input_r_TSTRB[3:0]"},
+						"TUSER": { "actual": "Input_r_TUSER[2:0]"},
+						"TVALID": { "actual": "Input_r_TVALID"}
+					}
+				},
+				"/hls_inst/Output_r": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "Output_r_TDATA[31:0]"},
+						"TDEST": { "actual": "Output_r_TDEST[5:0]"},
+						"TID": { "actual": "Output_r_TID[4:0]"},
+						"TKEEP": { "actual": "Output_r_TKEEP[3:0]"},
+						"TLAST": { "actual": "Output_r_TLAST[0:0]"},
+						"TREADY": { "actual": "Output_r_TREADY"},
+						"TSTRB": { "actual": "Output_r_TSTRB[3:0]"},
+						"TUSER": { "actual": "Output_r_TUSER[2:0]"},
+						"TVALID": { "actual": "Output_r_TVALID"}
+					}
+				},
+				"/hls_inst/s_axi_control": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_control_ARADDR[4:0]"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_control_ARREADY"},
+						"ARVALID": { "actual": "s_axi_control_ARVALID"},
+						"AWADDR": { "actual": "s_axi_control_AWADDR[4:0]"},
+						"AWREADY": { "actual": "s_axi_control_AWREADY"},
+						"AWVALID": { "actual": "s_axi_control_AWVALID"},
+						"BREADY": { "actual": "s_axi_control_BREADY"},
+						"BRESP": { "actual": "s_axi_control_BRESP[1:0]"},
+						"BVALID": { "actual": "s_axi_control_BVALID"},
+						"RDATA": { "actual": "s_axi_control_RDATA[31:0]"},
+						"RREADY": { "actual": "s_axi_control_RREADY"},
+						"RRESP": { "actual": "s_axi_control_RRESP[1:0]"},
+						"RVALID": { "actual": "s_axi_control_RVALID"},
+						"WDATA": { "actual": "s_axi_control_WDATA[31:0]"},
+						"WREADY": { "actual": "s_axi_control_WREADY"},
+						"WSTRB": { "actual": "s_axi_control_WSTRB[3:0]"},
+						"WVALID": { "actual": "s_axi_control_WVALID"}
+					}
+				}
+			}
+		}
+	}
+}

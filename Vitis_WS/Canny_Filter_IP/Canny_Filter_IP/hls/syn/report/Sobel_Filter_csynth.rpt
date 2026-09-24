@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'Sobel_Filter'
+================================================================
+* Date:           Thu Sep 24 14:58:47 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Canny_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.396 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                                                 |                                                       |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                             Instance                            |                         Module                        |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68  |Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2  |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    142|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        8|    4|    1290|   1745|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     79|    -|
+|Register         |        -|    -|     163|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        8|    4|    1453|   1966|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    1|       1|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |                             Instance                            |                         Module                        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68  |Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2  |        8|   0|  1149|  1697|    0|
+    |mul_31ns_31ns_62_2_1_U44                                         |mul_31ns_31ns_62_2_1                                   |        0|   4|   141|    48|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                            |                                                       |        8|   4|  1290|  1745|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+----+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+----+---+----+------------+------------+
+    |empty_63_fu_91_p2   |      icmp|   0|  0|  39|          32|           1|
+    |empty_64_fu_105_p2  |      icmp|   0|  0|  39|          32|           1|
+    |ap_block_state1     |        or|   0|  0|   2|           1|           1|
+    |smax1_fu_111_p3     |    select|   0|  0|  31|           1|          31|
+    |smax_fu_97_p3       |    select|   0|  0|  31|           1|          31|
+    +--------------------+----------+----+---+----+------------+------------+
+    |Total               |          |   0|  0| 142|          67|          65|
+    +--------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+----+-----------+-----+-----------+
+    |      Name     | LUT| Input Size| Bits| Total Bits|
+    +---------------+----+-----------+-----+-----------+
+    |Cols_blk_n     |   9|          2|    1|          2|
+    |Cols_c3_blk_n  |   9|          2|    1|          2|
+    |Rows_blk_n     |   9|          2|    1|          2|
+    |Rows_c1_blk_n  |   9|          2|    1|          2|
+    |ap_NS_fsm      |  25|          5|    1|          5|
+    |ap_done        |   9|          2|    1|          2|
+    |real_start     |   9|          2|    1|          2|
+    +---------------+----+-----------+-----+-----------+
+    |Total          |  79|         17|    7|         17|
+    +---------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                     | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Cols_2_reg_127                                                                |  32|   0|   32|          0|
+    |ap_CS_fsm                                                                     |   4|   0|    4|          0|
+    |ap_done_reg                                                                   |   1|   0|    1|          0|
+    |bound_reg_152                                                                 |  62|   0|   62|          0|
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_ap_start_reg  |   1|   0|    1|          0|
+    |smax1_reg_137                                                                 |  31|   0|   31|          0|
+    |smax_reg_132                                                                  |  31|   0|   31|          0|
+    |start_once_reg                                                                |   1|   0|    1|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                         | 163|   0|  163|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_full_n                         |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_continue                          |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_out                            |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_write                          |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|Gaussian_to_Sobel_dout               |   in|   32|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_empty_n            |   in|    1|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_read               |  out|    1|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_num_data_valid     |   in|    4|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_fifo_cap           |   in|    4|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Sobel_to_Suppression_din             |  out|   32|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_full_n          |   in|    1|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_write           |  out|    1|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_num_data_valid  |   in|    4|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_fifo_cap        |   in|    4|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Rows_dout                            |   in|   32|     ap_fifo|                  Rows|       pointer|
+|Rows_empty_n                         |   in|    1|     ap_fifo|                  Rows|       pointer|
+|Rows_read                            |  out|    1|     ap_fifo|                  Rows|       pointer|
+|Rows_num_data_valid                  |   in|    3|     ap_fifo|                  Rows|       pointer|
+|Rows_fifo_cap                        |   in|    3|     ap_fifo|                  Rows|       pointer|
+|Cols_dout                            |   in|   32|     ap_fifo|                  Cols|       pointer|
+|Cols_empty_n                         |   in|    1|     ap_fifo|                  Cols|       pointer|
+|Cols_read                            |  out|    1|     ap_fifo|                  Cols|       pointer|
+|Cols_num_data_valid                  |   in|    3|     ap_fifo|                  Cols|       pointer|
+|Cols_fifo_cap                        |   in|    3|     ap_fifo|                  Cols|       pointer|
+|Rows_c1_din                          |  out|   32|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_full_n                       |   in|    1|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_write                        |  out|    1|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_num_data_valid               |   in|    3|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_fifo_cap                     |   in|    3|     ap_fifo|               Rows_c1|       pointer|
+|Cols_c3_din                          |  out|   32|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_full_n                       |   in|    1|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_write                        |  out|    1|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_num_data_valid               |   in|    3|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_fifo_cap                     |   in|    3|     ap_fifo|               Cols_c3|       pointer|
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+

@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Canny_Filter.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_Canny_Filter_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter//AESL_inst_Canny_Filter_activity">
+         <obj_property name="label">AESL_inst_Canny_Filter_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_Canny_Filter_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_Canny_Filter_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter//AESL_inst_Canny_Filter_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter//AESL_inst_Canny_Filter_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter//AESL_inst_Canny_Filter_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/entry_proc_U0_activity">
+            <obj_property name="label">entry_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_Filter_U0_activity">
+            <obj_property name="label">Gaussian_Filter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Gaussian_Filter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Gaussian_Filter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_Filter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_Filter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_Filter_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity">
+               <obj_property name="label">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_Filter_U0_activity">
+            <obj_property name="label">Sobel_Filter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Sobel_Filter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Sobel_Filter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_Filter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_Filter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_Filter_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity">
+               <obj_property name="label">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_Filter_U0_activity">
+            <obj_property name="label">Suppression_Filter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Suppression_Filter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Suppression_Filter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_Filter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_Filter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_Filter_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity">
+               <obj_property name="label">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Hysteresis_Filter_U0_activity">
+            <obj_property name="label">Hysteresis_Filter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Hysteresis_Filter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Hysteresis_Filter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Hysteresis_Filter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Hysteresis_Filter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Hysteresis_Filter_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity">
+               <obj_property name="label">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter//AESL_inst_Canny_Filter_activity">
+      <obj_property name="ElementShortName">AESL_inst_Canny_Filter_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_Canny_Filter_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_Canny_Filter_group">
+      <obj_property name="label">AESL_inst_Canny_Filter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/entry_proc_U0_activity">
+         <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_Filter_U0_activity">
+         <obj_property name="ElementShortName">Gaussian_Filter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Gaussian_Filter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_Filter_U0_activity">
+         <obj_property name="ElementShortName">Sobel_Filter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Sobel_Filter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_Filter_U0_activity">
+         <obj_property name="ElementShortName">Suppression_Filter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Suppression_Filter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Hysteresis_Filter_U0_activity">
+         <obj_property name="ElementShortName">Hysteresis_Filter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Hysteresis_Filter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_Canny_Filter_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="entry_proc_U0_group">
+         <obj_property name="label">entry_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="entry_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="High_Threshold_c_group">
+               <obj_property name="label">High_Threshold_c(High_Threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/High_Threshold_c_blk_n">
+                  <obj_property name="ElementShortName">High_Threshold_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/High_Threshold_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/High_Threshold_c_full_n">
+                  <obj_property name="ElementShortName">High_Threshold_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/High_Threshold_c_write">
+                  <obj_property name="ElementShortName">High_Threshold_c_write</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Low_Threshold_c_group">
+               <obj_property name="label">Low_Threshold_c(Low_Threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/Low_Threshold_c_blk_n">
+                  <obj_property name="ElementShortName">Low_Threshold_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/Low_Threshold_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/Low_Threshold_c_full_n">
+                  <obj_property name="ElementShortName">Low_Threshold_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/entry_proc_U0/Low_Threshold_c_write">
+                  <obj_property name="ElementShortName">Low_Threshold_c_write</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Gaussian_Filter_U0_group">
+         <obj_property name="label">Gaussian_Filter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity">
+            <obj_property name="ElementShortName">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Gaussian_Filter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Gaussian_Filter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Gaussian_Filter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Gaussian_to_Sobel_group">
+               <obj_property name="label">Gaussian_to_Sobel(Gaussian_to_Sobel_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_to_Sobel_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_to_Sobel_full_n">
+                  <obj_property name="ElementShortName">Gaussian_to_Sobel_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Gaussian_to_Sobel_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Gaussian_to_Sobel_write">
+                  <obj_property name="ElementShortName">Gaussian_to_Sobel_write</obj_property>
+                  <obj_property name="ObjectShortName">Gaussian_to_Sobel_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_c2_group">
+               <obj_property name="label">Rows_c2(Rows_c2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Rows_c2_blk_n">
+                  <obj_property name="ElementShortName">Rows_c2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Rows_c2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Rows_c2_full_n">
+                  <obj_property name="ElementShortName">Rows_c2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Rows_c2_write">
+                  <obj_property name="ElementShortName">Rows_c2_write</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c2_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_c4_group">
+               <obj_property name="label">Cols_c4(Cols_c4_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Cols_c4_blk_n">
+                  <obj_property name="ElementShortName">Cols_c4_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c4_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Cols_c4_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Cols_c4_full_n">
+                  <obj_property name="ElementShortName">Cols_c4_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c4_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/Cols_c4_write">
+                  <obj_property name="ElementShortName">Cols_c4_write</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c4_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_group">
+            <obj_property name="label">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Sobel_Filter_U0_group">
+         <obj_property name="label">Sobel_Filter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity">
+            <obj_property name="ElementShortName">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Sobel_Filter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Gaussian_to_Sobel_group">
+               <obj_property name="label">Gaussian_to_Sobel(Gaussian_to_Sobel_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Gaussian_to_Sobel_dout">
+                  <obj_property name="ElementShortName">Gaussian_to_Sobel_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Gaussian_to_Sobel_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Gaussian_to_Sobel_empty_n">
+                  <obj_property name="ElementShortName">Gaussian_to_Sobel_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Gaussian_to_Sobel_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Gaussian_to_Sobel_read">
+                  <obj_property name="ElementShortName">Gaussian_to_Sobel_read</obj_property>
+                  <obj_property name="ObjectShortName">Gaussian_to_Sobel_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_group">
+               <obj_property name="label">Rows(Rows_c2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_blk_n">
+                  <obj_property name="ElementShortName">Rows_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_dout">
+                  <obj_property name="ElementShortName">Rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_empty_n">
+                  <obj_property name="ElementShortName">Rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_read">
+                  <obj_property name="ElementShortName">Rows_read</obj_property>
+                  <obj_property name="ObjectShortName">Rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_group">
+               <obj_property name="label">Cols(Cols_c4_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_blk_n">
+                  <obj_property name="ElementShortName">Cols_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_dout">
+                  <obj_property name="ElementShortName">Cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_empty_n">
+                  <obj_property name="ElementShortName">Cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_read">
+                  <obj_property name="ElementShortName">Cols_read</obj_property>
+                  <obj_property name="ObjectShortName">Cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Sobel_Filter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Sobel_Filter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Sobel_to_Suppression_group">
+               <obj_property name="label">Sobel_to_Suppression(Sobel_to_Suppression_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_to_Suppression_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_to_Suppression_full_n">
+                  <obj_property name="ElementShortName">Sobel_to_Suppression_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Sobel_to_Suppression_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Sobel_to_Suppression_write">
+                  <obj_property name="ElementShortName">Sobel_to_Suppression_write</obj_property>
+                  <obj_property name="ObjectShortName">Sobel_to_Suppression_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_c1_group">
+               <obj_property name="label">Rows_c1(Rows_c1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_c1_blk_n">
+                  <obj_property name="ElementShortName">Rows_c1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_c1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_c1_full_n">
+                  <obj_property name="ElementShortName">Rows_c1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Rows_c1_write">
+                  <obj_property name="ElementShortName">Rows_c1_write</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_c3_group">
+               <obj_property name="label">Cols_c3(Cols_c3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_c3_blk_n">
+                  <obj_property name="ElementShortName">Cols_c3_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c3_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_c3_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_c3_full_n">
+                  <obj_property name="ElementShortName">Cols_c3_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c3_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/Cols_c3_write">
+                  <obj_property name="ElementShortName">Cols_c3_write</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c3_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_group">
+            <obj_property name="label">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Suppression_Filter_U0_group">
+         <obj_property name="label">Suppression_Filter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity">
+            <obj_property name="ElementShortName">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Suppression_Filter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Sobel_to_Suppression_group">
+               <obj_property name="label">Sobel_to_Suppression(Sobel_to_Suppression_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Sobel_to_Suppression_dout">
+                  <obj_property name="ElementShortName">Sobel_to_Suppression_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Sobel_to_Suppression_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Sobel_to_Suppression_empty_n">
+                  <obj_property name="ElementShortName">Sobel_to_Suppression_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Sobel_to_Suppression_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Sobel_to_Suppression_read">
+                  <obj_property name="ElementShortName">Sobel_to_Suppression_read</obj_property>
+                  <obj_property name="ObjectShortName">Sobel_to_Suppression_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_group">
+               <obj_property name="label">Rows(Rows_c1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_blk_n">
+                  <obj_property name="ElementShortName">Rows_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_dout">
+                  <obj_property name="ElementShortName">Rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_empty_n">
+                  <obj_property name="ElementShortName">Rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_read">
+                  <obj_property name="ElementShortName">Rows_read</obj_property>
+                  <obj_property name="ObjectShortName">Rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_group">
+               <obj_property name="label">Cols(Cols_c3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_blk_n">
+                  <obj_property name="ElementShortName">Cols_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_dout">
+                  <obj_property name="ElementShortName">Cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_empty_n">
+                  <obj_property name="ElementShortName">Cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_read">
+                  <obj_property name="ElementShortName">Cols_read</obj_property>
+                  <obj_property name="ObjectShortName">Cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Suppression_Filter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Suppression_Filter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Suppression_to_Hysteresis_group">
+               <obj_property name="label">Suppression_to_Hysteresis(Suppression_to_Hysteresis_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_to_Hysteresis_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_to_Hysteresis_full_n">
+                  <obj_property name="ElementShortName">Suppression_to_Hysteresis_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Suppression_to_Hysteresis_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Suppression_to_Hysteresis_write">
+                  <obj_property name="ElementShortName">Suppression_to_Hysteresis_write</obj_property>
+                  <obj_property name="ObjectShortName">Suppression_to_Hysteresis_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_c_group">
+               <obj_property name="label">Rows_c(Rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_c_blk_n">
+                  <obj_property name="ElementShortName">Rows_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_c_full_n">
+                  <obj_property name="ElementShortName">Rows_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Rows_c_write">
+                  <obj_property name="ElementShortName">Rows_c_write</obj_property>
+                  <obj_property name="ObjectShortName">Rows_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_c_group">
+               <obj_property name="label">Cols_c(Cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_c_blk_n">
+                  <obj_property name="ElementShortName">Cols_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_c_full_n">
+                  <obj_property name="ElementShortName">Cols_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/Cols_c_write">
+                  <obj_property name="ElementShortName">Cols_c_write</obj_property>
+                  <obj_property name="ObjectShortName">Cols_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_group">
+            <obj_property name="label">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Hysteresis_Filter_U0_group">
+         <obj_property name="label">Hysteresis_Filter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity">
+            <obj_property name="ElementShortName">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Hysteresis_Filter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Suppression_to_Hysteresis_group">
+               <obj_property name="label">Suppression_to_Hysteresis(Suppression_to_Hysteresis_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Suppression_to_Hysteresis_dout">
+                  <obj_property name="ElementShortName">Suppression_to_Hysteresis_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Suppression_to_Hysteresis_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Suppression_to_Hysteresis_empty_n">
+                  <obj_property name="ElementShortName">Suppression_to_Hysteresis_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Suppression_to_Hysteresis_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Suppression_to_Hysteresis_read">
+                  <obj_property name="ElementShortName">Suppression_to_Hysteresis_read</obj_property>
+                  <obj_property name="ObjectShortName">Suppression_to_Hysteresis_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Rows_group">
+               <obj_property name="label">Rows(Rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Rows_blk_n">
+                  <obj_property name="ElementShortName">Rows_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Rows_dout">
+                  <obj_property name="ElementShortName">Rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Rows_empty_n">
+                  <obj_property name="ElementShortName">Rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Rows_read">
+                  <obj_property name="ElementShortName">Rows_read</obj_property>
+                  <obj_property name="ObjectShortName">Rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Cols_group">
+               <obj_property name="label">Cols(Cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Cols_blk_n">
+                  <obj_property name="ElementShortName">Cols_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Cols_dout">
+                  <obj_property name="ElementShortName">Cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Cols_empty_n">
+                  <obj_property name="ElementShortName">Cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Cols_read">
+                  <obj_property name="ElementShortName">Cols_read</obj_property>
+                  <obj_property name="ObjectShortName">Cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="High_Threshold_group">
+               <obj_property name="label">High_Threshold(High_Threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/High_Threshold_blk_n">
+                  <obj_property name="ElementShortName">High_Threshold_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/High_Threshold_dout">
+                  <obj_property name="ElementShortName">High_Threshold_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/High_Threshold_empty_n">
+                  <obj_property name="ElementShortName">High_Threshold_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/High_Threshold_read">
+                  <obj_property name="ElementShortName">High_Threshold_read</obj_property>
+                  <obj_property name="ObjectShortName">High_Threshold_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Low_Threshold_group">
+               <obj_property name="label">Low_Threshold(Low_Threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Low_Threshold_blk_n">
+                  <obj_property name="ElementShortName">Low_Threshold_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Low_Threshold_dout">
+                  <obj_property name="ElementShortName">Low_Threshold_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Low_Threshold_empty_n">
+                  <obj_property name="ElementShortName">Low_Threshold_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/Low_Threshold_read">
+                  <obj_property name="ElementShortName">Low_Threshold_read</obj_property>
+                  <obj_property name="ObjectShortName">Low_Threshold_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Hysteresis_Filter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Hysteresis_Filter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_group">
+            <obj_property name="label">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_Filter_top/AESL_inst_Canny_Filter/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

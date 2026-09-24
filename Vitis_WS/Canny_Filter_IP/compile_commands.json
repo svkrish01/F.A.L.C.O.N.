@@ -1,0 +1,67 @@
+[
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Canny_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Suppression_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Suppression_Filter.cpp"
+  },
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Canny_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Gaussian_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Gaussian_Filter.cpp"
+  },
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Canny_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Sobel_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Sobel_Filter.cpp"
+  },
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Canny_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter.cpp"
+  },
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Canny_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Hysteresis_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Hysteresis_Filter.cpp"
+  }
+]

@@ -1,0 +1,344 @@
+
+
+================================================================
+== Synthesis Summary Report of 'Canny_Filter'
+================================================================
++ General Information: 
+    * Date:           Thu Sep 24 14:58:50 2026
+    * Version:        2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:        Canny_Filter_IP
+    * Solution:       hls
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
+* Performance & Resource Estimates: 
++-----------------------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-------+-------+---------+---------+-----------+------------+-----+
+|                             Modules                             |  Issue |               | Iteration|         | Trip |          |     Latency     |       |         |         |           |            |     |
+|                             & Loops                             |  Type  | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|  (ns) | Slack |  BRAM   |   DSP   |     FF    |     LUT    | URAM|
++-----------------------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-------+-------+---------+---------+-----------+------------+-----+
+|+ Canny_Filter*                                                  |  Timing|              -|         -|        -|     -|  dataflow|        -|      -|  -0.10|  27 (9%)|  16 (7%)|  5899 (5%)|  6723 (12%)|    -|
+| + entry_proc                                                    |       -|              -|         -|        0|     -|        no|        0|  0.000|   3.69|        -|        -|    3 (~0%)|    38 (~0%)|    -|
+| + Gaussian_Filter                                               |  Timing|              -|         -|        -|     -|        no|        -|      -|  -0.10|   8 (2%)|   4 (1%)|  1251 (1%)|   1154 (2%)|    -|
+|  + Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2     |  Timing|              -|         -|        -|     -|       yes|        -|      -|  -0.10|   8 (2%)|        -|  946 (~0%)|    888 (1%)|    -|
+|   o VITIS_LOOP_13_1_VITIS_LOOP_15_2                             |       -|              -|         7|        1|     -|       yes|        -|      -|   7.30|        -|        -|          -|           -|    -|
+| + Sobel_Filter                                                  |  Timing|              -|         -|        -|     -|        no|        -|      -|  -0.10|   8 (2%)|   4 (1%)|  1453 (1%)|   1966 (3%)|    -|
+|  + Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2        |  Timing|              -|         -|        -|     -|       yes|        -|      -|  -0.10|   8 (2%)|        -|  1149 (1%)|   1697 (3%)|    -|
+|   o VITIS_LOOP_14_1_VITIS_LOOP_16_2                             |       -|              -|         7|        1|     -|       yes|        -|      -|   7.30|        -|        -|          -|           -|    -|
+| + Suppression_Filter                                            |  Timing|              -|         -|        -|     -|        no|        -|      -|  -0.10|   3 (1%)|   4 (1%)|  786 (~0%)|    905 (1%)|    -|
+|  + Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2  |  Timing|              -|         -|        -|     -|       yes|        -|      -|  -0.10|   3 (1%)|        -|  483 (~0%)|    645 (1%)|    -|
+|   o VITIS_LOOP_11_1_VITIS_LOOP_13_2                             |       -|              -|         4|        1|     -|       yes|        -|      -|   7.30|        -|        -|          -|           -|    -|
+| + Hysteresis_Filter                                             |  Timing|              -|         -|        -|     -|        no|        -|      -|  -0.10|   8 (2%)|   4 (1%)|  1127 (1%)|   1591 (2%)|    -|
+|  + Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2   |  Timing|              -|         -|        -|     -|       yes|        -|      -|  -0.10|   8 (2%)|        -|  608 (~0%)|   1182 (2%)|    -|
+|   o VITIS_LOOP_11_1_VITIS_LOOP_13_2                             |       -|              -|         4|        1|     -|       yes|        -|      -|   7.30|        -|        -|          -|           -|    -|
++-----------------------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-------+-------+---------+---------+-----------+------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register       | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL           | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER           | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER         | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR         | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | Rows           | 0x10   | 32    | W      | Data signal of Rows              |                                                                      |
+| s_axi_control | Cols           | 0x18   | 32    | W      | Data signal of Cols              |                                                                      |
+| s_axi_control | High_Threshold | 0x20   | 32    | W      | Data signal of High_Threshold    |                                                                      |
+| s_axi_control | Low_Threshold  | 0x28   | 32    | W      | Data signal of Low_Threshold     |                                                                      |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface     | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Input_Stream  | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 3     | 1      |
+| Output_Stream | out       | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 3     | 1      |
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+-----------------------------------------------------------------------------+
+| Argument       | Direction | Datatype                                                                    |
++----------------+-----------+-----------------------------------------------------------------------------+
+| Input_Stream   | in        | stream<hls::axis<ap_int<32>, 3UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| Output_Stream  | out       | stream<hls::axis<ap_int<32>, 3UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| Rows           | in        | int                                                                         |
+| Cols           | in        | int                                                                         |
+| High_Threshold | in        | int                                                                         |
+| Low_Threshold  | in        | int                                                                         |
++----------------+-----------+-----------------------------------------------------------------------------+
+
+* SW-to-HW Mapping
++----------------+---------------+-----------+------------------------------------------+
+| Argument       | HW Interface  | HW Type   | HW Info                                  |
++----------------+---------------+-----------+------------------------------------------+
+| Input_Stream   | Input_Stream  | interface |                                          |
+| Output_Stream  | Output_Stream | interface |                                          |
+| Rows           | s_axi_control | register  | name=Rows offset=0x10 range=32           |
+| Cols           | s_axi_control | register  | name=Cols offset=0x18 range=32           |
+| High_Threshold | s_axi_control | register  | name=High_Threshold offset=0x20 range=32 |
+| Low_Threshold  | s_axi_control | register  | name=Low_Threshold offset=0x28 range=32  |
++----------------+---------------+-----------+------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------+-----+--------+-----------------+-----------+------------------------+---------+
+| Name                                                            | DSP | Pragma | Variable        | Op        | Impl                   | Latency |
++-----------------------------------------------------------------+-----+--------+-----------------+-----------+------------------------+---------+
+| + Canny_Filter                                                  | 16  |        |                 |           |                        |         |
+|  + Gaussian_Filter                                              | 4   |        |                 |           |                        |         |
+|    empty_81_fu_124_p2                                           |     |        | empty_81        | setgt     | auto                   | 0       |
+|    smax_fu_130_p3                                               |     |        | smax            | select    | auto_sel               | 0       |
+|    empty_82_fu_138_p2                                           |     |        | empty_82        | setgt     | auto                   | 0       |
+|    smax1_fu_144_p3                                              |     |        | smax1           | select    | auto_sel               | 0       |
+|    mul_31ns_31ns_62_2_1_U16                                     | 4   |        | bound           | mul       | auto                   | 1       |
+|   + Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2    | 0   |        |                 |           |                        |         |
+|     icmp_ln13_fu_231_p2                                         |     |        | icmp_ln13       | seteq     | auto                   | 0       |
+|     icmp_ln15_fu_254_p2                                         |     |        | icmp_ln15       | setlt     | auto                   | 0       |
+|     add_ln13_fu_236_p2                                          |     |        | add_ln13        | add       | fabric                 | 0       |
+|     select_ln13_fu_259_p3                                       |     |        | select_ln13     | select    | auto_sel               | 0       |
+|     addr_cmp25_fu_281_p2                                        |     |        | addr_cmp25      | seteq     | auto                   | 0       |
+|     Top_Pixel_fu_356_p3                                         |     |        | Top_Pixel       | select    | auto_sel               | 0       |
+|     addr_cmp_fu_290_p2                                          |     |        | addr_cmp        | seteq     | auto                   | 0       |
+|     Mid_Pixel_fu_323_p3                                         |     |        | Mid_Pixel       | select    | auto_sel               | 0       |
+|     tmp1_fu_388_p2                                              |     |        | tmp1            | add       | fabric                 | 0       |
+|     add_ln43_fu_399_p2                                          |     |        | add_ln43        | add       | fabric                 | 0       |
+|     add_ln15_fu_306_p2                                          |     |        | add_ln15        | add       | fabric                 | 0       |
+|  + Sobel_Filter                                                 | 4   |        |                 |           |                        |         |
+|    empty_63_fu_91_p2                                            |     |        | empty_63        | setgt     | auto                   | 0       |
+|    smax_fu_97_p3                                                |     |        | smax            | select    | auto_sel               | 0       |
+|    empty_64_fu_105_p2                                           |     |        | empty_64        | setgt     | auto                   | 0       |
+|    smax1_fu_111_p3                                              |     |        | smax1           | select    | auto_sel               | 0       |
+|    mul_31ns_31ns_62_2_1_U44                                     | 4   |        | bound           | mul       | auto                   | 1       |
+|   + Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2       | 0   |        |                 |           |                        |         |
+|     icmp_ln14_fu_243_p2                                         |     |        | icmp_ln14       | seteq     | auto                   | 0       |
+|     icmp_ln16_fu_266_p2                                         |     |        | icmp_ln16       | setlt     | auto                   | 0       |
+|     add_ln14_fu_248_p2                                          |     |        | add_ln14        | add       | fabric                 | 0       |
+|     select_ln14_fu_271_p3                                       |     |        | select_ln14     | select    | auto_sel               | 0       |
+|     addr_cmp31_fu_288_p2                                        |     |        | addr_cmp31      | seteq     | auto                   | 0       |
+|     Top_Pixel_fu_353_p3                                         |     |        | Top_Pixel       | select    | auto_sel               | 0       |
+|     addr_cmp_fu_297_p2                                          |     |        | addr_cmp        | seteq     | auto                   | 0       |
+|     Mid_Pixel_fu_363_p3                                         |     |        | Mid_Pixel       | select    | auto_sel               | 0       |
+|     tmp7_fu_384_p2                                              |     |        | tmp7            | sub       | fabric                 | 0       |
+|     tmp35_fu_396_p2                                             |     |        | tmp35           | sub       | fabric                 | 0       |
+|     sub_ln50_fu_490_p2                                          |     |        | sub_ln50        | sub       | fabric                 | 0       |
+|     Gx_Value_Abs_fu_504_p3                                      |     |        | Gx_Value_Abs    | select    | auto_sel               | 0       |
+|     sub_ln51_fu_509_p2                                          |     |        | sub_ln51        | sub       | fabric                 | 0       |
+|     Gy_Value_Abs_fu_514_p3                                      |     |        | Gy_Value_Abs    | select    | auto_sel               | 0       |
+|     Magnitude_fu_556_p2                                         |     |        | Magnitude       | add       | fabric                 | 0       |
+|     icmp_ln54_fu_570_p2                                         |     |        | icmp_ln54       | setgt     | auto                   | 0       |
+|     Magnitude_1_fu_656_p3                                       |     |        | Magnitude_1     | select    | auto_sel               | 0       |
+|     sub_ln56_fu_532_p2                                          |     |        | sub_ln56        | sub       | fabric                 | 0       |
+|     icmp_ln60_fu_636_p2                                         |     |        | icmp_ln60       | setlt     | auto                   | 0       |
+|     icmp_ln61_fu_641_p2                                         |     |        | icmp_ln61       | setgt     | auto                   | 0       |
+|     icmp_ln62_fu_646_p2                                         |     |        | icmp_ln62       | setgt     | auto                   | 0       |
+|     icmp_ln62_2_fu_651_p2                                       |     |        | icmp_ln62_2     | setgt     | auto                   | 0       |
+|     and_ln62_fu_662_p2                                          |     |        | and_ln62        | and       | auto                   | 0       |
+|     and_ln62_1_fu_666_p2                                        |     |        | and_ln62_1      | and       | auto                   | 0       |
+|     or_ln62_fu_678_p2                                           |     |        | or_ln62         | or        | auto                   | 0       |
+|     Direction_fu_709_p6                                         |     |        | select_ln62     | select    | auto_sel               | 0       |
+|     xor_ln60_fu_692_p2                                          |     |        | xor_ln60        | xor       | auto                   | 0       |
+|     and_ln61_fu_697_p2                                          |     |        | and_ln61        | and       | auto                   | 0       |
+|     sparsemux_7_2_16_1_1_U37                                    |     |        | Direction       | sparsemux | onehotencoding_realdef | 0       |
+|     or_ln67_fu_733_p2                                           |     |        | or_ln67         | or        | auto                   | 0       |
+|     add_ln16_fu_313_p2                                          |     |        | add_ln16        | add       | fabric                 | 0       |
+|  + Suppression_Filter                                           | 4   |        |                 |           |                        |         |
+|    empty_55_fu_91_p2                                            |     |        | empty_55        | setgt     | auto                   | 0       |
+|    smax_fu_97_p3                                                |     |        | smax            | select    | auto_sel               | 0       |
+|    empty_56_fu_105_p2                                           |     |        | empty_56        | setgt     | auto                   | 0       |
+|    smax1_fu_111_p3                                              |     |        | smax1           | select    | auto_sel               | 0       |
+|    mul_31ns_31ns_62_2_1_U57                                     | 4   |        | bound           | mul       | auto                   | 1       |
+|   + Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 | 0   |        |                 |           |                        |         |
+|     icmp_ln11_fu_232_p2                                         |     |        | icmp_ln11       | seteq     | auto                   | 0       |
+|     icmp_ln13_fu_255_p2                                         |     |        | icmp_ln13       | setlt     | auto                   | 0       |
+|     add_ln11_fu_237_p2                                          |     |        | add_ln11        | add       | fabric                 | 0       |
+|     select_ln11_fu_260_p3                                       |     |        | select_ln11     | select    | auto_sel               | 0       |
+|     addr_cmp26_fu_286_p2                                        |     |        | addr_cmp26      | seteq     | auto                   | 0       |
+|     Top_Pixel_fu_347_p3                                         |     |        | Top_Pixel       | select    | auto_sel               | 0       |
+|     addr_cmp_fu_295_p2                                          |     |        | addr_cmp        | seteq     | auto                   | 0       |
+|     Mid_Pixel_fu_357_p3                                         |     |        | Mid_Pixel       | select    | auto_sel               | 0       |
+|     icmp_ln62_fu_427_p2                                         |     |        | icmp_ln62       | setlt     | auto                   | 0       |
+|     xor_ln62_fu_432_p2                                          |     |        | xor_ln62        | xor       | auto                   | 0       |
+|     icmp_ln62_1_fu_438_p2                                       |     |        | icmp_ln62_1     | setlt     | auto                   | 0       |
+|     xor_ln62_1_fu_443_p2                                        |     |        | xor_ln62_1      | xor       | auto                   | 0       |
+|     and_ln62_fu_449_p2                                          |     |        | and_ln62        | and       | auto                   | 0       |
+|     Final_Magnitude_fu_455_p3                                   |     |        | Final_Magnitude | select    | auto_sel               | 0       |
+|     add_ln13_fu_311_p2                                          |     |        | add_ln13        | add       | fabric                 | 0       |
+|  + Hysteresis_Filter                                            | 4   |        |                 |           |                        |         |
+|    add_ln70_fu_159_p2                                           |     |        | add_ln70        | add       | fabric                 | 0       |
+|    add_ln70_1_fu_165_p2                                         |     |        | add_ln70_1      | add       | fabric                 | 0       |
+|    empty_71_fu_123_p2                                           |     |        | empty_71        | setgt     | auto                   | 0       |
+|    smax_fu_129_p3                                               |     |        | smax            | select    | auto_sel               | 0       |
+|    empty_72_fu_137_p2                                           |     |        | empty_72        | setgt     | auto                   | 0       |
+|    smax1_fu_143_p3                                              |     |        | smax1           | select    | auto_sel               | 0       |
+|    mul_31ns_31ns_62_2_1_U80                                     | 4   |        | bound           | mul       | auto                   | 1       |
+|   + Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2  | 0   |        |                 |           |                        |         |
+|     icmp_ln11_fu_298_p2                                         |     |        | icmp_ln11       | seteq     | auto                   | 0       |
+|     icmp_ln13_fu_321_p2                                         |     |        | icmp_ln13       | setlt     | auto                   | 0       |
+|     add_ln11_fu_303_p2                                          |     |        | add_ln11        | add       | fabric                 | 0       |
+|     select_ln11_fu_326_p3                                       |     |        | select_ln11     | select    | auto_sel               | 0       |
+|     empty_69_fu_409_p3                                          |     |        | empty_69        | select    | auto_sel               | 0       |
+|     add_ln11_1_fu_416_p2                                        |     |        | add_ln11_1      | add       | fabric                 | 0       |
+|     icmp_ln70_fu_426_p2                                         |     |        | icmp_ln70       | seteq     | auto                   | 0       |
+|     addr_cmp22_fu_347_p2                                        |     |        | addr_cmp22      | seteq     | auto                   | 0       |
+|     Top_Pixel_fu_434_p3                                         |     |        | Top_Pixel       | select    | auto_sel               | 0       |
+|     addr_cmp_fu_356_p2                                          |     |        | addr_cmp        | seteq     | auto                   | 0       |
+|     Mid_Pixel_fu_444_p3                                         |     |        | Mid_Pixel       | select    | auto_sel               | 0       |
+|     icmp_ln38_fu_461_p2                                         |     |        | icmp_ln38       | setgt     | auto                   | 0       |
+|     icmp_ln42_fu_466_p2                                         |     |        | icmp_ln42       | setgt     | auto                   | 0       |
+|     Strong_fu_471_p2                                            |     |        | Strong          | setgt     | auto                   | 0       |
+|     icmp_ln50_fu_476_p2                                         |     |        | icmp_ln50       | setgt     | auto                   | 0       |
+|     icmp_ln50_1_fu_481_p2                                       |     |        | icmp_ln50_1     | setgt     | auto                   | 0       |
+|     icmp_ln50_2_fu_486_p2                                       |     |        | icmp_ln50_2     | setgt     | auto                   | 0       |
+|     icmp_ln50_3_fu_491_p2                                       |     |        | icmp_ln50_3     | setgt     | auto                   | 0       |
+|     icmp_ln50_4_fu_496_p2                                       |     |        | icmp_ln50_4     | setgt     | auto                   | 0       |
+|     icmp_ln50_5_fu_501_p2                                       |     |        | icmp_ln50_5     | setgt     | auto                   | 0       |
+|     icmp_ln50_6_fu_506_p2                                       |     |        | icmp_ln50_6     | setgt     | auto                   | 0       |
+|     or_ln57_fu_560_p2                                           |     |        | or_ln57         | or        | auto                   | 0       |
+|     or_ln57_1_fu_564_p2                                         |     |        | or_ln57_1       | or        | auto                   | 0       |
+|     or_ln57_2_fu_568_p2                                         |     |        | or_ln57_2       | or        | auto                   | 0       |
+|     or_ln57_3_fu_574_p2                                         |     |        | or_ln57_3       | or        | auto                   | 0       |
+|     or_ln57_4_fu_578_p2                                         |     |        | or_ln57_4       | or        | auto                   | 0       |
+|     or_ln57_5_fu_582_p2                                         |     |        | or_ln57_5       | or        | auto                   | 0       |
+|     Final_Value_1_fu_611_p4                                     |     |        | or_ln58         | or        | auto                   | 0       |
+|     xor_ln38_fu_594_p2                                          |     |        | xor_ln38        | xor       | auto                   | 0       |
+|     and_ln42_fu_599_p2                                          |     |        | and_ln42        | and       | auto                   | 0       |
+|     sparsemux_7_2_1_1_1_U64                                     |     |        | Final_Value_1   | sparsemux | onehotencoding_realdef | 0       |
+|     Output_Stream_TDATA                                         |     |        | select_ln69     | select    | auto_sel               | 0       |
+|     or_ln69_fu_510_p2                                           |     |        | or_ln69         | or        | auto                   | 0       |
+|     icmp_ln69_fu_515_p2                                         |     |        | icmp_ln69       | seteq     | auto                   | 0       |
+|     icmp_ln70_1_fu_372_p2                                       |     |        | icmp_ln70_1     | seteq     | auto                   | 0       |
+|     and_ln70_fu_521_p2                                          |     |        | and_ln70        | and       | auto                   | 0       |
+|     add_ln13_fu_377_p2                                          |     |        | add_ln13        | add       | fabric                 | 0       |
++-----------------------------------------------------------------+-----+--------+-----------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------------------------------------+---------------+-------------+------+------+--------+--------+---------------------------+------+---------+------------------+
+| Name                                                            | Usage         | Type        | BRAM | URAM | CE_REG | Pragma | Variable                  | Impl | Latency | Bitwidth, Depth, |
+|                                                                 |               |             |      |      |        |        |                           |      |         | Banks            |
++-----------------------------------------------------------------+---------------+-------------+------+------+--------+--------+---------------------------+------+---------+------------------+
+| + Canny_Filter                                                  |               |             | 27   | 0    |        |        |                           |      |         |                  |
+|   control_s_axi_U                                               | interface     | s_axilite   |      |      |        |        |                           |      |         |                  |
+|   High_Threshold_c_U                                            | fifo channel  | scalar prop |      |      | N      |        | High_Threshold_c          | srl  | 0       | 32, 5, 1         |
+|   Low_Threshold_c_U                                             | fifo channel  | scalar prop |      |      | N      |        | Low_Threshold_c           | srl  | 0       | 32, 5, 1         |
+|   Gaussian_to_Sobel_U                                           | fifo channel  | stream      |      |      | N      |        | Gaussian_to_Sobel         | srl  | 0       | 32, 8, 1         |
+|   Rows_c2_U                                                     | fifo channel  | scalar prop |      |      | N      |        | Rows_c2                   | srl  | 0       | 32, 2, 1         |
+|   Cols_c4_U                                                     | fifo channel  | scalar prop |      |      | N      |        | Cols_c4                   | srl  | 0       | 32, 2, 1         |
+|   Sobel_to_Suppression_U                                        | fifo channel  | stream      |      |      | N      |        | Sobel_to_Suppression      | srl  | 0       | 32, 8, 1         |
+|   Rows_c1_U                                                     | fifo channel  | scalar prop |      |      | N      |        | Rows_c1                   | srl  | 0       | 32, 2, 1         |
+|   Cols_c3_U                                                     | fifo channel  | scalar prop |      |      | N      |        | Cols_c3                   | srl  | 0       | 32, 2, 1         |
+|   Suppression_to_Hysteresis_U                                   | fifo channel  | stream      |      |      | N      |        | Suppression_to_Hysteresis | srl  | 0       | 32, 8, 1         |
+|   Rows_c_U                                                      | fifo channel  | scalar prop |      |      | N      |        | Rows_c                    | srl  | 0       | 32, 2, 1         |
+|   Cols_c_U                                                      | fifo channel  | scalar prop |      |      | N      |        | Cols_c                    | srl  | 0       | 32, 2, 1         |
+|  + Gaussian_Filter                                              |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|   + Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2    |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|     Line_Buffer_1_U                                             | ram_1p array  |             | 4    |      | N      |        | Line_Buffer_1             | auto | 1       | 32, 1920, 1      |
+|     Line_Buffer_U                                               | ram_1p array  |             | 4    |      | N      |        | Line_Buffer               | auto | 1       | 32, 1920, 1      |
+|  + Sobel_Filter                                                 |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|   + Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2       |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|     Line_Buffer_1_U                                             | ram_1p array  |             | 4    |      | N      |        | Line_Buffer_1             | auto | 1       | 32, 1920, 1      |
+|     Line_Buffer_U                                               | ram_s2p array |             | 4    |      | N      |        | Line_Buffer               | auto | 1       | 32, 1920, 1      |
+|  + Suppression_Filter                                           |               |             | 3    | 0    |        |        |                           |      |         |                  |
+|   + Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 |               |             | 3    | 0    |        |        |                           |      |         |                  |
+|     Line_Buffer_1_U                                             | ram_1p array  |             | 2    |      | N      |        | Line_Buffer_1             | auto | 1       | 16, 1920, 1      |
+|     Line_Buffer_U                                               | ram_s2p array |             | 1    |      | N      |        | Line_Buffer               | auto | 1       | 8, 1920, 1       |
+|  + Hysteresis_Filter                                            |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|   + Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2  |               |             | 8    | 0    |        |        |                           |      |         |                  |
+|     Line_Buffer_1_U                                             | ram_1p array  |             | 4    |      | N      |        | Line_Buffer_1             | auto | 1       | 32, 1920, 1      |
+|     Line_Buffer_U                                               | ram_s2p array |             | 4    |      | N      |        | Line_Buffer               | auto | 1       | 32, 1920, 1      |
++-----------------------------------------------------------------+---------------+-------------+------+------+--------+--------+---------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++-----------------+--------------------------------+--------------------------------------------------+-----------------+
+| Type            | Options                        | Location                                         | Messages        |
++-----------------+--------------------------------+--------------------------------------------------+-----------------+
+| ARRAY_PARTITION | variable=Window complete dim=0 | in gaussian_filter (Gaussian_Filter.cpp:9)       | Not implemented |
+| ARRAY_PARTITION | variable=Window complete dim=0 | in hysteresis_filter (Hysteresis_Filter.cpp:9)   | Not implemented |
+| ARRAY_PARTITION | variable=Window complete dim=0 | in sobel_filter (Sobel_Filter.cpp:9)             | Not implemented |
+| ARRAY_PARTITION | variable=Window complete dim=0 | in suppression_filter (Suppression_Filter.cpp:9) | Not implemented |
++-----------------+--------------------------------+--------------------------------------------------+-----------------+
+
+* Inferred Pragmas
++--------------+---------+-------------------------------------------------------------------------------------------------------+------------------------------------+
+| Type         | Options | Location                                                                                              | Inferred From                      |
++--------------+---------+-------------------------------------------------------------------------------------------------------+------------------------------------+
+| LOOP_FLATTEN |         | loop VITIS_LOOP_15_2 (Gaussian_Filter.cpp:15:26) in gaussian_filter (Gaussian_Filter.cpp:15)          | pipeline Gaussian_Filter.cpp:17    |
+| LOOP_FLATTEN |         | loop VITIS_LOOP_13_2 (Hysteresis_Filter.cpp:13:26) in hysteresis_filter (Hysteresis_Filter.cpp:13)    | pipeline Hysteresis_Filter.cpp:15  |
+| LOOP_FLATTEN |         | loop VITIS_LOOP_16_2 (Sobel_Filter.cpp:16:26) in sobel_filter (Sobel_Filter.cpp:16)                   | pipeline Sobel_Filter.cpp:18       |
+| LOOP_FLATTEN |         | loop VITIS_LOOP_13_2 (Suppression_Filter.cpp:13:26) in suppression_filter (Suppression_Filter.cpp:13) | pipeline Suppression_Filter.cpp:15 |
++--------------+---------+-------------------------------------------------------------------------------------------------------+------------------------------------+
+
+* Implemented Pragmas
++-----------------+------------------------------------------------------+--------------------------------------------------+
+| Type            | Options                                              | Location                                         |
++-----------------+------------------------------------------------------+--------------------------------------------------+
+| DATAFLOW        |                                                      | in canny_filter (Canny_Filter.cpp:13)            |
+| STREAM          | variable=Gaussian_to_Sobel type=fifo depth=8         | in canny_filter (Canny_Filter.cpp:19)            |
+| STREAM          | variable=Sobel_to_Suppression type=fifo depth=8      | in canny_filter (Canny_Filter.cpp:20)            |
+| STREAM          | variable=Suppression_to_Hysteresis type=fifo depth=8 | in canny_filter (Canny_Filter.cpp:21)            |
+| ARRAY_PARTITION | dim=1 type=complete variable=Line_Buffer             | in gaussian_filter (Gaussian_Filter.cpp:6)       |
+| ARRAY_PARTITION | dim=1 type=complete variable=Line_Buffer             | in hysteresis_filter (Hysteresis_Filter.cpp:6)   |
+| ARRAY_PARTITION | dim=1 type=complete variable=Line_Buffer             | in sobel_filter (Sobel_Filter.cpp:6)             |
+| ARRAY_PARTITION | dim=1 type=complete variable=Line_Buffer             | in suppression_filter (Suppression_Filter.cpp:6) |
++-----------------+------------------------------------------------------+--------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------------------------+---------------------------------------------------+
+| Type            | Options                                    | Location                                          |
++-----------------+--------------------------------------------+---------------------------------------------------+
+| INTERFACE       | axis port=Input_Stream                     | in canny_filter (Canny_Filter.cpp:5)              |
+| INTERFACE       | axis port=Output_Stream                    | in canny_filter (Canny_Filter.cpp:6)              |
+| INTERFACE       | s_axilite port=Rows                        | in canny_filter (Canny_Filter.cpp:7)              |
+| INTERFACE       | s_axilite port=Cols                        | in canny_filter (Canny_Filter.cpp:8)              |
+| INTERFACE       | s_axilite port=High_Threshold              | in canny_filter (Canny_Filter.cpp:9)              |
+| INTERFACE       | s_axilite port=Low_Threshold               | in canny_filter (Canny_Filter.cpp:10)             |
+| INTERFACE       | s_axilite port=return                      | in canny_filter (Canny_Filter.cpp:11)             |
+| DATAFLOW        |                                            | in canny_filter (Canny_Filter.cpp:13)             |
+| STREAM          | variable=Gaussian_to_Sobel depth=8         | in canny_filter (Canny_Filter.cpp:19)             |
+| STREAM          | variable=Sobel_to_Suppression depth=8      | in canny_filter (Canny_Filter.cpp:20)             |
+| STREAM          | variable=Suppression_to_Hysteresis depth=8 | in canny_filter (Canny_Filter.cpp:21)             |
+| ARRAY_PARTITION | variable=Line_Buffer complete dim=1        | in gaussian_filter (Gaussian_Filter.cpp:6)        |
+| PIPELINE        | ii=1                                       | in gaussian_filter (Gaussian_Filter.cpp:17)       |
+| ARRAY_PARTITION | variable=Line_Buffer complete dim=1        | in hysteresis_filter (Hysteresis_Filter.cpp:6)    |
+| PIPELINE        | ii=1                                       | in hysteresis_filter (Hysteresis_Filter.cpp:15)   |
+| ARRAY_PARTITION | variable=Line_Buffer complete dim=1        | in sobel_filter (Sobel_Filter.cpp:6)              |
+| PIPELINE        | ii=1                                       | in sobel_filter (Sobel_Filter.cpp:18)             |
+| ARRAY_PARTITION | variable=Line_Buffer complete dim=1        | in suppression_filter (Suppression_Filter.cpp:6)  |
+| PIPELINE        | ii=1                                       | in suppression_filter (Suppression_Filter.cpp:15) |
++-----------------+--------------------------------------------+---------------------------------------------------+
+
+

@@ -1,0 +1,186 @@
+
+
+================================================================
+== Vitis HLS Report for 'Gaussian_Filter'
+================================================================
+* Date:           Wed Sep 23 01:28:42 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Gaussian_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.206 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.28>
+ST_1 : Operation 7 [1/1] (1.00ns)   --->   "%Cols_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %Cols" [Gaussian_Filter.cpp:9]   --->   Operation 7 'read' 'Cols_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%Rows_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %Rows" [Gaussian_Filter.cpp:9]   --->   Operation 8 'read' 'Rows_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln9 = trunc i32 %Rows_read" [Gaussian_Filter.cpp:9]   --->   Operation 9 'trunc' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln9_1 = trunc i32 %Cols_read" [Gaussian_Filter.cpp:9]   --->   Operation 10 'trunc' 'trunc_ln9_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.55ns)   --->   "%empty = icmp_sgt  i32 %Cols_read, i32 0" [Gaussian_Filter.cpp:9]   --->   Operation 11 'icmp' 'empty' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.73ns)   --->   "%smax = select i1 %empty, i31 %trunc_ln9_1, i31 0" [Gaussian_Filter.cpp:9]   --->   Operation 12 'select' 'smax' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (2.55ns)   --->   "%empty_30 = icmp_sgt  i32 %Rows_read, i32 0" [Gaussian_Filter.cpp:9]   --->   Operation 13 'icmp' 'empty_30' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.73ns)   --->   "%smax1 = select i1 %empty_30, i31 %trunc_ln9, i31 0" [Gaussian_Filter.cpp:9]   --->   Operation 14 'select' 'smax1' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%cast = zext i31 %smax1" [Gaussian_Filter.cpp:9]   --->   Operation 15 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%cast2 = zext i31 %smax" [Gaussian_Filter.cpp:9]   --->   Operation 16 'zext' 'cast2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (6.91ns)   --->   "%bound = mul i62 %cast, i62 %cast2" [Gaussian_Filter.cpp:9]   --->   Operation 17 'mul' 'bound' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 18 [1/2] (6.91ns)   --->   "%bound = mul i62 %cast, i62 %cast2" [Gaussian_Filter.cpp:9]   --->   Operation 18 'mul' 'bound' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 3.77>
+ST_4 : Operation 19 [2/2] (3.77ns)   --->   "%call_ln9 = call void @Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2, i32 %Cols_read, i62 %bound, i32 %Input_r_V_data_V, i4 %Input_r_V_keep_V, i4 %Input_r_V_strb_V, i3 %Input_r_V_user_V, i1 %Input_r_V_last_V, i5 %Input_r_V_id_V, i6 %Input_r_V_dest_V, i32 %Output_r_V_data_V, i4 %Output_r_V_keep_V, i4 %Output_r_V_strb_V, i3 %Output_r_V_user_V, i1 %Output_r_V_last_V, i5 %Output_r_V_id_V, i6 %Output_r_V_dest_V" [Gaussian_Filter.cpp:9]   --->   Operation 19 'call' 'call_ln9' <Predicate = true> <Delay = 3.77> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 5.66>
+ST_5 : Operation 20 [1/2] (5.66ns)   --->   "%call_ln9 = call void @Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2, i32 %Cols_read, i62 %bound, i32 %Input_r_V_data_V, i4 %Input_r_V_keep_V, i4 %Input_r_V_strb_V, i3 %Input_r_V_user_V, i1 %Input_r_V_last_V, i5 %Input_r_V_id_V, i6 %Input_r_V_dest_V, i32 %Output_r_V_data_V, i4 %Output_r_V_keep_V, i4 %Output_r_V_strb_V, i3 %Output_r_V_user_V, i1 %Output_r_V_last_V, i5 %Output_r_V_id_V, i6 %Output_r_V_dest_V" [Gaussian_Filter.cpp:9]   --->   Operation 20 'call' 'call_ln9' <Predicate = true> <Delay = 5.66> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9" [Gaussian_Filter.cpp:9]   --->   Operation 21 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Input_r_V_data_V, i4 %Input_r_V_keep_V, i4 %Input_r_V_strb_V, i3 %Input_r_V_user_V, i1 %Input_r_V_last_V, i5 %Input_r_V_id_V, i6 %Input_r_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Input_r_V_data_V"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Input_r_V_keep_V"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Input_r_V_strb_V"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %Input_r_V_user_V"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %Input_r_V_last_V"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %Input_r_V_id_V"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %Input_r_V_dest_V"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Output_r_V_data_V, i4 %Output_r_V_keep_V, i4 %Output_r_V_strb_V, i3 %Output_r_V_user_V, i1 %Output_r_V_last_V, i5 %Output_r_V_id_V, i6 %Output_r_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Output_r_V_data_V"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Output_r_V_keep_V"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Output_r_V_strb_V"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %Output_r_V_user_V"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %Output_r_V_last_V"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %Output_r_V_id_V"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %Output_r_V_dest_V"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Rows"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Rows, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_4, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Rows, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Cols"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Cols, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_6, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Cols, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln17 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %Output_r_V_data_V, i4 %Output_r_V_keep_V, i4 %Output_r_V_strb_V, i3 %Output_r_V_user_V, i1 %Output_r_V_last_V, i5 %Output_r_V_id_V, i6 %Output_r_V_dest_V, void @empty_7" [Gaussian_Filter.cpp:17]   --->   Operation 45 'specaxissidechannel' 'specaxissidechannel_ln17' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln17 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %Input_r_V_data_V, i4 %Input_r_V_keep_V, i4 %Input_r_V_strb_V, i3 %Input_r_V_user_V, i1 %Input_r_V_last_V, i5 %Input_r_V_id_V, i6 %Input_r_V_dest_V, void @empty_8" [Gaussian_Filter.cpp:17]   --->   Operation 46 'specaxissidechannel' 'specaxissidechannel_ln17' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln72 = ret" [Gaussian_Filter.cpp:72]   --->   Operation 47 'ret' 'ret_ln72' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.285ns
+The critical path consists of the following:
+	s_axi read operation ('Cols_read', Gaussian_Filter.cpp:9) on port 'Cols' (Gaussian_Filter.cpp:9) [17]  (1.000 ns)
+	'icmp' operation 1 bit ('empty', Gaussian_Filter.cpp:9) [47]  (2.552 ns)
+	'select' operation 31 bit ('smax', Gaussian_Filter.cpp:9) [48]  (0.733 ns)
+
+ <State 2>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 62 bit ('bound', Gaussian_Filter.cpp:9) [53]  (6.912 ns)
+
+ <State 3>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 62 bit ('bound', Gaussian_Filter.cpp:9) [53]  (6.912 ns)
+
+ <State 4>: 3.772ns
+The critical path consists of the following:
+	'call' operation ('call_ln9', Gaussian_Filter.cpp:9) to 'Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2' [54]  (3.772 ns)
+
+ <State 5>: 5.661ns
+The critical path consists of the following:
+	'call' operation ('call_ln9', Gaussian_Filter.cpp:9) to 'Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2' [54]  (5.661 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

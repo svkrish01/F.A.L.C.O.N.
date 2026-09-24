@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2'
+================================================================
+* Date:           Wed Sep 23 01:28:43 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Gaussian_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.206 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_25_1_VITIS_LOOP_27_2  |        ?|        ?|         6|          1|          1|     ?|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    679|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        8|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       0|     99|    -|
+|Register         |        -|    -|    1303|    256|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        8|    0|    1303|   1034|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    0|       1|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |        Memory        |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Line_Buffer_data_1_U  |Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb  |        4|  0|   0|    0|  1920|   32|     1|        61440|
+    |Line_Buffer_data_U    |Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb  |        4|  0|   0|    0|  1920|   32|     1|        61440|
+    +----------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                 |                                                                                  |        8|  0|   0|    0|  3840|   64|     2|       122880|
+    +----------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Sum_1_fu_514_p2                        |         +|   0|  0|  32|          32|          32|
+    |add_ln25_fu_266_p2                     |         +|   0|  0|  69|          62|           1|
+    |add_ln27_fu_360_p2                     |         +|   0|  0|  12|          11|           1|
+    |add_ln55_1_fu_510_p2                   |         +|   0|  0|  32|          32|          32|
+    |add_ln55_2_fu_490_p2                   |         +|   0|  0|  32|          32|          32|
+    |add_ln55_3_fu_496_p2                   |         +|   0|  0|  32|          32|          32|
+    |add_ln55_fu_453_p2                     |         +|   0|  0|  39|          32|          32|
+    |tmp1_fu_442_p2                         |         +|   0|  0|  38|          31|          31|
+    |tmp21_fu_447_p2                        |         +|   0|  0|  31|          31|          31|
+    |tmp_fu_436_p2                          |         +|   0|  0|  31|          31|          31|
+    |ap_block_state3_pp0_stage0_iter2_grp1  |       and|   0|  0|   2|           1|           1|
+    |addr_cmp25_fu_335_p2                   |      icmp|   0|  0|  71|          64|          64|
+    |addr_cmp_fu_344_p2                     |      icmp|   0|  0|  71|          64|          64|
+    |icmp_ln25_fu_261_p2                    |      icmp|   0|  0|  69|          62|          62|
+    |icmp_ln27_fu_284_p2                    |      icmp|   0|  0|  39|          32|          32|
+    |ap_block_pp0_stage0_01001_grp1         |        or|   0|  0|   2|           1|           1|
+    |reuse_select26_fu_410_p3               |    select|   0|  0|  32|           1|          32|
+    |reuse_select_fu_377_p3                 |    select|   0|  0|  32|           1|          32|
+    |select_ln25_fu_289_p3                  |    select|   0|  0|  11|           1|          11|
+    |ap_enable_pp0                          |       xor|   0|  0|   2|           1|           2|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0| 679|         554|         556|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |Input_r_TDATA_blk_n      |   9|          2|    1|          2|
+    |J_fu_122                 |   9|          2|   11|         22|
+    |Output_r_TDATA_blk_n     |   9|          2|    1|          2|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter5  |   9|          2|    1|          2|
+    |indvar_flatten_fu_126    |   9|          2|   62|        124|
+    |reuse_addr_reg22_fu_94   |   9|          2|   64|        128|
+    |reuse_addr_reg_fu_102    |   9|          2|   64|        128|
+    |reuse_reg21_fu_98        |   9|          2|   32|         64|
+    |reuse_reg_fu_106         |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  99|         22|  270|        540|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |J_fu_122                          |  11|   0|   11|          0|
+    |Line_Buffer_data_addr_reg_663     |  11|   0|   11|          0|
+    |Sum_fu_110                        |  32|   0|   32|          0|
+    |add_ln55_3_reg_714                |  32|   0|   32|          0|
+    |add_ln55_reg_709                  |  32|   0|   32|          0|
+    |add_ln55_reg_709_pp0_iter5_reg    |  32|   0|   32|          0|
+    |addr_cmp25_reg_668                |   1|   0|    1|          0|
+    |addr_cmp25_reg_668_pp0_iter3_reg  |   1|   0|    1|          0|
+    |addr_cmp_reg_678                  |   1|   0|    1|          0|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg  |   1|   0|    1|          0|
+    |icmp_ln25_reg_622                 |   1|   0|    1|          0|
+    |indvar_flatten_fu_126             |  62|   0|   62|          0|
+    |p_0_0_0_0120379_fu_130            |  32|   0|   32|          0|
+    |p_0_0_0_0120379_load_reg_694      |  32|   0|   32|          0|
+    |p_0_0_0_0120_1386_fu_114          |  31|   0|   31|          0|
+    |p_0_0_0_0120_1393_fu_134          |  31|   0|   31|          0|
+    |p_0_0_0_0120_2400_fu_118          |  32|   0|   32|          0|
+    |p_0_0_0_0120_2407_fu_138          |  32|   0|   32|          0|
+    |p_0_0_0_0120_2407_load_reg_699    |  32|   0|   32|          0|
+    |p_0_reg_658                       |   6|   0|    6|          0|
+    |p_1_reg_633                       |   4|   0|    4|          0|
+    |p_2_reg_638                       |   4|   0|    4|          0|
+    |p_3_reg_643                       |   3|   0|    3|          0|
+    |p_4_reg_648                       |   1|   0|    1|          0|
+    |p_5_reg_653                       |   5|   0|    5|          0|
+    |p_s_reg_626                       |  32|   0|   32|          0|
+    |reuse_addr_reg22_fu_94            |  64|   0|   64|          0|
+    |reuse_addr_reg_fu_102             |  64|   0|   64|          0|
+    |reuse_reg21_fu_98                 |  32|   0|   32|          0|
+    |reuse_reg21_load_reg_683          |  32|   0|   32|          0|
+    |reuse_reg_fu_106                  |  32|   0|   32|          0|
+    |tmp21_reg_704                     |  31|   0|   31|          0|
+    |trunc_ln42_reg_688                |  31|   0|   31|          0|
+    |icmp_ln25_reg_622                 |  64|  32|    1|          0|
+    |p_0_reg_658                       |  64|  32|    6|          0|
+    |p_1_reg_633                       |  64|  32|    4|          0|
+    |p_2_reg_638                       |  64|  32|    4|          0|
+    |p_3_reg_643                       |  64|  32|    3|          0|
+    |p_4_reg_648                       |  64|  32|    1|          0|
+    |p_5_reg_653                       |  64|  32|    5|          0|
+    |p_s_reg_626                       |  64|  32|   32|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |1303| 256|  847|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                       Source Object                      |    C Type    |
++-----------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2|  return value|
+|Input_r_TVALID   |   in|    1|        axis|                                          Input_r_V_data_V|       pointer|
+|Input_r_TDATA    |   in|   32|        axis|                                          Input_r_V_data_V|       pointer|
+|Output_r_TREADY  |   in|    1|        axis|                                         Output_r_V_data_V|       pointer|
+|Output_r_TDATA   |  out|   32|        axis|                                         Output_r_V_data_V|       pointer|
+|Cols             |   in|   32|     ap_none|                                                      Cols|        scalar|
+|bound            |   in|   62|     ap_none|                                                     bound|        scalar|
+|Input_r_TREADY   |  out|    1|        axis|                                          Input_r_V_dest_V|       pointer|
+|Input_r_TDEST    |   in|    6|        axis|                                          Input_r_V_dest_V|       pointer|
+|Input_r_TKEEP    |   in|    4|        axis|                                          Input_r_V_keep_V|       pointer|
+|Input_r_TSTRB    |   in|    4|        axis|                                          Input_r_V_strb_V|       pointer|
+|Input_r_TUSER    |   in|    3|        axis|                                          Input_r_V_user_V|       pointer|
+|Input_r_TLAST    |   in|    1|        axis|                                          Input_r_V_last_V|       pointer|
+|Input_r_TID      |   in|    5|        axis|                                            Input_r_V_id_V|       pointer|
+|Output_r_TVALID  |  out|    1|        axis|                                         Output_r_V_dest_V|       pointer|
+|Output_r_TDEST   |  out|    6|        axis|                                         Output_r_V_dest_V|       pointer|
+|Output_r_TKEEP   |  out|    4|        axis|                                         Output_r_V_keep_V|       pointer|
+|Output_r_TSTRB   |  out|    4|        axis|                                         Output_r_V_strb_V|       pointer|
+|Output_r_TUSER   |  out|    3|        axis|                                         Output_r_V_user_V|       pointer|
+|Output_r_TLAST   |  out|    1|        axis|                                         Output_r_V_last_V|       pointer|
+|Output_r_TID     |  out|    5|        axis|                                           Output_r_V_id_V|       pointer|
++-----------------+-----+-----+------------+----------------------------------------------------------+--------------+
+

@@ -1,0 +1,604 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 24 15:03:03 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/Canny_Filter_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.091ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/J_fu_128_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_reg_864_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.919ns  (logic 3.192ns (53.928%)  route 2.727ns (46.072%))
+  Logic Levels:           13  (CARRY4=10 LUT2=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/J_fu_128_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 f  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/J_fu_128_reg[0]/Q
+                         net (fo=5, unplaced)         0.769     2.260    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/p_0_in[0]
+                         LUT4 (Prop_lut4_I1_O)        0.319     2.579 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry_i_4/O
+                         net (fo=1, unplaced)         0.000     2.579    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     3.155 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     3.164    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.281 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.281    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.398 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.398    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.515 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/icmp_ln16_fu_266_p2_carry__2/CO[3]
+                         net (fo=64, unplaced)        1.006     4.521    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/CO[0]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.645 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/ram_reg_0_i_9__0/O
+                         net (fo=6, unplaced)         0.934     5.579    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/select_ln14_fu_271_p3[3]
+                         LUT6 (Prop_lut6_I1_O)        0.124     5.703 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     5.703    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.236 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     6.245    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.362 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     6.362    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.479 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     6.479    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.596 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     6.596    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.713 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     6.713    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.179     6.892 r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_fu_288_p2_carry__4/CO[1]
+                         net (fo=1, unplaced)         0.000     6.892    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp_fu_297_p2[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_reg_864_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_reg_864_reg[0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.094    10.983    bd_0_i/hls_inst/inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/addr_cmp31_reg_864_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.983    <hidden>
+                         arrival time                          -6.892    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.091    <hidden>
+
+Slack (MET) :             4.099ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/J_fu_110_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_reg_583_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.911ns  (logic 3.192ns (54.001%)  route 2.719ns (45.999%))
+  Logic Levels:           13  (CARRY4=10 LUT2=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/J_fu_110_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 f  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/J_fu_110_reg[0]/Q
+                         net (fo=5, unplaced)         0.769     2.260    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/p_0_in[0]
+                         LUT4 (Prop_lut4_I1_O)        0.319     2.579 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry_i_4/O
+                         net (fo=1, unplaced)         0.000     2.579    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     3.155 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     3.164    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.281 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.281    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.398 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.398    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.515 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/icmp_ln15_fu_254_p2_carry__2/CO[3]
+                         net (fo=64, unplaced)        1.006     4.521    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/CO[0]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.645 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/ram_reg_0_i_9__0/O
+                         net (fo=4, unplaced)         0.926     5.571    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/select_ln13_fu_259_p3[3]
+                         LUT6 (Prop_lut6_I1_O)        0.124     5.695 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     5.695    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.228 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     6.237    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.354 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     6.354    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.471 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     6.471    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.588 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     6.588    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.705 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     6.705    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.179     6.884 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_fu_281_p2_carry__4/CO[1]
+                         net (fo=1, unplaced)         0.000     6.884    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp_fu_290_p2[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_reg_583_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_reg_583_reg[0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.094    10.983    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/addr_cmp25_reg_583_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.983    <hidden>
+                         arrival time                          -6.884    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.099    <hidden>
+
+Slack (MET) :             4.099ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/J_fu_84_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_reg_576_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.911ns  (logic 3.192ns (54.001%)  route 2.719ns (45.999%))
+  Logic Levels:           13  (CARRY4=10 LUT2=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/J_fu_84_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 f  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/J_fu_84_reg[0]/Q
+                         net (fo=5, unplaced)         0.769     2.260    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/p_0_in[0]
+                         LUT4 (Prop_lut4_I1_O)        0.319     2.579 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry_i_4/O
+                         net (fo=1, unplaced)         0.000     2.579    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     3.155 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     3.164    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.281 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.281    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.398 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.398    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.515 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/icmp_ln13_fu_255_p2_carry__2/CO[3]
+                         net (fo=64, unplaced)        1.006     4.521    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U/CO[0]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.645 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U/ram_reg_i_9__0/O
+                         net (fo=4, unplaced)         0.926     5.571    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/select_ln11_fu_260_p3[3]
+                         LUT6 (Prop_lut6_I1_O)        0.124     5.695 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     5.695    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.228 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     6.237    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.354 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     6.354    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.471 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     6.471    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.588 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     6.588    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.705 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     6.705    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.179     6.884 r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_fu_286_p2_carry__4/CO[1]
+                         net (fo=1, unplaced)         0.000     6.884    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp_fu_295_p2[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_reg_576_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_reg_576_reg[0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.094    10.983    bd_0_i/hls_inst/inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/addr_cmp26_reg_576_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.983    <hidden>
+                         arrival time                          -6.884    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.099    <hidden>
+
+Slack (MET) :             4.252ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_reg_835_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.514ns  (logic 3.599ns (65.274%)  route 1.915ns (34.726%))
+  Logic Levels:           6  (CARRY4=4 LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     3.427 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg_0/DOBDO[3]
+                         net (fo=1, unplaced)         0.800     4.227    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/Line_Buffer_q1[3]
+                         LUT3 (Prop_lut3_I1_O)        0.150     4.377 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/empty_67_fu_140[3]_i_1/O
+                         net (fo=3, unplaced)         0.467     4.844    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/D[3]
+                         LUT6 (Prop_lut6_I5_O)        0.124     4.968 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/icmp_ln50_1_fu_481_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.639     5.607    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U_n_59
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     6.127 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     6.136    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.253 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     6.253    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.370 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     6.370    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.487 r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     6.487    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_fu_481_p2[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_reg_835_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_reg_835_reg[0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)       -0.150    10.739    bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/icmp_ln50_1_reg_835_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.739    <hidden>
+                         arrival time                          -6.487    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.252    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[0]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[0])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[0]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_153
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[0])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[10]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[10])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[10]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_143
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[10])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[11]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[11])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[11]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_142
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[11])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[12]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[12])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[12]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_141
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[12])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[13]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[13])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[13]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_140
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[13])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+Slack (MET) :             4.255ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[14]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.261ns  (logic 4.206ns (98.709%)  route 0.055ns (1.291%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  ap_clk
+                         net (fo=3972, unset)         0.973     0.973    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[14])
+                                                      4.206     5.179 r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product/PCOUT[14]
+                         net (fo=1, unplaced)         0.055     5.234    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/tmp_product_n_139
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/PCIN[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  ap_clk
+                         net (fo=3972, unset)         0.924    10.924    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[14])
+                                                     -1.400     9.489    bd_0_i/hls_inst/inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16/buff0_reg
+  -------------------------------------------------------------------
+                         required time                          9.489    <hidden>
+                         arrival time                          -5.234    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.255    <hidden>
+
+
+
+

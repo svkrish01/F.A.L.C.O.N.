@@ -1,0 +1,158 @@
+{
+    "0": {
+        "name": "Canny_Filter",
+        "file": "Canny_Filter.cpp",
+        "fileloc": "3",
+        "instructions": "76",
+        "total_instructions": "596",
+        "calls": "1 2 4 6 3",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "1": {
+        "name": "entry_proc",
+        "file": "Canny_Filter.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "2": {
+        "name": "Gaussian_Filter",
+        "file": "Gaussian_Filter.cpp",
+        "fileloc": "3",
+        "instructions": "20",
+        "total_instructions": "111",
+        "calls": "9",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "3": {
+        "name": "Hysteresis_Filter",
+        "file": "Hysteresis_Filter.cpp",
+        "fileloc": "3",
+        "instructions": "24",
+        "total_instructions": "138",
+        "calls": "5",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "4": {
+        "name": "Sobel_Filter",
+        "file": "Sobel_Filter.cpp",
+        "fileloc": "3",
+        "instructions": "21",
+        "total_instructions": "152",
+        "calls": "7",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "5": {
+        "name": "Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2",
+        "file": "Hysteresis_Filter.cpp",
+        "fileloc": "5",
+        "instructions": "114",
+        "total_instructions": "114",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "15"
+        },
+        "stores": {
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "Suppression_Filter",
+        "file": "Suppression_Filter.cpp",
+        "fileloc": "3",
+        "instructions": "21",
+        "total_instructions": "112",
+        "calls": "8",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "7": {
+        "name": "Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2",
+        "file": "Sobel_Filter.cpp",
+        "fileloc": "5",
+        "instructions": "131",
+        "total_instructions": "131",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "30",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "14"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2",
+        "file": "Suppression_Filter.cpp",
+        "fileloc": "5",
+        "instructions": "91",
+        "total_instructions": "91",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "30",
+        "control_depth": "2",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "14"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2",
+        "file": "Gaussian_Filter.cpp",
+        "fileloc": "5",
+        "instructions": "91",
+        "total_instructions": "91",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "30",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "14"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Canny_Filter.h' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Gaussian_Filter.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Gaussian_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Sobel_Filter.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Sobel_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Suppression_Filter.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Suppression_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Hysteresis_Filter.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Hysteresis_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Canny_Filter.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=Canny_Filter' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 3 seconds. Elapsed time: 19.745 seconds; current allocated memory: 140.289 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'Canny_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Hysteresis_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Suppression_Filter.cpp' ... 
+ERROR: [HLS 207-4637] use of undeclared identifier 'S' (Suppression_Filter.cpp:10:1)
+ERROR: syntax check failed.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 39.292 seconds; peak allocated memory: 143.379 MB.

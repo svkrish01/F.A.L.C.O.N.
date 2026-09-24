@@ -1,0 +1,63 @@
+<pragmas>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<4, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<5, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<int>::read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<int>::write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::axis<ap_int<32>, 3, 5, 6>>::read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::axis<ap_int<32>, 3, 5, 6>>::write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<6>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="Canny_Filter.cpp" line="13" pragmaType="dataflow" parentfunction="Canny_Filter" disable_start_propagation="0"/>
+<pragma file="Canny_Filter.cpp" line="5" pragmaType="interface" parentfunction="Canny_Filter" mode="axis" port="Input_Stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="Canny_Filter.cpp" line="6" pragmaType="interface" parentfunction="Canny_Filter" mode="axis" port="Output_Stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="Canny_Filter.cpp" line="7" pragmaType="interface" parentfunction="Canny_Filter" mode="s_axilite" port="Rows" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Canny_Filter.cpp" line="8" pragmaType="interface" parentfunction="Canny_Filter" mode="s_axilite" port="Cols" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Canny_Filter.cpp" line="9" pragmaType="interface" parentfunction="Canny_Filter" mode="s_axilite" port="High_Threshold" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Canny_Filter.cpp" line="10" pragmaType="interface" parentfunction="Canny_Filter" mode="s_axilite" port="Low_Threshold" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Canny_Filter.cpp" line="11" pragmaType="interface" parentfunction="Canny_Filter" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Canny_Filter.cpp" line="19" pragmaType="stream" parentfunction="Canny_Filter" depth="8" type="fifo" variable="Gaussian_to_Sobel"/>
+<pragma file="Canny_Filter.cpp" line="20" pragmaType="stream" parentfunction="Canny_Filter" depth="8" type="fifo" variable="Sobel_to_Suppression"/>
+<pragma file="Canny_Filter.cpp" line="21" pragmaType="stream" parentfunction="Canny_Filter" depth="8" type="fifo" variable="Suppression_to_Hysteresis"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<6, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<5>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<3, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="Hysteresis_Filter.cpp" line="15" pragmaType="pipeline" parentfunction="Hysteresis_Filter" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Hysteresis_Filter.cpp" line="6" pragmaType="array_partition" parentfunction="Hysteresis_Filter" dim="1" factor="0" mode="complete" dynamic="0" variable="Line_Buffer"/>
+<pragma file="Hysteresis_Filter.cpp" line="9" pragmaType="array_partition" parentfunction="Hysteresis_Filter" dim="0" factor="0" mode="complete" dynamic="0" variable="Window"/>
+<pragma file="Suppression_Filter.cpp" line="15" pragmaType="pipeline" parentfunction="Suppression_Filter" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Suppression_Filter.cpp" line="6" pragmaType="array_partition" parentfunction="Suppression_Filter" dim="1" factor="0" mode="complete" dynamic="0" variable="Line_Buffer"/>
+<pragma file="Suppression_Filter.cpp" line="9" pragmaType="array_partition" parentfunction="Suppression_Filter" dim="0" factor="0" mode="complete" dynamic="0" variable="Window"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="Gaussian_Filter.cpp" line="17" pragmaType="pipeline" parentfunction="Gaussian_Filter" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Gaussian_Filter.cpp" line="6" pragmaType="array_partition" parentfunction="Gaussian_Filter" dim="1" factor="0" mode="complete" dynamic="0" variable="Line_Buffer"/>
+<pragma file="Gaussian_Filter.cpp" line="9" pragmaType="array_partition" parentfunction="Gaussian_Filter" dim="0" factor="0" mode="complete" dynamic="0" variable="Window"/>
+<pragma file="Sobel_Filter.cpp" line="18" pragmaType="pipeline" parentfunction="Sobel_Filter" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Sobel_Filter.cpp" line="6" pragmaType="array_partition" parentfunction="Sobel_Filter" dim="1" factor="0" mode="complete" dynamic="0" variable="Line_Buffer"/>
+<pragma file="Sobel_Filter.cpp" line="9" pragmaType="array_partition" parentfunction="Sobel_Filter" dim="0" factor="0" mode="complete" dynamic="0" variable="Window"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::axis<ap_int<32>, 3, 5, 6>::get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2026.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<1, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<int>::read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<int>::stream" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -1,0 +1,241 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2026.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>7.125</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>7.125</CP_FINAL>
+  <CP_ROUTE>7.125</CP_ROUTE>
+  <CP_SYNTH>5.909</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>2.875</SLACK_FINAL>
+  <SLACK_ROUTE>2.875</SLACK_ROUTE>
+  <SLACK_SYNTH>4.091</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>2.875</WNS_FINAL>
+  <WNS_ROUTE>2.875</WNS_ROUTE>
+  <WNS_SYNTH>4.091</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>25</BRAM>
+    <CLB>0</CLB>
+    <DSP>16</DSP>
+    <FF>3817</FF>
+    <LATCH>0</LATCH>
+    <LUT>2710</LUT>
+    <SLICE>1107</SLICE>
+    <SRL>62</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="Canny_Filter" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="20">Cols_c3_U Cols_c4_U Cols_c_U Gaussian_Filter_U0 Gaussian_to_Sobel_U High_Threshold_c_U Hysteresis_Filter_U0 Low_Threshold_c_U Rows_c1_U Rows_c2_U Rows_c_U Sobel_Filter_U0 Sobel_to_Suppression_U Suppression_Filter_U0 Suppression_to_Hysteresis_U control_s_axi_U entry_proc_U0 start_for_Hysteresis_Filter_U0_U start_for_Sobel_Filter_U0_U start_for_Suppression_Filter_U0_U</SubModules>
+    <Resources BRAM="25" DSP="16" FF="3817" LUT="2710" LogicLUT="2648" RAMB18="1" RAMB36="12" SRL="62"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Cols_c3_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Cols_c4_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Cols_c_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter">
+    <SubModules count="3">grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90 mul_31ns_31ns_62_2_1_U16 regslice_both_Input_Stream_V_data_V_U</SubModules>
+    <Resources BRAM="8" DSP="4" FF="1019" LUT="400" LogicLUT="399" RAMB36="4" SRL="1"/>
+    <LocalResources FF="101" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90" DEPTH="2" FILE_NAME="Canny_Filter_Gaussian_Filter.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2">
+    <SubModules count="3">Line_Buffer_1_U Line_Buffer_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources BRAM="8" FF="815" LUT="314" LogicLUT="313" RAMB36="4" SRL="1"/>
+    <LocalResources FF="813" LUT="267" LogicLUT="266" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U" DEPTH="3" FILE_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_U" DEPTH="3" FILE_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2.v" ORIG_REF_NAME="Canny_Filter_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/mul_31ns_31ns_62_2_1_U16" DEPTH="2" FILE_NAME="Canny_Filter_Gaussian_Filter.v" ORIG_REF_NAME="Canny_Filter_mul_31ns_31ns_62_2_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_Filter_U0/regslice_both_Input_Stream_V_data_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Gaussian_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+    <Resources FF="69" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Gaussian_to_Sobel_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d8_S">
+  </RtlModule>
+  <RtlModule CELL="inst/High_Threshold_c_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d5_S">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_Hysteresis_Filter">
+    <SubModules count="7">grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84 mul_31ns_31ns_62_2_1_U80 regslice_both_Output_Stream_V_data_V_U regslice_both_Output_Stream_V_keep_V_U regslice_both_Output_Stream_V_last_V_U regslice_both_Output_Stream_V_strb_V_U regslice_both_Output_Stream_V_user_V_U</SubModules>
+    <Resources BRAM="6" DSP="4" FF="707" LUT="549" LogicLUT="549" RAMB36="3"/>
+    <LocalResources FF="270" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2">
+    <SubModules count="3">Line_Buffer_1_U Line_Buffer_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources BRAM="6" FF="362" LUT="406" LogicLUT="406" RAMB36="3"/>
+    <LocalResources FF="360" LUT="324" LogicLUT="324"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U" DEPTH="3" FILE_NAME="Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U" DEPTH="3" FILE_NAME="Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="4" LUT="55" LogicLUT="55" RAMB36="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_mul_31ns_31ns_62_2_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/regslice_both_Output_Stream_V_data_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/regslice_both_Output_Stream_V_keep_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/regslice_both_Output_Stream_V_last_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/regslice_both_Output_Stream_V_strb_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/Hysteresis_Filter_U0/regslice_both_Output_Stream_V_user_V_U" DEPTH="2" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" ORIG_REF_NAME="Canny_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/Low_Threshold_c_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d5_S">
+  </RtlModule>
+  <RtlModule CELL="inst/Rows_c1_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Rows_c2_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Rows_c_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d2_S">
+    <Resources FF="70" LUT="70" LogicLUT="70"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_Sobel_Filter">
+    <SubModules count="2">grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68 mul_31ns_31ns_62_2_1_U44</SubModules>
+    <Resources BRAM="8" DSP="4" FF="1029" LUT="773" LogicLUT="772" RAMB36="4" SRL="1"/>
+    <LocalResources FF="100" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68" DEPTH="2" FILE_NAME="Canny_Filter_Sobel_Filter.v" ORIG_REF_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2">
+    <SubModules count="3">Line_Buffer_1_U Line_Buffer_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources BRAM="8" FF="895" LUT="723" LogicLUT="722" RAMB36="4" SRL="1"/>
+    <LocalResources FF="893" LUT="696" LogicLUT="695" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_1_U" DEPTH="3" FILE_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v" ORIG_REF_NAME="Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U" DEPTH="3" FILE_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v" ORIG_REF_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v" ORIG_REF_NAME="Canny_Filter_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_Filter_U0/mul_31ns_31ns_62_2_1_U44" DEPTH="2" FILE_NAME="Canny_Filter_Sobel_Filter.v" ORIG_REF_NAME="Canny_Filter_mul_31ns_31ns_62_2_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_to_Suppression_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d8_S">
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_Suppression_Filter">
+    <SubModules count="2">grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68 mul_31ns_31ns_62_2_1_U57</SubModules>
+    <Resources BRAM="3" DSP="4" FF="400" LUT="235" LogicLUT="235" RAMB18="1" RAMB36="1"/>
+    <LocalResources FF="99" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68" DEPTH="2" FILE_NAME="Canny_Filter_Suppression_Filter.v" ORIG_REF_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2">
+    <SubModules count="3">Line_Buffer_1_U Line_Buffer_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources BRAM="3" FF="267" LUT="189" LogicLUT="189" RAMB18="1" RAMB36="1"/>
+    <LocalResources FF="265" LUT="145" LogicLUT="145"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_1_U" DEPTH="3" FILE_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg">
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U" DEPTH="3" FILE_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi">
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v" ORIG_REF_NAME="Canny_Filter_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_Filter_U0/mul_31ns_31ns_62_2_1_U57" DEPTH="2" FILE_NAME="Canny_Filter_Suppression_Filter.v" ORIG_REF_NAME="Canny_Filter_mul_31ns_31ns_62_2_1">
+  </RtlModule>
+  <RtlModule CELL="inst/Suppression_to_Hysteresis_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_fifo_w32_d8_S">
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_control_s_axi">
+    <Resources FF="181" LUT="204" LogicLUT="204"/>
+  </RtlModule>
+  <RtlModule CELL="inst/entry_proc_U0" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_entry_proc">
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_Hysteresis_Filter_U0_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_start_for_Hysteresis_Filter_U0">
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_Sobel_Filter_U0_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_start_for_Sobel_Filter_U0">
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_Suppression_Filter_U0_U" DEPTH="1" FILE_NAME="Canny_Filter.v" ORIG_REF_NAME="Canny_Filter_start_for_Suppression_Filter_U0">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.591" DATAPATH_LOGIC_DELAY="1.509" DATAPATH_NET_DELAY="5.082" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[4]" LOGIC_LEVELS="6" MAX_FANOUT="96" SLACK="2.875" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Canny_Filter_fifo_w32_d2_S.v" LINE_NUMBER="56"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_10__1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="390"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.563" DATAPATH_LOGIC_DELAY="1.509" DATAPATH_NET_DELAY="5.054" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[13]" LOGIC_LEVELS="6" MAX_FANOUT="96" SLACK="2.903" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Canny_Filter_fifo_w32_d2_S.v" LINE_NUMBER="56"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_1__1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="390"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.550" DATAPATH_LOGIC_DELAY="1.509" DATAPATH_NET_DELAY="5.041" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg__0/B[4]" LOGIC_LEVELS="6" MAX_FANOUT="96" SLACK="2.916" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Canny_Filter_fifo_w32_d2_S.v" LINE_NUMBER="56"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_10__1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="391"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.536" DATAPATH_LOGIC_DELAY="1.509" DATAPATH_NET_DELAY="5.027" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[8]" LOGIC_LEVELS="6" MAX_FANOUT="96" SLACK="2.930" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Canny_Filter_fifo_w32_d2_S.v" LINE_NUMBER="56"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_6__1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="390"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.520" DATAPATH_LOGIC_DELAY="1.509" DATAPATH_NET_DELAY="5.011" ENDPOINT_PIN="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[12]" LOGIC_LEVELS="6" MAX_FANOUT="96" SLACK="2.946" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/addr_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Canny_Filter_fifo_w32_d2_S.v" LINE_NUMBER="56"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="648"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Canny_Filter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="Canny_Filter_Hysteresis_Filter.v" LINE_NUMBER="390"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/Canny_Filter_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/Canny_Filter_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/Canny_Filter_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/Canny_Filter_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/Canny_Filter_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/Canny_Filter_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/Canny_Filter_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/Canny_Filter_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

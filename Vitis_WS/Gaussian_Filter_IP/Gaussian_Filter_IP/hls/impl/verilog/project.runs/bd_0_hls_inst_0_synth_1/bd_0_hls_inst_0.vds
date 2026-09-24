@@ -1,0 +1,566 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 22-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 23 01:30:04 2026
+# Process ID         : 23980
+# Current directory  : C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : DESKTOP-55UAODO
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 28991 MB
+# Total Virtual      : 45840 MB
+# Available Virtual  : 20604 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 65019
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 583.488 ; gain = 267.832
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+INFO: [Vivado_Tcl 97-128] Directive used for synth_design is: sdx_optimization_effort_high
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16520
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1396.129 ; gain = 575.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_flow_control_loop_pipe_sequential_init' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_flow_control_loop_pipe_sequential_init' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_control_s_axi' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_control_s_axi.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_control_s_axi' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_mul_31ns_31ns_62_2_1' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_mul_31ns_31ns_62_2_1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both__parameterized0' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both__parameterized0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both__parameterized1' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both__parameterized1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both__parameterized2' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both__parameterized2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both__parameterized3' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both__parameterized3' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Gaussian_Filter_regslice_both__parameterized4' [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter_regslice_both__parameterized4' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Gaussian_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/62a8/hdl/verilog/Gaussian_Filter_control_s_axi.v:276]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port reset in module Gaussian_Filter_mul_31ns_31ns_62_2_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[1] in module Gaussian_Filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[0] in module Gaussian_Filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.113 ; gain = 713.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.113 ; gain = 713.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.113 ; gain = 713.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1534.113 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/Gaussian_Filter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/Gaussian_Filter_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1589.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1591.062 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.062 ; gain = 769.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.062 ; gain = 769.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.062 ; gain = 769.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Gaussian_Filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Gaussian_Filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Gaussian_Filter_regslice_both__parameterized4'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Gaussian_Filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Gaussian_Filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Gaussian_Filter_regslice_both__parameterized4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1591.062 ; gain = 769.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   31 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               62 Bit    Registers := 2     
+	               32 Bit    Registers := 27    
+	               31 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 10    
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 53    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	              60K Bit	(1920 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 141   
+	   4 Input    2 Bit        Muxes := 56    
+	   2 Input    1 Bit        Muxes := 55    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U18/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_178_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U18/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_173_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: register smax1_reg_178_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U18/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U18/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_173_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U18/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U18/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U18/buff0_reg.
+INFO: [Synth 8-7129] Port AWADDR[1] in module Gaussian_Filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[0] in module Gaussian_Filter_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[47]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[46]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[45]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[44]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[43]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[42]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[41]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[40]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[39]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[38]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[37]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[36]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[35]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[34]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[33]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[32]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[31]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[30]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[29]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[28]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[27]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[26]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[25]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[24]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[23]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[22]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[21]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[20]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[19]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[18]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[17]) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[47]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[46]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[45]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[44]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[43]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[42]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[41]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[40]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[39]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[38]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[37]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[36]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[35]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[34]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[33]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[32]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[31]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[30]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[29]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[28]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[27]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[26]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[25]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[24]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[23]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[22]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[21]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[20]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[19]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[18]__0) is unused and will be removed from module Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U18/buff0_reg[17]__0) is unused and will be removed from module Gaussian_Filter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1645.855 ; gain = 824.777
+---------------------------------------------------------------------------------
+ Sort Area is  mul_31ns_31ns_62_2_1_U18/tmp_product_0 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U18/tmp_product_0 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U18/tmp_product_3 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U18/tmp_product_3 : 0 1 : 2563 5230 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst        | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_U/ram_reg   | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Gaussian_Filter | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Gaussian_Filter | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Gaussian_Filter | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Gaussian_Filter | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1799.598 ; gain = 978.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1806.121 ; gain = 985.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst        | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_U/ram_reg   | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
++------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.715 ; gain = 1013.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2087.285 ; gain = 1266.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2087.285 ; gain = 1266.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2087.285 ; gain = 1266.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2087.285 ; gain = 1266.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2088.254 ; gain = 1267.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2088.254 ; gain = 1267.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_1_reg_633_pp0_iter5_reg_reg[3]     | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_2_reg_638_pp0_iter5_reg_reg[3]     | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_3_reg_643_pp0_iter5_reg_reg[2]     | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_4_reg_648_pp0_iter5_reg_reg[0]     | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_5_reg_653_pp0_iter5_reg_reg[4]     | 4      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/p_0_reg_658_pp0_iter5_reg_reg[5]     | 4      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|Gaussian_Filter | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/ap_loop_exit_ready_pp0_iter5_reg_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Gaussian_Filter | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Gaussian_Filter | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Gaussian_Filter | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Gaussian_Filter | (PCIN>>17+A*B')'  | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    84|
+|2     |DSP48E1  |     4|
+|4     |LUT1     |    20|
+|5     |LUT2     |   224|
+|6     |LUT3     |   285|
+|7     |LUT4     |   187|
+|8     |LUT5     |    73|
+|9     |LUT6     |   182|
+|10    |RAMB36E1 |     4|
+|11    |SRL16E   |    24|
+|12    |FDRE     |  1300|
+|13    |FDSE     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2088.254 ; gain = 1267.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 2088.254 ; gain = 1210.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2088.254 ; gain = 1267.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2097.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2101.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8fd5d9c7
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+142 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 2101.086 ; gain = 1499.004
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2101.086 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 431a986a04a6af18
+INFO: [Coretcl 2-1174] Renamed 21 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2101.086 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/F.A.L.C.O.N/Vitis_WS/Gaussian_Filter_IP/Gaussian_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 01:31:14 2026...

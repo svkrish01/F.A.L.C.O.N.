@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vitis HLS Report for 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2'
+================================================================
+* Date:           Thu Sep 24 14:58:48 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Canny_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.396 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_11_1_VITIS_LOOP_13_2  |        ?|        ?|         4|          1|          1|     ?|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    464|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        3|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       0|    149|    -|
+|Register         |        -|    -|     483|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        3|    0|     483|    645|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        1|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |      Memory     |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Line_Buffer_1_U  |Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg  |        2|  0|   0|    0|  1920|   16|     1|        30720|
+    |Line_Buffer_U    |Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi  |        1|  0|   0|    0|  1920|    8|     1|        15360|
+    +-----------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total            |                                                                                  |        3|  0|   0|    0|  3840|   24|     2|        46080|
+    +-----------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln11_fu_237_p2                |         +|   0|  0|  69|          62|           1|
+    |add_ln13_fu_311_p2                |         +|   0|  0|  38|          31|           1|
+    |and_ln62_fu_449_p2                |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter2  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_249                  |       and|   0|  0|   2|           1|           1|
+    |addr_cmp26_fu_286_p2              |      icmp|   0|  0|  71|          64|          64|
+    |addr_cmp_fu_295_p2                |      icmp|   0|  0|  71|          64|          64|
+    |icmp_ln11_fu_232_p2               |      icmp|   0|  0|  69|          62|          62|
+    |icmp_ln13_fu_255_p2               |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln62_1_fu_438_p2             |      icmp|   0|  0|  15|           8|           8|
+    |icmp_ln62_fu_427_p2               |      icmp|   0|  0|  15|           8|           8|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |Final_Magnitude_fu_455_p3         |    select|   0|  0|   8|           1|           8|
+    |Mid_Pixel_fu_357_p3               |    select|   0|  0|  16|           1|          16|
+    |Top_Pixel_fu_347_p3               |    select|   0|  0|   8|           1|           8|
+    |select_ln11_fu_260_p3             |    select|   0|  0|  31|           1|          31|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln62_1_fu_443_p2              |       xor|   0|  0|   2|           1|           2|
+    |xor_ln62_fu_432_p2                |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 464|         342|         313|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------+----+-----------+-----+-----------+
+    |                   Name                   | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |J_fu_84                                   |   9|          2|   31|         62|
+    |Sobel_to_Suppression_blk_n                |   9|          2|    1|          2|
+    |Suppression_to_Hysteresis_blk_n           |   9|          2|    1|          2|
+    |ap_done_int                               |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter4                   |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter4_Magnitude_1_reg_173  |  25|          5|    8|         40|
+    |ap_phi_reg_pp0_iter4_Magnitude_2_reg_186  |  25|          5|    8|         40|
+    |indvar_flatten_fu_88                      |   9|          2|   62|        124|
+    |reuse_addr_reg23_fu_64                    |   9|          2|   64|        128|
+    |reuse_addr_reg_fu_72                      |   9|          2|   64|        128|
+    |reuse_reg22_fu_68                         |   9|          2|    8|         16|
+    |reuse_reg_fu_76                           |   9|          2|   16|         32|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |Total                                     | 149|         32|  266|        580|
+    +------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |Center_Magnitude_reg_616                  |   8|   0|    8|          0|
+    |J_fu_84                                   |  31|   0|   31|          0|
+    |Line_Buffer_addr_reg_570                  |  11|   0|   11|          0|
+    |addr_cmp26_reg_576                        |   1|   0|    1|          0|
+    |addr_cmp_reg_586                          |   1|   0|    1|          0|
+    |ap_CS_fsm                                 |   1|   0|    1|          0|
+    |ap_done_reg                               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4                   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg          |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg          |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_Magnitude_1_reg_173  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter1_Magnitude_2_reg_186  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_Magnitude_1_reg_173  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_Magnitude_2_reg_186  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter3_Magnitude_1_reg_173  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter3_Magnitude_2_reg_186  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter4_Magnitude_1_reg_173  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter4_Magnitude_2_reg_186  |   8|   0|    8|          0|
+    |empty_49_fu_92                            |   8|   0|    8|          0|
+    |empty_50_fu_96                            |   8|   0|    8|          0|
+    |empty_51_fu_100                           |   8|   0|    8|          0|
+    |empty_52_fu_104                           |   8|   0|    8|          0|
+    |empty_53_fu_108                           |   8|   0|    8|          0|
+    |empty_fu_80                               |  16|   0|   16|          0|
+    |icmp_ln11_reg_555                         |   1|   0|    1|          0|
+    |indvar_flatten_fu_88                      |  62|   0|   62|          0|
+    |reuse_addr_reg23_fu_64                    |  64|   0|   64|          0|
+    |reuse_addr_reg_fu_72                      |  64|   0|   64|          0|
+    |reuse_reg22_fu_68                         |   8|   0|    8|          0|
+    |reuse_reg_fu_76                           |  16|   0|   16|          0|
+    |trunc_ln17_1_reg_565                      |  16|   0|   16|          0|
+    |trunc_ln17_reg_559                        |   8|   0|    8|          0|
+    |icmp_ln11_reg_555                         |  64|  32|    1|          0|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     | 483|  32|  420|          0|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|                 RTL Ports                | Dir | Bits|  Protocol  |                        Source Object                        |    C Type    |
++------------------------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|ap_clk                                    |   in|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|ap_rst                                    |   in|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|ap_start                                  |   in|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|ap_done                                   |  out|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|ap_idle                                   |  out|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|ap_ready                                  |  out|    1|  ap_ctrl_hs|  Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2|  return value|
+|Sobel_to_Suppression_dout                 |   in|   32|     ap_fifo|                                         Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_empty_n              |   in|    1|     ap_fifo|                                         Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_read                 |  out|    1|     ap_fifo|                                         Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_num_data_valid       |   in|    4|     ap_fifo|                                         Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_fifo_cap             |   in|    4|     ap_fifo|                                         Sobel_to_Suppression|       pointer|
+|Suppression_to_Hysteresis_din             |  out|   32|     ap_fifo|                                    Suppression_to_Hysteresis|       pointer|
+|Suppression_to_Hysteresis_full_n          |   in|    1|     ap_fifo|                                    Suppression_to_Hysteresis|       pointer|
+|Suppression_to_Hysteresis_write           |  out|    1|     ap_fifo|                                    Suppression_to_Hysteresis|       pointer|
+|Suppression_to_Hysteresis_num_data_valid  |   in|    4|     ap_fifo|                                    Suppression_to_Hysteresis|       pointer|
+|Suppression_to_Hysteresis_fifo_cap        |   in|    4|     ap_fifo|                                    Suppression_to_Hysteresis|       pointer|
+|Cols_1                                    |   in|   32|     ap_none|                                                       Cols_1|        scalar|
+|bound                                     |   in|   62|     ap_none|                                                        bound|        scalar|
++------------------------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+

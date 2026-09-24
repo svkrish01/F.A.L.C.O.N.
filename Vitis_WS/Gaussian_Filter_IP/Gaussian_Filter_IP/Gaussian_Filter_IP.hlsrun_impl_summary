@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\Gaussian_Filter_IP.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/23/26 01:29:08",
+ "timestampMillis": "1790107148181",
+ "buildStep": {
+  "cmdId": "c3b6ad67-e21c-47d5-b5d0-913942aa67fc",
+  "name": "vitis-run",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\logs\\Gaussian_Filter_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\hls_config.cfg --work_dir Gaussian_Filter_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\hls_config.cfg",
+   "--work_dir",
+   "Gaussian_Filter_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:29:08",
+ "timestampMillis": "1790107148183",
+ "status": {
+  "cmdId": "c3b6ad67-e21c-47d5-b5d0-913942aa67fc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153232",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Gaussian_Filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153233",
+ "buildStep": {
+  "cmdId": "c262a1f2-aa39-474d-8016-adcb06799f7c",
+  "name": "",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153235",
+ "status": {
+  "cmdId": "c262a1f2-aa39-474d-8016-adcb06799f7c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153238",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153238",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153239",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153240",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153240",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:29:13",
+ "timestampMillis": "1790107153241",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:34:28",
+ "timestampMillis": "1790107468968",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:34:28",
+ "timestampMillis": "1790107468969",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:34:28",
+ "timestampMillis": "1790107468971",
+ "status": {
+  "cmdId": "c262a1f2-aa39-474d-8016-adcb06799f7c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:34:29",
+ "timestampMillis": "1790107469101",
+ "status": {
+  "cmdId": "c3b6ad67-e21c-47d5-b5d0-913942aa67fc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:34:29",
+ "timestampMillis": "1790107469102",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:34:29",
+ "timestampMillis": "1790107469102",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

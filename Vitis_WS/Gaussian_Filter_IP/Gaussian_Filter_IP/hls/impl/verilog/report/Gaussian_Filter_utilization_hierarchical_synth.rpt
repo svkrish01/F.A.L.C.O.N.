@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 23 01:32:24 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/Gaussian_Filter_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                    Instance                                    |                                          Module                                          | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                                   |                                                                                    (top) |        790 |        766 |       0 |   24 | 1329 |      4 |      0 |          4 |
+|   bd_0_i                                                                       |                                                                                     bd_0 |        790 |        766 |       0 |   24 | 1329 |      4 |      0 |          4 |
+|     hls_inst                                                                   |                                                                          bd_0_hls_inst_0 |        790 |        766 |       0 |   24 | 1329 |      4 |      0 |          4 |
+|       inst                                                                     |                                                          bd_0_hls_inst_0_Gaussian_Filter |        790 |        766 |       0 |   24 | 1329 |      4 |      0 |          4 |
+|         (inst)                                                                 |                                                          bd_0_hls_inst_0_Gaussian_Filter |          0 |          0 |       0 |    0 |  152 |      0 |      0 |          0 |
+|         control_s_axi_U                                                        |                                            bd_0_hls_inst_0_Gaussian_Filter_control_s_axi |        191 |        191 |       0 |    0 |  116 |      0 |      0 |          0 |
+|         grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86     | bd_0_hls_inst_0_Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2 |        388 |        364 |       0 |   24 |  769 |      4 |      0 |          0 |
+|           (grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86) | bd_0_hls_inst_0_Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2 |        335 |        311 |       0 |   24 |  767 |      0 |      0 |          0 |
+|         regslice_both_Input_r_V_data_V_U                                       |                                            bd_0_hls_inst_0_Gaussian_Filter_regslice_both |         39 |         39 |       0 |    0 |   69 |      0 |      0 |          0 |
+|         regslice_both_Output_r_V_data_V_U                                      |                                          bd_0_hls_inst_0_Gaussian_Filter_regslice_both_1 |         34 |         34 |       0 |    0 |   61 |      0 |      0 |          0 |
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

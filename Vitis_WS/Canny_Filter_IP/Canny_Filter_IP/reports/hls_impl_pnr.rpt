@@ -1,0 +1,250 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Thu Sep 24 15:05:46 +0530 2026
+    * Version:         2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:         Canny_Filter_IP
+    * Solution:        hls
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              2710
+FF:               3817
+DSP:              16
+BRAM:             25
+URAM:             0
+SRL:              62
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 5.909       |
+| Post-Route     | 7.125       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++-------------------------------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                          | LUT | FF | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-------------------------------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                          |     |    |     |      |      | 62  |        |      |         |          |        |
+|   Cols_c3_U                                                                   |     |    |     |      |      |     |        |      |         |          |        |
+|   Cols_c4_U                                                                   |     |    |     |      |      |     |        |      |         |          |        |
+|   Cols_c_U                                                                    |     |    |     |      |      |     |        |      |         |          |        |
+|   Gaussian_Filter_U0                                                          |     |    |     |      |      | 1   |        |      |         |          |        |
+|     (Gaussian_Filter_U0)                                                      |     |    |     |      |      |     |        |      |         |          |        |
+|     grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90        |     |    |     |      |      | 1   |        |      |         |          |        |
+|       (grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90)    |     |    |     |      |      | 1   |        |      |         |          |        |
+|       Line_Buffer_1_U                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_U                                                           |     |    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                |     |    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_31ns_62_2_1_U16                                                  |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Input_Stream_V_data_V_U                                     |     |    |     |      |      |     |        |      |         |          |        |
+|   Gaussian_to_Sobel_U                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|   High_Threshold_c_U                                                          |     |    |     |      |      |     |        |      |         |          |        |
+|   Hysteresis_Filter_U0                                                        |     |    |     |      |      |     |        |      |         |          |        |
+|     (Hysteresis_Filter_U0)                                                    |     |    |     |      |      |     |        |      |         |          |        |
+|     grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84      |     |    |     |      |      |     |        |      |         |          |        |
+|       (grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84)  |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_1_U                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_U                                                           |     |    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                |     |    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_31ns_62_2_1_U80                                                  |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Output_Stream_V_data_V_U                                    |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Output_Stream_V_keep_V_U                                    |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Output_Stream_V_last_V_U                                    |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Output_Stream_V_strb_V_U                                    |     |    |     |      |      |     |        |      |         |          |        |
+|     regslice_both_Output_Stream_V_user_V_U                                    |     |    |     |      |      |     |        |      |         |          |        |
+|   Low_Threshold_c_U                                                           |     |    |     |      |      |     |        |      |         |          |        |
+|   Rows_c1_U                                                                   |     |    |     |      |      |     |        |      |         |          |        |
+|   Rows_c2_U                                                                   |     |    |     |      |      |     |        |      |         |          |        |
+|   Rows_c_U                                                                    |     |    |     |      |      |     |        |      |         |          |        |
+|   Sobel_Filter_U0                                                             |     |    |     |      |      | 1   |        |      |         |          |        |
+|     (Sobel_Filter_U0)                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|     grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68           |     |    |     |      |      | 1   |        |      |         |          |        |
+|       (grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68)       |     |    |     |      |      | 1   |        |      |         |          |        |
+|       Line_Buffer_1_U                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_U                                                           |     |    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                |     |    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_31ns_62_2_1_U44                                                  |     |    |     |      |      |     |        |      |         |          |        |
+|   Sobel_to_Suppression_U                                                      |     |    |     |      |      |     |        |      |         |          |        |
+|   Suppression_Filter_U0                                                       |     |    |     |      |      |     |        |      |         |          |        |
+|     (Suppression_Filter_U0)                                                   |     |    |     |      |      |     |        |      |         |          |        |
+|     grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68     |     |    |     |      |      |     |        |      |         |          |        |
+|       (grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68) |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_1_U                                                         |     |    |     |      |      |     |        |      |         |          |        |
+|       Line_Buffer_U                                                           |     |    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                |     |    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_31ns_62_2_1_U57                                                  |     |    |     |      |      |     |        |      |         |          |        |
+|   Suppression_to_Hysteresis_U                                                 |     |    |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                             |     |    |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                                                               |     |    |     |      |      |     |        |      |         |          |        |
+|   start_for_Hysteresis_Filter_U0_U                                            |     |    |     |      |      |     |        |      |         |          |        |
+|   start_for_Sobel_Filter_U0_U                                                 |     |    |     |      |      |     |        |      |         |          |        |
+|   start_for_Suppression_Filter_U0_U                                           |     |    |     |      |      |     |        |      |         |          |        |
++-------------------------------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 5.09%  | OK     |
+| FD                                                        | 50%       | 3.59%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.36%  | OK     |
+| MUXF7                                                     | 15%       | 0.02%  | OK     |
+| DSP                                                       | 80%       | 7.27%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 8.93%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 8.10%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 68     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.52   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN         | ENDPOINT PIN                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                        |                                                                 |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 2.875 | Cols_c_U/addr_reg[0]/C | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[4]    |            6 |         96 |          6.591 |          1.509 |        5.082 |
+| Path2 | 2.903 | Cols_c_U/addr_reg[0]/C | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[13]   |            6 |         96 |          6.563 |          1.509 |        5.054 |
+| Path3 | 2.916 | Cols_c_U/addr_reg[0]/C | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg__0/B[4] |            6 |         96 |          6.550 |          1.509 |        5.041 |
+| Path4 | 2.930 | Cols_c_U/addr_reg[0]/C | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[8]    |            6 |         96 |          6.536 |          1.509 |        5.027 |
+| Path5 | 2.946 | Cols_c_U/addr_reg[0]/C | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg/B[12]   |            6 |         96 |          6.520 |          1.509 |        5.011 |
++-------+-------+------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +---------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                         | Primitive Type       |
+    +---------------------------------------------------------------------+----------------------+
+    | Cols_c_U/addr_reg[0]                                                | FLOP_LATCH.flop.FDRE |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1 | LUT.others.LUT5      |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_10__1    | LUT.others.LUT4      |
+    | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg             | MULT.dsp.DSP48E1     |
+    +---------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                         | Primitive Type       |
+    +---------------------------------------------------------------------+----------------------+
+    | Cols_c_U/addr_reg[0]                                                | FLOP_LATCH.flop.FDRE |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1 | LUT.others.LUT5      |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_1__1     | LUT.others.LUT4      |
+    | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg             | MULT.dsp.DSP48E1     |
+    +---------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                         | Primitive Type       |
+    +---------------------------------------------------------------------+----------------------+
+    | Cols_c_U/addr_reg[0]                                                | FLOP_LATCH.flop.FDRE |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1 | LUT.others.LUT5      |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_10__1    | LUT.others.LUT4      |
+    | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg__0          | MULT.dsp.DSP48E1     |
+    +---------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                         | Primitive Type       |
+    +---------------------------------------------------------------------+----------------------+
+    | Cols_c_U/addr_reg[0]                                                | FLOP_LATCH.flop.FDRE |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1 | LUT.others.LUT5      |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_6__1     | LUT.others.LUT4      |
+    | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg             | MULT.dsp.DSP48E1     |
+    +---------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                         | Primitive Type       |
+    +---------------------------------------------------------------------+----------------------+
+    | Cols_c_U/addr_reg[0]                                                | FLOP_LATCH.flop.FDRE |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_100__1 | LUT.others.LUT5      |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_79__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_61__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_43__1  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/tmp_product_i_33__2  | CARRY.others.CARRY4  |
+    | Cols_c_U/U_Canny_Filter_fifo_w32_d2_S_ShiftReg/buff0_reg_i_2__1     | LUT.others.LUT4      |
+    | Hysteresis_Filter_U0/mul_31ns_31ns_62_2_1_U80/buff0_reg             | MULT.dsp.DSP48E1     |
+    +---------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------------+
+| Report Type              | Report Location                                                      |
++--------------------------+----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/Canny_Filter_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/Canny_Filter_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/Canny_Filter_power_routed.rpt                    |
+| status                   | impl/verilog/report/Canny_Filter_status_routed.rpt                   |
+| timing                   | impl/verilog/report/Canny_Filter_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/Canny_Filter_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/Canny_Filter_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/Canny_Filter_utilization_hierarchical_routed.rpt |
++--------------------------+----------------------------------------------------------------------+
+
+

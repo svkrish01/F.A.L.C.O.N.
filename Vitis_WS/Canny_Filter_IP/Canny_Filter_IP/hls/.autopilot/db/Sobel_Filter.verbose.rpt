@@ -1,0 +1,897 @@
+
+
+================================================================
+== Vitis HLS Report for 'Sobel_Filter'
+================================================================
+* Date:           Thu Sep 24 14:58:47 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        Canny_Filter_IP
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.396 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                                                 |                                                       |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                             Instance                            |                         Module                        |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68  |Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2  |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+        +-----------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    142|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        8|    4|    1290|   1745|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     79|    -|
+|Register         |        -|    -|     163|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        8|    4|    1453|   1966|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    1|       1|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |                             Instance                            |                         Module                        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68  |Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2  |        8|   0|  1149|  1697|    0|
+    |mul_31ns_31ns_62_2_1_U44                                         |mul_31ns_31ns_62_2_1                                   |        0|   4|   141|    48|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                            |                                                       |        8|   4|  1290|  1745|    0|
+    +-----------------------------------------------------------------+-------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+----+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+----+---+----+------------+------------+
+    |empty_63_fu_91_p2   |      icmp|   0|  0|  39|          32|           1|
+    |empty_64_fu_105_p2  |      icmp|   0|  0|  39|          32|           1|
+    |ap_block_state1     |        or|   0|  0|   2|           1|           1|
+    |smax1_fu_111_p3     |    select|   0|  0|  31|           1|          31|
+    |smax_fu_97_p3       |    select|   0|  0|  31|           1|          31|
+    +--------------------+----------+----+---+----+------------+------------+
+    |Total               |          |   0|  0| 142|          67|          65|
+    +--------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+----+-----------+-----+-----------+
+    |      Name     | LUT| Input Size| Bits| Total Bits|
+    +---------------+----+-----------+-----+-----------+
+    |Cols_blk_n     |   9|          2|    1|          2|
+    |Cols_c3_blk_n  |   9|          2|    1|          2|
+    |Rows_blk_n     |   9|          2|    1|          2|
+    |Rows_c1_blk_n  |   9|          2|    1|          2|
+    |ap_NS_fsm      |  25|          5|    1|          5|
+    |ap_done        |   9|          2|    1|          2|
+    |real_start     |   9|          2|    1|          2|
+    +---------------+----+-----------+-----+-----------+
+    |Total          |  79|         17|    7|         17|
+    +---------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                     | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Cols_2_reg_127                                                                |  32|   0|   32|          0|
+    |ap_CS_fsm                                                                     |   4|   0|    4|          0|
+    |ap_done_reg                                                                   |   1|   0|    1|          0|
+    |bound_reg_152                                                                 |  62|   0|   62|          0|
+    |grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68_ap_start_reg  |   1|   0|    1|          0|
+    |smax1_reg_137                                                                 |  31|   0|   31|          0|
+    |smax_reg_132                                                                  |  31|   0|   31|          0|
+    |start_once_reg                                                                |   1|   0|    1|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                         | 163|   0|  163|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_full_n                         |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_continue                          |   in|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_out                            |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|start_write                          |  out|    1|  ap_ctrl_hs|          Sobel_Filter|  return value|
+|Gaussian_to_Sobel_dout               |   in|   32|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_empty_n            |   in|    1|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_read               |  out|    1|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_num_data_valid     |   in|    4|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Gaussian_to_Sobel_fifo_cap           |   in|    4|     ap_fifo|     Gaussian_to_Sobel|       pointer|
+|Sobel_to_Suppression_din             |  out|   32|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_full_n          |   in|    1|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_write           |  out|    1|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_num_data_valid  |   in|    4|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Sobel_to_Suppression_fifo_cap        |   in|    4|     ap_fifo|  Sobel_to_Suppression|       pointer|
+|Rows_dout                            |   in|   32|     ap_fifo|                  Rows|       pointer|
+|Rows_empty_n                         |   in|    1|     ap_fifo|                  Rows|       pointer|
+|Rows_read                            |  out|    1|     ap_fifo|                  Rows|       pointer|
+|Rows_num_data_valid                  |   in|    3|     ap_fifo|                  Rows|       pointer|
+|Rows_fifo_cap                        |   in|    3|     ap_fifo|                  Rows|       pointer|
+|Cols_dout                            |   in|   32|     ap_fifo|                  Cols|       pointer|
+|Cols_empty_n                         |   in|    1|     ap_fifo|                  Cols|       pointer|
+|Cols_read                            |  out|    1|     ap_fifo|                  Cols|       pointer|
+|Cols_num_data_valid                  |   in|    3|     ap_fifo|                  Cols|       pointer|
+|Cols_fifo_cap                        |   in|    3|     ap_fifo|                  Cols|       pointer|
+|Rows_c1_din                          |  out|   32|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_full_n                       |   in|    1|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_write                        |  out|    1|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_num_data_valid               |   in|    3|     ap_fifo|               Rows_c1|       pointer|
+|Rows_c1_fifo_cap                     |   in|    3|     ap_fifo|               Rows_c1|       pointer|
+|Cols_c3_din                          |  out|   32|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_full_n                       |   in|    1|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_write                        |  out|    1|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_num_data_valid               |   in|    3|     ap_fifo|               Cols_c3|       pointer|
+|Cols_c3_fifo_cap                     |   in|    3|     ap_fifo|               Cols_c3|       pointer|
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.26>
+ST_1 : Operation 5 [1/1] ( I:3.63ns O:3.63ns )   --->   "%Cols_2 = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %Cols"   --->   Operation 5 'read' 'Cols_2' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = trunc i32 %Cols_2"   --->   Operation 6 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %Cols_c3, i32 %Cols_2"   --->   Operation 7 'write' 'write_ln0' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] ( I:3.63ns O:3.63ns )   --->   "%Rows_2 = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %Rows"   --->   Operation 8 'read' 'Rows_2' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%empty_62 = trunc i32 %Rows_2"   --->   Operation 9 'trunc' 'empty_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %Rows_c1, i32 %Rows_2"   --->   Operation 10 'write' 'write_ln0' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 11 [1/1] (2.55ns)   --->   "%empty_63 = icmp_sgt  i32 %Cols_2, i32 0"   --->   Operation 11 'icmp' 'empty_63' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.73ns)   --->   "%smax = select i1 %empty_63, i31 %empty, i31 0"   --->   Operation 12 'select' 'smax' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (2.55ns)   --->   "%empty_64 = icmp_sgt  i32 %Rows_2, i32 0"   --->   Operation 13 'icmp' 'empty_64' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.73ns)   --->   "%smax1 = select i1 %empty_64, i31 %empty_62, i31 0"   --->   Operation 14 'select' 'smax1' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%cast = zext i31 %smax1"   --->   Operation 15 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%cast4 = zext i31 %smax"   --->   Operation 16 'zext' 'cast4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (6.91ns)   --->   "%bound = mul i62 %cast, i62 %cast4"   --->   Operation 17 'mul' 'bound' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 18 [1/2] (6.91ns)   --->   "%bound = mul i62 %cast, i62 %cast4"   --->   Operation 18 'mul' 'bound' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2, i32 %Cols_2, i32 %Gaussian_to_Sobel, i32 %Sobel_to_Suppression, i62 %bound"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Cols, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Cols_c3, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Rows, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Rows_c1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Sobel_to_Suppression, void @empty_9, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Gaussian_to_Sobel, void @empty_9, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2, i32 %Cols_2, i32 %Gaussian_to_Sobel, i32 %Sobel_to_Suppression, i62 %bound"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln72 = ret" [Sobel_Filter.cpp:72]   --->   Operation 27 'ret' 'ret_ln72' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ Gaussian_to_Sobel]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Sobel_to_Suppression]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Rows]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Cols]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Rows_c1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Cols_c3]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+Cols_2            (read         ) [ 00111]
+empty             (trunc        ) [ 00000]
+write_ln0         (write        ) [ 00000]
+Rows_2            (read         ) [ 00000]
+empty_62          (trunc        ) [ 00000]
+write_ln0         (write        ) [ 00000]
+empty_63          (icmp         ) [ 00000]
+smax              (select       ) [ 00100]
+empty_64          (icmp         ) [ 00000]
+smax1             (select       ) [ 00100]
+cast              (zext         ) [ 00010]
+cast4             (zext         ) [ 00010]
+bound             (mul          ) [ 00001]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+call_ln0          (call         ) [ 00000]
+ret_ln72          (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="Gaussian_to_Sobel">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Gaussian_to_Sobel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="Sobel_to_Suppression">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Sobel_to_Suppression"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="Rows">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Rows"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="Cols">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Cols"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="Rows_c1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Rows_c1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="Cols_c3">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Cols_c3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.i32P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.i32P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ScalarProp_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="Cols_2_read_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="32" slack="0"/>
+<pin id="42" dir="0" index="1" bw="32" slack="0"/>
+<pin id="43" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Cols_2/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="write_ln0_write_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="0" slack="0"/>
+<pin id="48" dir="0" index="1" bw="32" slack="0"/>
+<pin id="49" dir="0" index="2" bw="32" slack="0"/>
+<pin id="50" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="Rows_2_read_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="32" slack="0"/>
+<pin id="56" dir="0" index="1" bw="32" slack="0"/>
+<pin id="57" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Rows_2/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="write_ln0_write_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="0" slack="0"/>
+<pin id="62" dir="0" index="1" bw="32" slack="0"/>
+<pin id="63" dir="0" index="2" bw="32" slack="0"/>
+<pin id="64" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="0" slack="0"/>
+<pin id="70" dir="0" index="1" bw="32" slack="2"/>
+<pin id="71" dir="0" index="2" bw="32" slack="0"/>
+<pin id="72" dir="0" index="3" bw="32" slack="0"/>
+<pin id="73" dir="0" index="4" bw="62" slack="0"/>
+<pin id="74" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1004" name="grp_fu_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="31" slack="0"/>
+<pin id="80" dir="0" index="1" bw="31" slack="0"/>
+<pin id="81" dir="1" index="2" bw="62" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="bound/2 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1004" name="empty_fu_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="32" slack="0"/>
+<pin id="85" dir="1" index="1" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="empty/1 "/>
+</bind>
+</comp>
+
+<comp id="87" class="1004" name="empty_62_fu_87">
+<pin_list>
+<pin id="88" dir="0" index="0" bw="32" slack="0"/>
+<pin id="89" dir="1" index="1" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="empty_62/1 "/>
+</bind>
+</comp>
+
+<comp id="91" class="1004" name="empty_63_fu_91">
+<pin_list>
+<pin id="92" dir="0" index="0" bw="32" slack="0"/>
+<pin id="93" dir="0" index="1" bw="32" slack="0"/>
+<pin id="94" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="empty_63/1 "/>
+</bind>
+</comp>
+
+<comp id="97" class="1004" name="smax_fu_97">
+<pin_list>
+<pin id="98" dir="0" index="0" bw="1" slack="0"/>
+<pin id="99" dir="0" index="1" bw="31" slack="0"/>
+<pin id="100" dir="0" index="2" bw="31" slack="0"/>
+<pin id="101" dir="1" index="3" bw="31" slack="1"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="smax/1 "/>
+</bind>
+</comp>
+
+<comp id="105" class="1004" name="empty_64_fu_105">
+<pin_list>
+<pin id="106" dir="0" index="0" bw="32" slack="0"/>
+<pin id="107" dir="0" index="1" bw="32" slack="0"/>
+<pin id="108" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="empty_64/1 "/>
+</bind>
+</comp>
+
+<comp id="111" class="1004" name="smax1_fu_111">
+<pin_list>
+<pin id="112" dir="0" index="0" bw="1" slack="0"/>
+<pin id="113" dir="0" index="1" bw="31" slack="0"/>
+<pin id="114" dir="0" index="2" bw="31" slack="0"/>
+<pin id="115" dir="1" index="3" bw="31" slack="1"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="smax1/1 "/>
+</bind>
+</comp>
+
+<comp id="119" class="1004" name="cast_fu_119">
+<pin_list>
+<pin id="120" dir="0" index="0" bw="31" slack="1"/>
+<pin id="121" dir="1" index="1" bw="62" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="cast/2 "/>
+</bind>
+</comp>
+
+<comp id="123" class="1004" name="cast4_fu_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="31" slack="1"/>
+<pin id="125" dir="1" index="1" bw="62" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="cast4/2 "/>
+</bind>
+</comp>
+
+<comp id="127" class="1005" name="Cols_2_reg_127">
+<pin_list>
+<pin id="128" dir="0" index="0" bw="32" slack="2"/>
+<pin id="129" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opset="Cols_2 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1005" name="smax_reg_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="31" slack="1"/>
+<pin id="134" dir="1" index="1" bw="31" slack="1"/>
+</pin_list>
+<bind>
+<opset="smax "/>
+</bind>
+</comp>
+
+<comp id="137" class="1005" name="smax1_reg_137">
+<pin_list>
+<pin id="138" dir="0" index="0" bw="31" slack="1"/>
+<pin id="139" dir="1" index="1" bw="31" slack="1"/>
+</pin_list>
+<bind>
+<opset="smax1 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1005" name="cast_reg_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="62" slack="1"/>
+<pin id="144" dir="1" index="1" bw="62" slack="1"/>
+</pin_list>
+<bind>
+<opset="cast "/>
+</bind>
+</comp>
+
+<comp id="147" class="1005" name="cast4_reg_147">
+<pin_list>
+<pin id="148" dir="0" index="0" bw="62" slack="1"/>
+<pin id="149" dir="1" index="1" bw="62" slack="1"/>
+</pin_list>
+<bind>
+<opset="cast4 "/>
+</bind>
+</comp>
+
+<comp id="152" class="1005" name="bound_reg_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="62" slack="1"/>
+<pin id="154" dir="1" index="1" bw="62" slack="1"/>
+</pin_list>
+<bind>
+<opset="bound "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="44"><net_src comp="12" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="45"><net_src comp="6" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="51"><net_src comp="14" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="52"><net_src comp="10" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="53"><net_src comp="40" pin="2"/><net_sink comp="46" pin=2"/></net>
+
+<net id="58"><net_src comp="12" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="59"><net_src comp="4" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="65"><net_src comp="14" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="66"><net_src comp="8" pin="0"/><net_sink comp="60" pin=1"/></net>
+
+<net id="67"><net_src comp="54" pin="2"/><net_sink comp="60" pin=2"/></net>
+
+<net id="75"><net_src comp="20" pin="0"/><net_sink comp="68" pin=0"/></net>
+
+<net id="76"><net_src comp="0" pin="0"/><net_sink comp="68" pin=2"/></net>
+
+<net id="77"><net_src comp="2" pin="0"/><net_sink comp="68" pin=3"/></net>
+
+<net id="82"><net_src comp="78" pin="2"/><net_sink comp="68" pin=4"/></net>
+
+<net id="86"><net_src comp="40" pin="2"/><net_sink comp="83" pin=0"/></net>
+
+<net id="90"><net_src comp="54" pin="2"/><net_sink comp="87" pin=0"/></net>
+
+<net id="95"><net_src comp="40" pin="2"/><net_sink comp="91" pin=0"/></net>
+
+<net id="96"><net_src comp="16" pin="0"/><net_sink comp="91" pin=1"/></net>
+
+<net id="102"><net_src comp="91" pin="2"/><net_sink comp="97" pin=0"/></net>
+
+<net id="103"><net_src comp="83" pin="1"/><net_sink comp="97" pin=1"/></net>
+
+<net id="104"><net_src comp="18" pin="0"/><net_sink comp="97" pin=2"/></net>
+
+<net id="109"><net_src comp="54" pin="2"/><net_sink comp="105" pin=0"/></net>
+
+<net id="110"><net_src comp="16" pin="0"/><net_sink comp="105" pin=1"/></net>
+
+<net id="116"><net_src comp="105" pin="2"/><net_sink comp="111" pin=0"/></net>
+
+<net id="117"><net_src comp="87" pin="1"/><net_sink comp="111" pin=1"/></net>
+
+<net id="118"><net_src comp="18" pin="0"/><net_sink comp="111" pin=2"/></net>
+
+<net id="122"><net_src comp="119" pin="1"/><net_sink comp="78" pin=0"/></net>
+
+<net id="126"><net_src comp="123" pin="1"/><net_sink comp="78" pin=1"/></net>
+
+<net id="130"><net_src comp="40" pin="2"/><net_sink comp="127" pin=0"/></net>
+
+<net id="131"><net_src comp="127" pin="1"/><net_sink comp="68" pin=1"/></net>
+
+<net id="135"><net_src comp="97" pin="3"/><net_sink comp="132" pin=0"/></net>
+
+<net id="136"><net_src comp="132" pin="1"/><net_sink comp="123" pin=0"/></net>
+
+<net id="140"><net_src comp="111" pin="3"/><net_sink comp="137" pin=0"/></net>
+
+<net id="141"><net_src comp="137" pin="1"/><net_sink comp="119" pin=0"/></net>
+
+<net id="145"><net_src comp="119" pin="1"/><net_sink comp="142" pin=0"/></net>
+
+<net id="146"><net_src comp="142" pin="1"/><net_sink comp="78" pin=0"/></net>
+
+<net id="150"><net_src comp="123" pin="1"/><net_sink comp="147" pin=0"/></net>
+
+<net id="151"><net_src comp="147" pin="1"/><net_sink comp="78" pin=1"/></net>
+
+<net id="155"><net_src comp="78" pin="2"/><net_sink comp="152" pin=0"/></net>
+
+<net id="156"><net_src comp="152" pin="1"/><net_sink comp="68" pin=4"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: Sobel_to_Suppression | {3 4 }
+	Port: Rows_c1 | {1 }
+	Port: Cols_c3 | {1 }
+ - Input state : 
+	Port: Sobel_Filter : Gaussian_to_Sobel | {3 4 }
+	Port: Sobel_Filter : Rows | {1 }
+	Port: Sobel_Filter : Cols | {1 }
+  - Chain level:
+	State 1
+		smax : 1
+		smax1 : 1
+	State 2
+		bound : 1
+	State 3
+		call_ln0 : 1
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                         Functional Unit                         |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   call   | grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68 |    8    |    0    |  3.176  |   1016  |   1514  |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|    mul   |                            grp_fu_78                            |    0    |    4    |    0    |   141   |    48   |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   icmp   |                          empty_63_fu_91                         |    0    |    0    |    0    |    0    |    39   |    0    |
+|          |                         empty_64_fu_105                         |    0    |    0    |    0    |    0    |    39   |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|  select  |                            smax_fu_97                           |    0    |    0    |    0    |    0    |    31   |    0    |
+|          |                           smax1_fu_111                          |    0    |    0    |    0    |    0    |    31   |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   read   |                        Cols_2_read_fu_40                        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                        Rows_2_read_fu_54                        |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   write  |                      write_ln0_write_fu_46                      |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                      write_ln0_write_fu_60                      |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   trunc  |                           empty_fu_83                           |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                          empty_62_fu_87                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   zext   |                           cast_fu_119                           |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                           cast4_fu_123                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                                 |    8    |    4    |  3.176  |   1157  |   1702  |    0    |
+|----------|-----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++--------------+--------+
+|              |   FF   |
++--------------+--------+
+|Cols_2_reg_127|   32   |
+| bound_reg_152|   62   |
+| cast4_reg_147|   62   |
+| cast_reg_142 |   62   |
+| smax1_reg_137|   31   |
+| smax_reg_132 |   31   |
++--------------+--------+
+|     Total    |   280  |
++--------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
+|                               Comp                              |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|-----------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
+| grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68 |  p4  |   2  |  62  |   124  ||    0    ||    9    |
+|                            grp_fu_78                            |  p0  |   2  |  31  |   62   ||    0    ||    9    |
+|                            grp_fu_78                            |  p1  |   2  |  31  |   62   ||    0    ||    9    |
+|-----------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
+|                              Total                              |      |      |      |   248  ||  4.764  ||    0    ||    27   |
+|-----------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    8   |    4   |    3   |  1157  |  1702  |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    4   |    0   |   27   |    -   |
+|  Register |    -   |    -   |    -   |   280  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    8   |    4   |    7   |  1437  |  1729  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

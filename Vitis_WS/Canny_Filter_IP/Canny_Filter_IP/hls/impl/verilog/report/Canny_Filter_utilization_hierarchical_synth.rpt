@@ -1,0 +1,62 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 24 15:02:52 2026
+| Host         : DESKTOP-55UAODO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 7 -file ./report/Canny_Filter_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                       Instance                                      |                                                      Module                                                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                                        |                                                                                                           (top) |       2909 |       2787 |       0 |  122 | 3817 |     12 |      1 |         16 |
+|   bd_0_i                                                                            |                                                                                                            bd_0 |       2909 |       2787 |       0 |  122 | 3817 |     12 |      1 |         16 |
+|     hls_inst                                                                        |                                                                                                 bd_0_hls_inst_0 |       2909 |       2787 |       0 |  122 | 3817 |     12 |      1 |         16 |
+|       inst                                                                          |                                                                                    bd_0_hls_inst_0_Canny_Filter |       2909 |       2787 |       0 |  122 | 3817 |     12 |      1 |         16 |
+|         control_s_axi_U                                                             |                                                                      bd_0_hls_inst_0_Canny_Filter_control_s_axi |        235 |        235 |       0 |    0 |  181 |      0 |      0 |          0 |
+|         Cols_c3_U                                                                   |                                                                      bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S |         72 |         72 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                          bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg_27 |         64 |         64 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Cols_c4_U                                                                   |                                                                    bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_0 |         72 |         72 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                          bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg_26 |         64 |         64 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Cols_c_U                                                                    |                                                                    bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_1 |         71 |         71 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                          bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg_25 |         64 |         64 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Gaussian_Filter_U0                                                          |                                                                    bd_0_hls_inst_0_Canny_Filter_Gaussian_Filter |        450 |        449 |       0 |    1 | 1019 |      4 |      0 |          4 |
+|           (Gaussian_Filter_U0)                                                      |                                                                    bd_0_hls_inst_0_Canny_Filter_Gaussian_Filter |          1 |          1 |       0 |    0 |  101 |      0 |      0 |          0 |
+|           grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90        |                           bd_0_hls_inst_0_Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2 |        364 |        363 |       0 |    1 |  815 |      4 |      0 |          0 |
+|             (grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90)    |                           bd_0_hls_inst_0_Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2 |        310 |        309 |       0 |    1 |  813 |      0 |      0 |          0 |
+|           regslice_both_Input_Stream_V_data_V_U                                     |                                                                   bd_0_hls_inst_0_Canny_Filter_regslice_both_21 |         39 |         39 |       0 |    0 |   69 |      0 |      0 |          0 |
+|         Hysteresis_Filter_U0                                                        |                                                                  bd_0_hls_inst_0_Canny_Filter_Hysteresis_Filter |        566 |        566 |       0 |    0 |  707 |      3 |      0 |          4 |
+|           (Hysteresis_Filter_U0)                                                    |                                                                  bd_0_hls_inst_0_Canny_Filter_Hysteresis_Filter |         64 |         64 |       0 |    0 |  270 |      0 |      0 |          0 |
+|           grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84      |                         bd_0_hls_inst_0_Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 |        421 |        421 |       0 |    0 |  362 |      3 |      0 |          0 |
+|             (grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84)  |                         bd_0_hls_inst_0_Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 |        324 |        324 |       0 |    0 |  360 |      0 |      0 |          0 |
+|             Line_Buffer_U                                                           | bd_0_hls_inst_0_Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W_16 |         60 |         60 |       0 |    0 |    0 |      2 |      0 |          0 |
+|         Rows_c1_U                                                                   |                                                                    bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_3 |         71 |         71 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                          bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg_12 |         64 |         64 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Rows_c2_U                                                                   |                                                                    bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_4 |         71 |         71 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                          bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg_11 |         64 |         64 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Rows_c_U                                                                    |                                                                    bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_5 |         70 |         70 |       0 |    0 |   70 |      0 |      0 |          0 |
+|           U_Canny_Filter_fifo_w32_d2_S_ShiftReg                                     |                                                             bd_0_hls_inst_0_Canny_Filter_fifo_w32_d2_S_ShiftReg |         63 |         63 |       0 |    0 |   64 |      0 |      0 |          0 |
+|         Sobel_Filter_U0                                                             |                                                                       bd_0_hls_inst_0_Canny_Filter_Sobel_Filter |        795 |        794 |       0 |    1 | 1029 |      4 |      0 |          4 |
+|           (Sobel_Filter_U0)                                                         |                                                                       bd_0_hls_inst_0_Canny_Filter_Sobel_Filter |          3 |          3 |       0 |    0 |  100 |      0 |      0 |          0 |
+|           grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68           |                              bd_0_hls_inst_0_Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2 |        745 |        744 |       0 |    1 |  895 |      4 |      0 |          0 |
+|             (grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68)       |                              bd_0_hls_inst_0_Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2 |        714 |        713 |       0 |    1 |  893 |      0 |      0 |          0 |
+|         Suppression_Filter_U0                                                       |                                                                 bd_0_hls_inst_0_Canny_Filter_Suppression_Filter |        246 |        246 |       0 |    0 |  400 |      1 |      1 |          4 |
+|           (Suppression_Filter_U0)                                                   |                                                                 bd_0_hls_inst_0_Canny_Filter_Suppression_Filter |          1 |          1 |       0 |    0 |   99 |      0 |      0 |          0 |
+|           grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68     |                        bd_0_hls_inst_0_Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 |        200 |        200 |       0 |    0 |  267 |      1 |      1 |          0 |
+|             (grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68) |                        bd_0_hls_inst_0_Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 |        145 |        145 |       0 |    0 |  265 |      0 |      0 |          0 |
++-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

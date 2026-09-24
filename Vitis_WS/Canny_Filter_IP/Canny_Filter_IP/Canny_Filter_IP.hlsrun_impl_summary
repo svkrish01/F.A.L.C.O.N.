@@ -1,0 +1,273 @@
+<ENTRY>
+{
+ "thisFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\Canny_Filter_IP.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/24/26 14:59:07",
+ "timestampMillis": "1790242147556",
+ "buildStep": {
+  "cmdId": "4aac9ce1-1e52-4e29-963e-bddc7a464f7b",
+  "name": "vitis-run",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\logs\\Canny_Filter_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\hls_config.cfg --work_dir Canny_Filter_IP ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\hls_config.cfg",
+   "--work_dir",
+   "Canny_Filter_IP"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/24/26 14:59:07",
+ "timestampMillis": "1790242147557",
+ "status": {
+  "cmdId": "4aac9ce1-1e52-4e29-963e-bddc7a464f7b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153240",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Canny_Filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter.h",
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Gaussian_Filter.cpp",
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Sobel_Filter.cpp",
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Suppression_Filter.cpp",
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Hysteresis_Filter.cpp",
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153242",
+ "buildStep": {
+  "cmdId": "1fcd7fc5-edfa-428f-a906-313a71c8e05f",
+  "name": "",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153242",
+ "status": {
+  "cmdId": "1fcd7fc5-edfa-428f-a906-313a71c8e05f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153245",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153245",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153246",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153246",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153247",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 14:59:13",
+ "timestampMillis": "1790242153247",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547174",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547176",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Canny_Filter_IP\\Canny_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547177",
+ "status": {
+  "cmdId": "1fcd7fc5-edfa-428f-a906-313a71c8e05f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547326",
+ "status": {
+  "cmdId": "4aac9ce1-1e52-4e29-963e-bddc7a464f7b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547328",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/24/26 15:05:47",
+ "timestampMillis": "1790242547329",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

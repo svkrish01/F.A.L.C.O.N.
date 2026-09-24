@@ -1,0 +1,5 @@
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten gaussian_filter/VITIS_LOOP_15_2
+set_directive_loop_flatten hysteresis_filter/VITIS_LOOP_13_2
+set_directive_loop_flatten sobel_filter/VITIS_LOOP_16_2
+set_directive_loop_flatten suppression_filter/VITIS_LOOP_13_2

@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=Gaussian_Filter",
+      "-c",
+      "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter.cpp"
+    ],
+    "file": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter.cpp"
+  }
+]

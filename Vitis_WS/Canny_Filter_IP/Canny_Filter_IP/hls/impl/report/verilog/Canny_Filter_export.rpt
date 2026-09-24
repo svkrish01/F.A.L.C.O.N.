@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2026.1
+Project:             Canny_Filter_IP
+Solution:            hls
+Device target:       xc7z020-clg400-1
+Report date:         Thu Sep 24 15:05:46 +0530 2026
+
+#=== Post-Implementation Resource usage ===
+SLICE:         1107
+LUT:           2710
+FF:            3817
+DSP:             16
+BRAM:            25
+URAM:             0
+LATCH:            0
+SRL:             62
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      5.909
+CP achieved post-implementation: 7.125
+Timing met

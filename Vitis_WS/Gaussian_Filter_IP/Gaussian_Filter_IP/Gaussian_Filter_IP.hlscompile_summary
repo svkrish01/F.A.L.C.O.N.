@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\Gaussian_Filter_IP.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/23/26 01:28:06",
+ "timestampMillis": "1790107086182",
+ "buildStep": {
+  "cmdId": "fced95cd-4919-4f8f-a637-77335b9824a0",
+  "name": "v++",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\logs\\Gaussian_Filter_IP.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\hls_config.cfg --work_dir Gaussian_Filter_IP ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\hls_config.cfg",
+   "--work_dir",
+   "Gaussian_Filter_IP"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=Gaussian_Filter.cpp\nsyn.top=Gaussian_Filter"
+   }
+  ],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:28:06",
+ "timestampMillis": "1790107086186",
+ "status": {
+  "cmdId": "fced95cd-4919-4f8f-a637-77335b9824a0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094594",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Gaussian_Filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094596",
+ "buildStep": {
+  "cmdId": "f24fce2c-bb25-469c-841f-ef2ccdc26745",
+  "name": "",
+  "logFile": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094596",
+ "status": {
+  "cmdId": "f24fce2c-bb25-469c-841f-ef2ccdc26745",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094597",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094597",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:14",
+ "timestampMillis": "1790107094597",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128315",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128316",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128316",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128317",
+ "status": {
+  "cmdId": "f24fce2c-bb25-469c-841f-ef2ccdc26745",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128473",
+ "status": {
+  "cmdId": "fced95cd-4919-4f8f-a637-77335b9824a0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128495",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\reports\\v++_compile_Gaussian_Filter_IP_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/23/26 01:28:48",
+ "timestampMillis": "1790107128496",
+ "report": {
+  "path": "C:/F.A.L.C.O.N\\Vitis_WS\\Gaussian_Filter_IP\\Gaussian_Filter_IP\\reports\\.db\\v++_compile_Gaussian_Filter_IP_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

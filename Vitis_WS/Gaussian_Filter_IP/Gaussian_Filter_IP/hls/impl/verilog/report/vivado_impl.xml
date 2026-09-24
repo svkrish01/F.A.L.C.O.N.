@@ -1,0 +1,176 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2026.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.542</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.542</CP_FINAL>
+  <CP_ROUTE>6.542</CP_ROUTE>
+  <CP_SYNTH>5.894</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.458</SLACK_FINAL>
+  <SLACK_ROUTE>3.458</SLACK_ROUTE>
+  <SLACK_SYNTH>4.106</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.458</WNS_FINAL>
+  <WNS_ROUTE>3.458</WNS_ROUTE>
+  <WNS_SYNTH>4.106</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>8</BRAM>
+    <CLB>0</CLB>
+    <DSP>4</DSP>
+    <FF>1329</FF>
+    <LATCH>0</LATCH>
+    <LUT>701</LUT>
+    <SLICE>353</SLICE>
+    <SRL>20</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="Gaussian_Filter" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="17">control_s_axi_U grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86 mul_31ns_31ns_62_2_1_U18 regslice_both_Input_r_V_data_V_U regslice_both_Input_r_V_dest_V_U regslice_both_Input_r_V_id_V_U regslice_both_Input_r_V_keep_V_U regslice_both_Input_r_V_last_V_U regslice_both_Input_r_V_strb_V_U regslice_both_Input_r_V_user_V_U regslice_both_Output_r_V_data_V_U regslice_both_Output_r_V_dest_V_U regslice_both_Output_r_V_id_V_U regslice_both_Output_r_V_keep_V_U regslice_both_Output_r_V_last_V_U regslice_both_Output_r_V_strb_V_U regslice_both_Output_r_V_user_V_U</SubModules>
+    <Resources BRAM="8" DSP="4" FF="1329" LUT="701" LogicLUT="681" RAMB36="4" SRL="20"/>
+    <LocalResources FF="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_control_s_axi">
+    <Resources FF="116" LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2">
+    <SubModules count="3">Line_Buffer_data_1_U Line_Buffer_data_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources BRAM="8" FF="769" LUT="333" LogicLUT="313" RAMB36="4" SRL="20"/>
+    <LocalResources FF="767" LUT="287" LogicLUT="267" SRL="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U" DEPTH="2" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" ORIG_REF_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_U" DEPTH="2" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" ORIG_REF_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" ORIG_REF_NAME="Gaussian_Filter_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/mul_31ns_31ns_62_2_1_U18" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_mul_31ns_31ns_62_2_1">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_data_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+    <Resources FF="69" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_dest_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_id_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_keep_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_last_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_strb_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Input_r_V_user_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_data_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+    <Resources FF="61" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_dest_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_id_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_keep_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_last_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_strb_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_Output_r_V_user_V_U" DEPTH="1" FILE_NAME="Gaussian_Filter.v" ORIG_REF_NAME="Gaussian_Filter_regslice_both">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.688" DATAPATH_LOGIC_DELAY="1.680" DATAPATH_NET_DELAY="4.008" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_1/ADDRARDADDR[6]" LOGIC_LEVELS="6" MAX_FANOUT="26" SLACK="3.458" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_read_reg_168_reg[2]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_read_reg_168_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter.v" LINE_NUMBER="238"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_0_i_10__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_1" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_Line_Buffer_data_1_Rbkb.v" LINE_NUMBER="34"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.475" DATAPATH_LOGIC_DELAY="3.190" DATAPATH_NET_DELAY="3.285" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_reg_668_reg[0]/D" LOGIC_LEVELS="13" MAX_FANOUT="26" SLACK="3.535" STARTPOINT_PIN="bd_0_i/hls_inst/inst/Cols_read_reg_168_reg[2]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/Cols_read_reg_168_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter.v" LINE_NUMBER="238"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln27_fu_284_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/Line_Buffer_data_1_U/ram_reg_0_i_8__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_fu_335_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="632"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/addr_cmp25_reg_668_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="417"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.916" DATAPATH_LOGIC_DELAY="2.343" DATAPATH_NET_DELAY="3.573" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[0]/CE" LOGIC_LEVELS="8" MAX_FANOUT="62" SLACK="3.628" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="690"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="365"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.916" DATAPATH_LOGIC_DELAY="2.343" DATAPATH_NET_DELAY="3.573" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[1]/CE" LOGIC_LEVELS="8" MAX_FANOUT="62" SLACK="3.628" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="690"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="365"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.916" DATAPATH_LOGIC_DELAY="2.343" DATAPATH_NET_DELAY="3.573" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[2]/CE" LOGIC_LEVELS="8" MAX_FANOUT="62" SLACK="3.628" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="690"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/icmp_ln25_fu_261_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="Gaussian_Filter_control_s_axi.v" LINE_NUMBER="130"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="365"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_fu_86/indvar_flatten_fu_126_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="Gaussian_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2.v" LINE_NUMBER="364"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/Gaussian_Filter_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/Gaussian_Filter_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/Gaussian_Filter_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/Gaussian_Filter_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/Gaussian_Filter_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/Gaussian_Filter_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/Gaussian_Filter_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/Gaussian_Filter_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2 3 4",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "Canny_Filter.cpp",
+    "fileloc": 3,
+    "instructions": 21,
+    "memory_accesses": 0,
+    "name": "Canny_Filter",
+    "total_instructions": 557
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "Gaussian_Filter.cpp",
+    "fileloc": 3,
+    "instructions": 135,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 13,
+    "name": "Gaussian_Filter",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 135
+  },
+  "2": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 16,
+    "file": "Sobel_Filter.cpp",
+    "fileloc": 3,
+    "instructions": 118,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 6,
+    "name": "Sobel_Filter",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 118
+  },
+  "3": {
+    "basicblocks": 14,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 7,
+    "file": "Suppression_Filter.cpp",
+    "fileloc": 3,
+    "instructions": 94,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 6,
+    "name": "Suppression_Filter",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 94
+  },
+  "4": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 13,
+    "file": "Hysteresis_Filter.cpp",
+    "fileloc": 3,
+    "instructions": 189,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 19,
+    "name": "Hysteresis_Filter",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 189
+  }
+}

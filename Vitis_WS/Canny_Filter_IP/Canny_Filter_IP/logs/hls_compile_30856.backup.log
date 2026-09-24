@@ -1,0 +1,393 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Canny_Filter.h' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Gaussian_Filter.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Gaussian_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Sobel_Filter.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Sobel_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Suppression_Filter.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Suppression_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Hysteresis_Filter.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Hysteresis_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Canny_Filter.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=Canny_Filter' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 3 seconds. Elapsed time: 20.969 seconds; current allocated memory: 138.910 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'Canny_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Hysteresis_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Suppression_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Sobel_Filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Gaussian_Filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 47.557 seconds; current allocated memory: 142.656 MB.
+INFO: [HLS 200-1995] There were 1,379 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma (Hysteresis_Filter.cpp:19:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_46_4' is marked as complete unroll implied by the pipeline pragma (Hysteresis_Filter.cpp:46:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_48_5' is marked as complete unroll implied by the pipeline pragma (Hysteresis_Filter.cpp:48:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma (Suppression_Filter.cpp:19:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_3' is marked as complete unroll implied by the pipeline pragma (Sobel_Filter.cpp:22:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_4' is marked as complete unroll implied by the pipeline pragma (Sobel_Filter.cpp:41:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_5' is marked as complete unroll implied by the pipeline pragma (Sobel_Filter.cpp:43:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_21_3' is marked as complete unroll implied by the pipeline pragma (Gaussian_Filter.cpp:21:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_39_4' is marked as complete unroll implied by the pipeline pragma (Gaussian_Filter.cpp:39:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_5' is marked as complete unroll implied by the pipeline pragma (Gaussian_Filter.cpp:41:34)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_3' (Hysteresis_Filter.cpp:19:30) in function 'Hysteresis_Filter' completely with a factor of 3 (Hysteresis_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_46_4' (Hysteresis_Filter.cpp:46:34) in function 'Hysteresis_Filter' completely with a factor of 3 (Hysteresis_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_48_5' (Hysteresis_Filter.cpp:48:38) in function 'Hysteresis_Filter' completely with a factor of 3 (Hysteresis_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_3' (Suppression_Filter.cpp:19:30) in function 'Suppression_Filter' completely with a factor of 3 (Suppression_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_3' (Sobel_Filter.cpp:22:30) in function 'Sobel_Filter' completely with a factor of 3 (Sobel_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_4' (Sobel_Filter.cpp:41:30) in function 'Sobel_Filter' completely with a factor of 3 (Sobel_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_5' (Sobel_Filter.cpp:43:34) in function 'Sobel_Filter' completely with a factor of 3 (Sobel_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_21_3' (Gaussian_Filter.cpp:21:30) in function 'Gaussian_Filter' completely with a factor of 3 (Gaussian_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_39_4' (Gaussian_Filter.cpp:39:30) in function 'Gaussian_Filter' completely with a factor of 3 (Gaussian_Filter.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_5' (Gaussian_Filter.cpp:41:34) in function 'Gaussian_Filter' completely with a factor of 3 (Gaussian_Filter.cpp:4:0)
+INFO: [HLS 200-1995] There were 749 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 475 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 3ul, 5ul, 6ul, (unsigned char)56, false>::axis()' into 'Gaussian_Filter(hls::stream<hls::axis<ap_int<32>, 3ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<int, 0>&, int, int)' (Gaussian_Filter.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 3ul, 5ul, 6ul, (unsigned char)56, false>::axis()' into 'Hysteresis_Filter(hls::stream<int, 0>&, hls::stream<hls::axis<ap_int<32>, 3ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, int, int, int, int)' (Hysteresis_Filter.cpp:4:0)
+INFO: [HLS 200-1995] There were 554 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 520 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-248] Applying array_partition to 'Line_Buffer': Complete partitioning on dimension 1. (Gaussian_Filter.cpp:5:9)
+INFO: [HLS 214-248] Applying array_partition to 'Line_Buffer': Complete partitioning on dimension 1. (Sobel_Filter.cpp:5:9)
+INFO: [HLS 214-248] Applying array_partition to 'Line_Buffer': Complete partitioning on dimension 1. (Suppression_Filter.cpp:5:9)
+INFO: [HLS 214-248] Applying array_partition to 'Line_Buffer': Complete partitioning on dimension 1. (Hysteresis_Filter.cpp:5:9)
+INFO: [HLS 200-1995] There were 432 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 424 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 424 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 424 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 532 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 531 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 482 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 432 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 432 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 367 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 12.073 seconds; current allocated memory: 145.648 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 145.648 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 150.883 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 154.055 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'Canny_Filter' (Canny_Filter.cpp:3:1), detected/extracted 5 process function(s): 
+	 'entry_proc'
+	 'Gaussian_Filter'
+	 'Sobel_Filter'
+	 'Suppression_Filter'
+	 'Hysteresis_Filter'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Sobel_Filter.cpp:16:43) to (Sobel_Filter.cpp:16:26) in function 'Sobel_Filter'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Hysteresis_Filter.cpp:15:1) to (Hysteresis_Filter.cpp:13:26) in function 'Hysteresis_Filter'... converting 4 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Hysteresis_Filter' (Hysteresis_Filter.cpp:5:22)...7 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gaussian_Filter' (Gaussian_Filter.cpp:5:22)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.411 seconds; current allocated memory: 177.117 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_11_1'(Suppression_Filter.cpp:11:22) and 'VITIS_LOOP_13_2'(Suppression_Filter.cpp:13:26) in function 'Suppression_Filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_14_1'(Sobel_Filter.cpp:14:22) and 'VITIS_LOOP_16_2'(Sobel_Filter.cpp:16:26) in function 'Sobel_Filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_11_1'(Hysteresis_Filter.cpp:11:22) and 'VITIS_LOOP_13_2'(Hysteresis_Filter.cpp:13:26) in function 'Hysteresis_Filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_13_1'(Gaussian_Filter.cpp:13:22) and 'VITIS_LOOP_15_2'(Gaussian_Filter.cpp:15:26) in function 'Gaussian_Filter' into perfectly nested loops.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'VITIS_LOOP_13_2' (Suppression_Filter.cpp:13:26) and outer loop 'VITIS_LOOP_11_1' (Suppression_Filter.cpp:11:22) in function 'Suppression_Filter' successfully.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'VITIS_LOOP_16_2' (Sobel_Filter.cpp:16:26) and outer loop 'VITIS_LOOP_14_1' (Sobel_Filter.cpp:14:22) in function 'Sobel_Filter' successfully.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'VITIS_LOOP_13_2' (Hysteresis_Filter.cpp:13:26) and outer loop 'VITIS_LOOP_11_1' (Hysteresis_Filter.cpp:11:22) in function 'Hysteresis_Filter' successfully.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'VITIS_LOOP_15_2' (Gaussian_Filter.cpp:15:26) and outer loop 'VITIS_LOOP_13_1' (Gaussian_Filter.cpp:13:22) in function 'Gaussian_Filter' successfully.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.474 seconds; current allocated memory: 250.695 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Canny_Filter' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.511 seconds; current allocated memory: 253.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.476 seconds; current allocated memory: 254.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_1_VITIS_LOOP_15_2'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'icmp' operation 1 bit ('icmp_ln15', Gaussian_Filter.cpp:15) to 'store' operation ('J_write_ln15', Gaussian_Filter.cpp:15) of variable 'add_ln15', Gaussian_Filter.cpp:15 31 bit on local variable 'J', Gaussian_Filter.cpp:15 (combination delay: 7.39556 ns) to honor II or Latency constraint in region 'VITIS_LOOP_13_1_VITIS_LOOP_15_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_13_1_VITIS_LOOP_15_2'
+WARNING: [HLS 200-871] Estimated clock period (7.396 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' consists of the following:
+	'load' operation 31 bit ('J_load', Gaussian_Filter.cpp:15) on local variable 'J', Gaussian_Filter.cpp:15 [48]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln15', Gaussian_Filter.cpp:15) [50]  (2.552 ns)
+	'select' operation 31 bit ('select_ln13', Gaussian_Filter.cpp:13) [53]  (0.733 ns)
+	'add' operation 31 bit ('add_ln15', Gaussian_Filter.cpp:15) [93]  (2.522 ns)
+	'store' operation ('J_write_ln15', Gaussian_Filter.cpp:15) of variable 'add_ln15', Gaussian_Filter.cpp:15 31 bit on local variable 'J', Gaussian_Filter.cpp:15 [98]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 256.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 256.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gaussian_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 256.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 256.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_1_VITIS_LOOP_16_2'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'icmp' operation 1 bit ('icmp_ln16', Sobel_Filter.cpp:16) to 'store' operation ('J_write_ln16', Sobel_Filter.cpp:16) of variable 'add_ln16', Sobel_Filter.cpp:16 31 bit on local variable 'J', Sobel_Filter.cpp:16 (combination delay: 7.39556 ns) to honor II or Latency constraint in region 'VITIS_LOOP_14_1_VITIS_LOOP_16_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_14_1_VITIS_LOOP_16_2'
+WARNING: [HLS 200-871] Estimated clock period (7.396 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' consists of the following:
+	'load' operation 31 bit ('J_load', Sobel_Filter.cpp:16) on local variable 'J', Sobel_Filter.cpp:16 [41]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln16', Sobel_Filter.cpp:16) [43]  (2.552 ns)
+	'select' operation 31 bit ('select_ln14', Sobel_Filter.cpp:14) [46]  (0.733 ns)
+	'add' operation 31 bit ('add_ln16', Sobel_Filter.cpp:16) [127]  (2.522 ns)
+	'store' operation ('J_write_ln16', Sobel_Filter.cpp:16) of variable 'add_ln16', Sobel_Filter.cpp:16 31 bit on local variable 'J', Sobel_Filter.cpp:16 [132]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.726 seconds; current allocated memory: 258.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 258.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Sobel_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 258.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 258.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'icmp' operation 1 bit ('icmp_ln13', Suppression_Filter.cpp:13) to 'store' operation ('J_write_ln13', Suppression_Filter.cpp:13) of variable 'add_ln13', Suppression_Filter.cpp:13 31 bit on local variable 'J', Suppression_Filter.cpp:13 (combination delay: 7.39556 ns) to honor II or Latency constraint in region 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'
+WARNING: [HLS 200-871] Estimated clock period (7.396 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' consists of the following:
+	'load' operation 31 bit ('J_load', Suppression_Filter.cpp:13) on local variable 'J', Suppression_Filter.cpp:13 [42]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln13', Suppression_Filter.cpp:13) [44]  (2.552 ns)
+	'select' operation 31 bit ('select_ln11', Suppression_Filter.cpp:11) [47]  (0.733 ns)
+	'add' operation 31 bit ('add_ln13', Suppression_Filter.cpp:13) [91]  (2.522 ns)
+	'store' operation ('J_write_ln13', Suppression_Filter.cpp:13) of variable 'add_ln13', Suppression_Filter.cpp:13 31 bit on local variable 'J', Suppression_Filter.cpp:13 [98]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.75 seconds; current allocated memory: 259.094 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 259.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Suppression_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 259.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 259.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'icmp' operation 1 bit ('icmp_ln13', Hysteresis_Filter.cpp:13) to 'store' operation ('J_write_ln13', Hysteresis_Filter.cpp:13) of variable 'add_ln13', Hysteresis_Filter.cpp:13 31 bit on local variable 'J', Hysteresis_Filter.cpp:13 (combination delay: 7.39556 ns) to honor II or Latency constraint in region 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_11_1_VITIS_LOOP_13_2'
+WARNING: [HLS 200-871] Estimated clock period (7.396 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' consists of the following:
+	'load' operation 31 bit ('J_load', Hysteresis_Filter.cpp:13) on local variable 'J', Hysteresis_Filter.cpp:13 [56]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln13', Hysteresis_Filter.cpp:13) [59]  (2.552 ns)
+	'select' operation 31 bit ('select_ln11', Hysteresis_Filter.cpp:11) [62]  (0.733 ns)
+	'add' operation 31 bit ('add_ln13', Hysteresis_Filter.cpp:13) [114]  (2.522 ns)
+	'store' operation ('J_write_ln13', Hysteresis_Filter.cpp:13) of variable 'add_ln13', Hysteresis_Filter.cpp:13 31 bit on local variable 'J', Hysteresis_Filter.cpp:13 [120]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.809 seconds; current allocated memory: 260.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 260.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Hysteresis_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 260.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 260.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Canny_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_Hysteresis_Filter_U0 (from entry_proc_U0 to Hysteresis_Filter_U0) to 4 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 261.238 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 261.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 262.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' pipeline 'VITIS_LOOP_13_1_VITIS_LOOP_15_2' pipeline type 'loop pipeline'
+INFO: [SYN 201-210] Renamed object name 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUTO_1R1W' to 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_RAM_AUTO_1R1W' to 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_RAM_AUTOcud' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2'.
+INFO: [RTMG 210-278] Implementing memory 'Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.664 seconds; current allocated memory: 265.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gaussian_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gaussian_Filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.406 seconds; current allocated memory: 267.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' pipeline 'VITIS_LOOP_14_1_VITIS_LOOP_16_2' pipeline type 'loop pipeline'
+INFO: [SYN 201-210] Renamed object name 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_1_RAM_AUTO_1R1W' to 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_1_RAM_AUTO_dEe' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2'.
+INFO: [RTMG 210-278] Implementing memory 'Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.343 seconds; current allocated memory: 269.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Sobel_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Sobel_Filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.344 seconds; current allocated memory: 272.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' pipeline 'VITIS_LOOP_11_1_VITIS_LOOP_13_2' pipeline type 'loop pipeline'
+INFO: [SYN 201-210] Renamed object name 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAM_AUTO_1R1W' to 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AUTO_1R1W' to 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+INFO: [RTMG 210-278] Implementing memory 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.859 seconds; current allocated memory: 272.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Suppression_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Suppression_Filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.277 seconds; current allocated memory: 275.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' pipeline 'VITIS_LOOP_11_1_VITIS_LOOP_13_2' pipeline type 'loop pipeline'
+INFO: [SYN 201-210] Renamed object name 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAM_AUTO_1R1W' to 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAM_g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AUTO_1R1W' to 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AUhbi' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 276.250 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Hysteresis_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Hysteresis_Filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 279.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Canny_Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Input_Stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Output_Stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/High_Threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_Filter/Low_Threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Canny_Filter' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'Rows', 'Cols', 'High_Threshold', 'Low_Threshold' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Canny_Filter'.
+INFO: [RTMG 210-285] Implementing FIFO 'High_Threshold_c_U(Canny_Filter_fifo_w32_d5_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Low_Threshold_c_U(Canny_Filter_fifo_w32_d5_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Gaussian_to_Sobel_U(Canny_Filter_fifo_w32_d8_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Rows_c2_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Cols_c4_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Sobel_to_Suppression_U(Canny_Filter_fifo_w32_d8_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Rows_c1_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Cols_c3_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Suppression_to_Hysteresis_U(Canny_Filter_fifo_w32_d8_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Rows_c_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Cols_c_U(Canny_Filter_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Hysteresis_Filter_U0_U(Canny_Filter_start_for_Hysteresis_Filter_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Sobel_Filter_U0_U(Canny_Filter_start_for_Sobel_Filter_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Suppression_Filter_U0_U(Canny_Filter_start_for_Suppression_Filter_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.396 seconds; current allocated memory: 280.688 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.973 seconds; current allocated memory: 285.336 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.132 seconds; current allocated memory: 292.750 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for Canny_Filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for Canny_Filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 135.22 MHz
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 7 seconds. Total elapsed time: 101.283 seconds; peak allocated memory: 292.816 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 47s

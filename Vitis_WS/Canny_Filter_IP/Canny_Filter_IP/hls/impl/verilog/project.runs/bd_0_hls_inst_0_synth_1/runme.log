@@ -1,0 +1,919 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 22-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep 24 14:59:57 2026
+# Process ID         : 29768
+# Current directory  : C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : DESKTOP-55UAODO
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 28991 MB
+# Total Virtual      : 45840 MB
+# Available Virtual  : 26763 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Sep 24 14:59:57 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 64866
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 582.738 ; gain = 268.602
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+INFO: [Vivado_Tcl 97-128] Directive used for synth_design is: sdx_optimization_effort_high
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28888
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1397.281 ; gain = 577.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_control_s_axi' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_control_s_axi.v:225]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_control_s_axi' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_entry_proc' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_entry_proc' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Gaussian_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_flow_control_loop_pipe_sequential_init' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_flow_control_loop_pipe_sequential_init' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_mul_31ns_31ns_62_2_1' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_mul_31ns_31ns_62_2_1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_mul_31ns_31ns_62_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both__parameterized0' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both__parameterized0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both__parameterized1' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both__parameterized1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both__parameterized2' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both__parameterized2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both__parameterized3' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both__parameterized3' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_regslice_both__parameterized4' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_regslice_both__parameterized4' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Gaussian_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Gaussian_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Sobel_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_sparsemux_7_2_16_1_1' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_sparsemux_7_2_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_sparsemux_7_2_16_1_1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_sparsemux_7_2_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Sobel_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Sobel_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Suppression_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Suppression_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Suppression_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Hysteresis_Filter' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Hysteresis_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_sparsemux_7_2_1_1_1' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_sparsemux_7_2_1_1_1' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_Hysteresis_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_Hysteresis_Filter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d5_S' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d5_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d5_S_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d5_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d5_S_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d5_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d5_S' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d5_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d8_S' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d8_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d8_S_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d8_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d8_S_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d8_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d8_S' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d8_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d2_S' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_fifo_w32_d2_S_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d2_S_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_fifo_w32_d2_S' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Hysteresis_Filter_U0' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Hysteresis_Filter_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Hysteresis_Filter_U0_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Hysteresis_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Hysteresis_Filter_U0_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Hysteresis_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Hysteresis_Filter_U0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Hysteresis_Filter_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Sobel_Filter_U0' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Sobel_Filter_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Sobel_Filter_U0_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Sobel_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Sobel_Filter_U0_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Sobel_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Sobel_Filter_U0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Sobel_Filter_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Suppression_Filter_U0' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Suppression_Filter_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Canny_Filter_start_for_Suppression_Filter_U0_ShiftReg' [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Suppression_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Suppression_Filter_U0_ShiftReg' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Suppression_Filter_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter_start_for_Suppression_Filter_U0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_start_for_Suppression_Filter_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Filter' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8210/hdl/verilog/Canny_Filter_control_s_axi.v:298]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port addr[1] in module Canny_Filter_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Canny_Filter_mul_31ns_31ns_62_2_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Canny_Filter_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_Line_Buffer_RAM_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Canny_Filter_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_Line_Buffer_1_RAM_AUbkb is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[3] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[3] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cols_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_num_data_valid[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_fifo_cap[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port High_Threshold_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_num_data_valid[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_num_data_valid[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_num_data_valid[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_num_data_valid[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_fifo_cap[3] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_fifo_cap[2] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_fifo_cap[1] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Low_Threshold_fifo_cap[0] in module Canny_Filter_Hysteresis_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_RAM_AfYi is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_Line_Buffer_1_RAMeOg is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[31] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[30] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[29] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[28] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[27] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[26] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[25] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[24] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[23] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[22] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[21] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[20] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[19] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[18] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[17] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_dout[16] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[3] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[2] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[1] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[0] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[3] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[2] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[1] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[0] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[3] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[2] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[1] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[0] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[3] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[2] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[1] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[0] in module Canny_Filter_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[3] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[2] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[1] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_num_data_valid[0] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[3] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[2] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[1] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Sobel_to_Suppression_fifo_cap[0] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[3] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[2] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[1] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_num_data_valid[0] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[3] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[2] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[1] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Suppression_to_Hysteresis_fifo_cap[0] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_num_data_valid[2] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rows_num_data_valid[1] in module Canny_Filter_Suppression_Filter is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1554.539 ; gain = 734.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1554.539 ; gain = 734.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1554.539 ; gain = 734.379
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1554.539 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/Canny_Filter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/Canny_Filter_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1623.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1625.906 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1625.906 ; gain = 805.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1625.906 ; gain = 805.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1625.906 ; gain = 805.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Canny_Filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Canny_Filter_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Canny_Filter_regslice_both__parameterized4'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Canny_Filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Canny_Filter_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Canny_Filter_regslice_both__parameterized4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1625.906 ; gain = 805.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 6     
+	   4 Input   32 Bit       Adders := 4     
+	   2 Input   31 Bit       Adders := 5     
+	   4 Input   31 Bit       Adders := 1     
+	   3 Input   31 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 9     
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               62 Bit    Registers := 8     
+	               32 Bit    Registers := 85    
+	               31 Bit    Registers := 20    
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 14    
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 24    
+	                1 Bit    Registers := 165   
++---Multipliers : 
+	              32x32  Multipliers := 4     
++---RAMs : 
+	              60K Bit	(1920 X 32 bit)          RAMs := 6     
+	              30K Bit	(1920 X 16 bit)          RAMs := 1     
+	              15K Bit	(1920 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input   64 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 19    
+	   2 Input   31 Bit        Muxes := 8     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   6 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 172   
+	   4 Input    2 Bit        Muxes := 56    
+	   2 Input    1 Bit        Muxes := 149   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U16/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_170_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U16/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_165_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: register smax1_reg_170_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U16/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U16/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_165_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U16/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U16/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U16/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U44/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_137_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U44/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_132_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: register smax1_reg_137_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U44/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U44/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_132_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U44/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U44/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U44/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U57/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_137_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U57/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_132_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: register smax1_reg_137_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U57/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U57/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_132_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U57/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U57/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U57/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U80/tmp_product, operation Mode is: A2*B2.
+DSP Report: register smax1_reg_197_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U80/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_192_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: register smax1_reg_197_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U80/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/tmp_product.
+DSP Report: Generating DSP mul_31ns_31ns_62_2_1_U80/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register smax_reg_192_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: register mul_31ns_31ns_62_2_1_U80/buff0_reg is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+DSP Report: operator mul_31ns_31ns_62_2_1_U80/tmp_product is absorbed into DSP mul_31ns_31ns_62_2_1_U80/buff0_reg.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module Canny_Filter_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module Canny_Filter_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_keep_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_keep_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_strb_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_strb_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_user_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_user_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_id_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_id_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_dest_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (regslice_both_Input_Stream_V_dest_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[47]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[46]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[45]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[44]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[43]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[42]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[41]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[40]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[39]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[38]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[37]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[36]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[35]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[34]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[33]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[32]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[31]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[30]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[29]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[28]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[27]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[26]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[25]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[24]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[23]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[22]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[21]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[20]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[19]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[18]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[17]) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[47]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[46]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[45]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[44]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[43]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[42]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[41]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[40]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[39]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[38]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[37]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[36]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[35]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[34]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[33]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[32]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[31]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[30]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[29]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[28]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[27]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[26]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[25]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[24]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[23]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[22]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[21]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[20]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[19]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[18]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U16/buff0_reg[17]__0) is unused and will be removed from module Canny_Filter_Gaussian_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[47]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[46]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[45]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[44]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[43]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[42]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[41]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[40]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[39]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[38]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[37]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[36]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[35]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[34]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[33]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[32]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[31]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[30]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[29]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[28]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[27]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[26]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[25]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Synth 8-3332] Sequential element (mul_31ns_31ns_62_2_1_U44/buff0_reg[24]) is unused and will be removed from module Canny_Filter_Sobel_Filter.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84i_0/\grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U/ram_reg_1 , of type : RAMB36E1 in constant propagation
+WARNING: [Synth 8-13373] Removed Macro Instance : inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84i_0/\grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U/ram_reg_1 , of type : RAMB36E1 in constant propagation
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1657.824 ; gain = 837.664
+---------------------------------------------------------------------------------
+ Sort Area is  mul_31ns_31ns_62_2_1_U16/tmp_product_0 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U16/tmp_product_0 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U44/tmp_product_6 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U44/tmp_product_6 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U57/tmp_product_8 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U57/tmp_product_8 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U80/tmp_product_a : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U80/tmp_product_a : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U16/tmp_product_3 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U16/tmp_product_3 : 0 1 : 2563 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U44/tmp_product_7 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U44/tmp_product_7 : 0 1 : 2563 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U57/tmp_product_9 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U57/tmp_product_9 : 0 1 : 2563 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U80/tmp_product_b : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  mul_31ns_31ns_62_2_1_U80/tmp_product_b : 0 1 : 2563 5230 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object                                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/Gaussian_Filter_U0    | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/ram_reg    | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Gaussian_Filter_U0    | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_U/ram_reg      | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Sobel_Filter_U0       | grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_1_U/ram_reg       | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Sobel_Filter_U0       | grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/ram_reg         | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|inst/Suppression_Filter_U0 | grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_1_U/ram_reg | 1 K x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
+|inst/Suppression_Filter_U0 | grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U/ram_reg   | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/Hysteresis_Filter_U0  | grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U/ram_reg  | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Hysteresis_Filter_U0  | grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Canny_Filter_Gaussian_Filter    | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Gaussian_Filter    | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Gaussian_Filter    | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Gaussian_Filter    | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Sobel_Filter       | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Sobel_Filter       | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Sobel_Filter       | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Sobel_Filter       | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Suppression_Filter | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Suppression_Filter | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Suppression_Filter | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Suppression_Filter | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Hysteresis_Filter  | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Hysteresis_Filter  | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Hysteresis_Filter  | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Hysteresis_Filter  | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++--------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1836.828 ; gain = 1016.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 1860.297 ; gain = 1040.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object                                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/Gaussian_Filter_U0    | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/ram_reg    | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Gaussian_Filter_U0    | grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_U/ram_reg      | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Sobel_Filter_U0       | grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_1_U/ram_reg       | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Sobel_Filter_U0       | grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/ram_reg         | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|inst/Suppression_Filter_U0 | grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_1_U/ram_reg | 1 K x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
+|inst/Suppression_Filter_U0 | grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U/ram_reg   | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/Hysteresis_Filter_U0  | grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U/ram_reg  | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|inst/Hysteresis_Filter_U0  | grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++---------------------------+-----------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/Line_Buffer_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/Line_Buffer_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Suppression_Filter_U0/grp_Suppression_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_68/Line_Buffer_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Hysteresis_Filter_U0/grp_Hysteresis_Filter_Pipeline_VITIS_LOOP_11_1_VITIS_LOOP_13_2_fu_84/Line_Buffer_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1891.316 ; gain = 1071.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2132.637 ; gain = 1312.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2132.637 ; gain = 1312.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 2132.637 ; gain = 1312.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 2132.637 ; gain = 1312.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 2136.699 ; gain = 1316.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 2136.699 ; gain = 1316.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Canny_Filter | Gaussian_Filter_U0/grp_Gaussian_Filter_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_15_2_fu_90/ap_loop_exit_ready_pp0_iter6_reg_reg | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Canny_Filter | Sobel_Filter_U0/grp_Sobel_Filter_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2_fu_68/ap_loop_exit_ready_pp0_iter6_reg_reg       | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+----------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[4] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[7] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Canny_Filter_Gaussian_Filter    | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Gaussian_Filter    | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Gaussian_Filter    | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Gaussian_Filter    | (PCIN>>17+A*B')'  | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Hysteresis_Filter  | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Hysteresis_Filter  | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Hysteresis_Filter  | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Hysteresis_Filter  | (PCIN>>17+A*B')'  | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Sobel_Filter       | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Sobel_Filter       | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Sobel_Filter       | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Sobel_Filter       | (PCIN>>17+A*B')'  | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Suppression_Filter | A'*B'             | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Suppression_Filter | (PCIN>>17+A'*B')' | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Canny_Filter_Suppression_Filter | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Canny_Filter_Suppression_Filter | (PCIN>>17+A*B')'  | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   471|
+|2     |DSP48E1  |    16|
+|4     |LUT1     |   149|
+|5     |LUT2     |   877|
+|6     |LUT3     |   970|
+|7     |LUT4     |   908|
+|8     |LUT5     |   395|
+|9     |LUT6     |   454|
+|10    |MUXF7    |     4|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    12|
+|14    |SRL16E   |   122|
+|15    |FDRE     |  3649|
+|16    |FDSE     |   168|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 2136.699 ; gain = 1316.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:08 . Memory (MB): peak = 2136.699 ; gain = 1245.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 2136.699 ; gain = 1316.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2145.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 504 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2149.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9fd9568a
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+342 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:22 . Memory (MB): peak = 2149.500 ; gain = 1547.652
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2149.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 06afe05bed47d9df
+INFO: [Coretcl 2-1174] Renamed 58 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2149.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/F.A.L.C.O.N/Vitis_WS/Canny_Filter_IP/Canny_Filter_IP/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 15:01:37 2026...
